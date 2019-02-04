@@ -6,7 +6,7 @@ mkdir content
 cd content
 
 echo $$$$$$$$$$$$$$$$$$$$ create content from template {template.json - shortname}
-dotnet new eiskwebapi -n App
+dotnet new eiskwebapi -n Eisk
 
 echo $$$$$$$$$$$$$$$$$$$$ unstalling template {nuspec - package id / template.json - identity }
 dotnet new -u Eisk.WebApi

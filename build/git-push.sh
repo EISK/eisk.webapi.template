@@ -4,7 +4,7 @@ ContentTargetGitUserEmail=${3:-joy_csharp@yahoo.com}
 
 ContentSrc=${4:-content}
 
-ContentTargetGitBranch=${5:-content}
+ContentTargetGitBranch=${5:-master}
 ContentTargetGitRepoDownloadFolder=${6:-content-repo}
 
 SOURCE_DIR=$PWD
@@ -35,5 +35,5 @@ fi
 
 echo "############################# Push contents to the remote branch"
 git add . -A
-git commit -m "Update content"
+git commit -m "Updated with minor changes."
 git push origin $ContentTargetGitBranch
