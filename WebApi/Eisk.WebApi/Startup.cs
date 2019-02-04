@@ -36,13 +36,13 @@ namespace Eisk.WebApi
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Eisk.WebApi", Version = "v1.0",
+                c.SwaggerDoc("v1", new Info { Title = "Eisk.WebApi", Version = "v1.0-preview-1",
                     Description = "EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.",
                     Contact = new Contact
                     {
-                        Name = "Ashraf Alam",
+                        Name = "EISK",
                         Email = string.Empty,
-                        Url = "https://eisk.github.io/eisk.webapi.docs"
+                        Url = "https://eisk.github.io/eisk.webapi"
                     }
                 });
             });

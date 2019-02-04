@@ -330,3 +330,4 @@ ASALocalRun/
 .mfractor/
 /build/dnn-template-render
 /build/content
+/build/content-repo
