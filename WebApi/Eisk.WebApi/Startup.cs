@@ -5,9 +5,10 @@ using Eisk.DomainServices;
 using Eisk.EFCore.Setup;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Azure.KeyVault.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Swashbuckle.AspNetCore.Swagger;
+//using Swashbuckle.AspNetCore.Swagger;
 
 namespace Eisk.WebApi
 {
