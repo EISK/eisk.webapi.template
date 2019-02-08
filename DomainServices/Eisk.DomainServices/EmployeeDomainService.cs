@@ -1,11 +1,12 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Eisk.Core.DomainService;
 using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 
 namespace Eisk.DomainServices
 {
-    public class EmployeeDomainService : DomainService<Employee, int>
+    public class EmployeeDomainService : DomainServiceAsync<Employee, int>
     {
         private readonly IEmployeeDataService _employeeDataService;
 
@@ -14,9 +15,9 @@ namespace Eisk.DomainServices
             _employeeDataService = employeeDataService;
         }
 
-        public virtual IList<Employee> GetByFirstName(string firstName)
+        public virtual async Task<IList<Employee>> GetByFirstName(string firstName)
         {
-            return _employeeDataService.GetByFirstName(firstName);
+            return await _employeeDataService.GetByFirstName(firstName);
         }
 
     }

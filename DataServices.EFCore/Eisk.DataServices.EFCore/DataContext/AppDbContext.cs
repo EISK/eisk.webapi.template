@@ -1,4 +1,4 @@
-﻿using Eisk.Domains.Employee;
+﻿using Eisk.Domains.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Eisk.DataServices.EFCore.DataContext

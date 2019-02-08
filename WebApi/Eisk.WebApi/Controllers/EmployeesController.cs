@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
-using Eisk.Domains.Employee;
+using System.Threading.Tasks;
+using Eisk.Domains.Entities;
 using Eisk.DomainServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,33 +16,33 @@ namespace Eisk.WebApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Employee> Get()
+        public async Task<IEnumerable<Employee>> Get()
         {
-            return _employeeDomainService.GetAll();
+            return await _employeeDomainService.GetAll();
         }
 
         [HttpGet("{id}")]
-        public Employee Get(int id)
+        public async Task<Employee> Get(int id)
         {
-            return _employeeDomainService.GetById(id);
+            return await _employeeDomainService.GetById(id);
         }
 
         [HttpPost]
-        public void Post(Employee employee)
+        public async Task Post(Employee employee)
         {
-            _employeeDomainService.Add(employee);
+            await _employeeDomainService.Add(employee);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, Employee employee)
+        public async Task Put(int id, Employee employee)
         {
-            _employeeDomainService.Update(id, employee);
+            await _employeeDomainService.Update(id, employee);
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
-            _employeeDomainService.Delete(id);
+            await _employeeDomainService.Delete(id);
         }
     }
 }

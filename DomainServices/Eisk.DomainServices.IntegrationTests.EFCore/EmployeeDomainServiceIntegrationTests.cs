@@ -1,5 +1,5 @@
 using Eisk.DataServices.EFCore;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 using Eisk.EFCore.Setup;
 using Eisk.Test.Core.TestBases;
 

@@ -1,22 +1,25 @@
 using System.Collections.Generic;
 using System.Linq;
-using Eisk.Core.DataService.EFCore;
-using Eisk.DataServices.EFCore.DataContext;
-using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Employee;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Eisk.DataServices.EFCore
 {
-    public class EmployeeDataService : EntityContextDataService<Employee>, IEmployeeDataService
+    using Core.DataService.EFCore;
+    using DataContext;
+    using Interfaces;
+    using Domains.Entities;
+
+    public class EmployeeDataService : EntityDataServiceAsync<Employee>, IEmployeeDataService
     {
         public EmployeeDataService(AppDbContext dbContext) : base(dbContext)
         {
 
         }
 
-        public virtual IList<Employee> GetByFirstName(string firstName)
+        public virtual async Task<IList<Employee>> GetByFirstName(string firstName)
         {
-            return DbContext.Set<Employee>().Where(x => x.FirstName.Contains(firstName)).ToList();
+            return await DbContext.Set<Employee>().Where(x => x.FirstName.Contains(firstName)).ToListAsync();
         }
 
     }
