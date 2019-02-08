@@ -1,4 +1,4 @@
-﻿namespace Eisk.Domains.Models.Employee.Enums
+﻿namespace Eisk.Domains.Models.Employee
 {
     public enum TitleOfCourtesy
     {
