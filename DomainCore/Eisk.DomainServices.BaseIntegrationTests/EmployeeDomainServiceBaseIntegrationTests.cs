@@ -1,6 +1,6 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 using Eisk.Test.Core.TestBases;
 using Xunit;
 

@@ -1,6 +1,6 @@
 using Eisk.Core.Exceptions;
 using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 using Moq;
 using System.Threading.Tasks;
 using Xunit;

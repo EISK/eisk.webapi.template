@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Eisk.Domains.Employee
+namespace Eisk.Domains.Entities
 {
     [Table("Employees")]
     public class Employee : Person

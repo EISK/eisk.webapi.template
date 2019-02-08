@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Eisk.Core.DomainService;
 using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 
 namespace Eisk.DomainServices
 {

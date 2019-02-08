@@ -1,5 +1,5 @@
 using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 using Eisk.Test.Core.TestBases;
 
 namespace Eisk.DataServices.BaseIntegrationTests

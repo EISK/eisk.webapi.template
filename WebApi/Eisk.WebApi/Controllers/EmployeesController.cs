@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Eisk.Domains.Employee;
+using Eisk.Domains.Entities;
 using Eisk.DomainServices;
 using Microsoft.AspNetCore.Mvc;
 
