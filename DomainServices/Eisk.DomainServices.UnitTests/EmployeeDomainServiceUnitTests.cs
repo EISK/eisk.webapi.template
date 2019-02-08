@@ -1,5 +1,6 @@
 using Eisk.Core.Exceptions;
 using Eisk.DataServices.Interfaces;
+using Eisk.Domains.Employee;
 using Moq;
 using System.Threading.Tasks;
 using Xunit;
@@ -28,7 +29,7 @@ namespace Eisk.DomainServices.UnitTests
         public async Task Add_NullEmployeePassed_ShouldThrowExceptionAsync()
         {
             //Act + Assert
-            var error =  await Assert.ThrowsAsync<NullInputEntityException>(testCode: () => Factory_DomainService().Add(null));
+            var error =  await Assert.ThrowsAsync<NullInputEntityException<Employee>>(testCode: () => Factory_DomainService().Add(null));
 
             //Assert
             Assert.Equal("Input object to be created or updated is null.", error.Message);
