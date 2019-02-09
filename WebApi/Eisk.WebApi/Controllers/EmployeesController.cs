@@ -2,12 +2,12 @@
 
 namespace Eisk.WebApi.Controllers
 {
-    using Core.Controller;
+    using Eisk.Core.WebApi;
     using Domains.Entities;
     using DomainServices;
 
     [Route("api/[controller]")]
-    public class EmployeesController : DomainApiControllerBaseAsync<Employee,int>
+    public class EmployeesController : WebApiControllerBaseAsync<Employee,int>
     {
         public EmployeesController(EmployeeDomainService employeeDomainService):base(employeeDomainService)
         {
