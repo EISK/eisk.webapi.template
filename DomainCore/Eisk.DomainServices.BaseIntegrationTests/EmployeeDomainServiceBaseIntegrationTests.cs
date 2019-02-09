@@ -1,11 +1,12 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Eisk.Domains.Entities;
-using Eisk.Test.Core.TestBases;
 using Xunit;
 
 namespace Eisk.DomainServices.BaseIntegrationTests
 {
+    using Domains.Entities;
+    using Eisk.Test.Core.TestBases;
+
     public abstract class EmployeeDomainServiceBaseIntegrationTests : DomainServiceBaseIntegrationTests<Employee, int>
     {
     
@@ -27,11 +28,11 @@ namespace Eisk.DomainServices.BaseIntegrationTests
             await _employeeDomainService.Add(objectToAdd);
 
             //Act
-            var returnEmployee = _employeeDomainService.GetByFirstName(firstName);
+            var returnEmployee = await _employeeDomainService.GetByFirstName(firstName);
 
             //Assert
             Assert.NotNull(returnEmployee);
-            //Assert.Equal(firstName, returnEmployee.FirstOrDefault()?.FirstName);
+            Assert.Equal(firstName, returnEmployee.FirstOrDefault()?.FirstName);
         }
     }
 }

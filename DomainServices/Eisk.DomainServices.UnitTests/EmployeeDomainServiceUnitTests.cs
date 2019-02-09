@@ -1,12 +1,13 @@
-using Eisk.Core.Exceptions;
-using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Entities;
 using Moq;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Eisk.DomainServices.UnitTests
 {
+    using Core.Exceptions;
+    using DataServices.Interfaces;
+    using Domains.Entities;
+
     public class EmployeeDomainServiceUnitTests
     {
         #region Helpers

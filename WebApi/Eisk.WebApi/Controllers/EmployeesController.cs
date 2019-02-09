@@ -1,48 +1,17 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Eisk.Domains.Entities;
-using Eisk.DomainServices;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Eisk.WebApi.Controllers
 {
+    using Core.Controller;
+    using Domains.Entities;
+    using DomainServices;
+
     [Route("api/[controller]")]
-    public class EmployeesController : Controller
+    public class EmployeesController : DomainApiControllerBaseAsync<Employee,int>
     {
-        private EmployeeDomainService _employeeDomainService;
-        public EmployeesController(EmployeeDomainService ctx)
+        public EmployeesController(EmployeeDomainService employeeDomainService):base(employeeDomainService)
         {
-            _employeeDomainService = ctx;
-        }
-
-        [HttpGet]
-        public async Task<IEnumerable<Employee>> Get()
-        {
-            return await _employeeDomainService.GetAll();
-        }
-
-        [HttpGet("{id}")]
-        public async Task<Employee> Get(int id)
-        {
-            return await _employeeDomainService.GetById(id);
-        }
-
-        [HttpPost]
-        public async Task Post(Employee employee)
-        {
-            await _employeeDomainService.Add(employee);
-        }
-
-        [HttpPut("{id}")]
-        public async Task Put(int id, Employee employee)
-        {
-            await _employeeDomainService.Update(id, employee);
-        }
-
-        [HttpDelete("{id}")]
-        public async Task Delete(int id)
-        {
-            await _employeeDomainService.Delete(id);
+            
         }
     }
 }

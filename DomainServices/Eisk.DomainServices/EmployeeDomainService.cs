@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Eisk.Core.DomainService;
-using Eisk.DataServices.Interfaces;
-using Eisk.Domains.Entities;
-
 namespace Eisk.DomainServices
 {
+    using Core.DomainService;
+    using DataServices.Interfaces;
+    using Domains.Entities;
+
     public class EmployeeDomainService : DomainServiceAsync<Employee, int>
     {
         private readonly IEmployeeDataService _employeeDataService;

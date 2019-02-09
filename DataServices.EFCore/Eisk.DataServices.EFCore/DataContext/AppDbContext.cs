@@ -1,8 +1,9 @@
-﻿using Eisk.Domains.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Eisk.DataServices.EFCore.DataContext
 {
+    using Domains.Entities;
+
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)

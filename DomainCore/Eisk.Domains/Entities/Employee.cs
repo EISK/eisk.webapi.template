@@ -1,11 +1,12 @@
-﻿using Eisk.Domains.BaseEntities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Eisk.Domains.Entities
 {
+    using BaseEntities;
+
     [Table("Employees")]
     public class Employee : Person
     {
