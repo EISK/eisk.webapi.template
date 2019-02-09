@@ -1,17 +1,21 @@
-﻿using Eisk.DataServices.EFCore;
-using Eisk.DataServices.EFCore.DataContext;
-using Eisk.DataServices.Interfaces;
-using Eisk.DomainServices;
-using Eisk.EFCore.Setup;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Azure.KeyVault.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Eisk.WebApi
 {
+    using Core.DataService;
+    using Eisk.Core.DataService.EFCore;
+    using Core.DomainService;
+    using Eisk.DataServices.EFCore;
+    using Eisk.DataServices.EFCore.DataContext;
+    using DataServices.Interfaces;
+    using DomainServices;
+    using EFCore.Setup;
+
     public class Startup
     {
         public Startup(IHostingEnvironment env, IConfiguration configuration)
@@ -26,6 +30,16 @@ namespace Eisk.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //generic services
+
+            services.AddScoped<DbContext, InMemoryDbContext>();
+
+            services.AddTransient(typeof(IEntityDataServiceAsync<>), typeof(EntityDataServiceAsync<>));
+
+            services.AddTransient(typeof(DomainServiceAsync<,>));
+
+            //custom services
+
             services.AddScoped<AppDbContext, InMemoryDbContext>();
 
             services.AddTransient<IEmployeeDataService, EmployeeDataService>();
@@ -35,13 +49,17 @@ namespace Eisk.WebApi
             services.AddMvc();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Eisk.WebApi", Version = "v1.0-preview-1",
+                c.SwaggerDoc("v1", new Info
+                {
+                    Title = "Eisk.WebApi",
+                    Version = "v1.0-preview-1",
                     Description = "EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.",
                     Contact = new Swashbuckle.AspNetCore.Swagger.Contact
                     {
-                        Name = "EISK",
+                        Name = "EISK Web Api",
                         Email = string.Empty,
                         Url = "https://eisk.github.io/eisk.webapi"
                     }
@@ -49,6 +67,7 @@ namespace Eisk.WebApi
             });
 
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
