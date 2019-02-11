@@ -1,6 +1,5 @@
 namespace Eisk.DomainServices.IntegrationTests.EFCore.Ext
 {
-    using BaseIntegrationTests;
     using Eisk.DataServices.EFCore;
     using Eisk.EFCore.Setup;
 

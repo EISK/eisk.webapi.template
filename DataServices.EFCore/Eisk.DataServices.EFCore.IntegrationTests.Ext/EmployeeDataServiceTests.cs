@@ -1,6 +1,5 @@
 namespace Eisk.DataServices.EFCore.IntegrationTests.Ext
 {
-    using BaseIntegrationTests;
     using Eisk.EFCore.Setup;
 
     public class EmployeeDataServiceTests: EmployeeDataServiceBaseIntegrationTests
