@@ -3,9 +3,9 @@ namespace Eisk.DomainServices.IntegrationTests.EFCore.Ext
     using Eisk.DataServices.EFCore;
     using Eisk.EFCore.Setup;
 
-    public class EmployeeDomainServiceIntegrationTests : EmployeeDomainServiceBaseIntegrationTests
+    public class EmployeeDomainServiceEfCoreInMemoryIntegrationTests : EmployeeDomainServiceBaseIntegrationTests
     {
-        public EmployeeDomainServiceIntegrationTests() :
+        public EmployeeDomainServiceEfCoreInMemoryIntegrationTests() :
             base(new EmployeeDomainService(Factory_DataService()))
         {
             
