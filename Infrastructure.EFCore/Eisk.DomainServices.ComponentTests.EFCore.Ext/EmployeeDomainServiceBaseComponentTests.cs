@@ -6,10 +6,10 @@ using Xunit;
 
 namespace Eisk.DomainServices.ComponentTests.EFCore.Ext
 {
-    public abstract class EmployeeDomainServiceBaseIntegrationTests : DomainServiceBaseIntegrationTests<Employee, int>
+    public abstract class EmployeeDomainServiceBaseComponentTests : DomainServiceBaseIntegrationTests<Employee, int>
     {
     
-        protected EmployeeDomainServiceBaseIntegrationTests(EmployeeDomainService employeeDomainService) : 
+        protected EmployeeDomainServiceBaseComponentTests(EmployeeDomainService employeeDomainService) : 
         base(employeeDomainService, x => x.Id)
         {
             _employeeDomainService = employeeDomainService;

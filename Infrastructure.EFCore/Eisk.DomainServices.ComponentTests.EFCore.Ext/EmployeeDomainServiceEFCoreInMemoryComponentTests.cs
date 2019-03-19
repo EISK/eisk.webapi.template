@@ -3,9 +3,9 @@ using Eisk.EFCore.Setup;
 
 namespace Eisk.DomainServices.ComponentTests.EFCore.Ext
 {
-    public class EmployeeDomainServiceEfCoreInMemoryIntegrationTests : EmployeeDomainServiceBaseIntegrationTests
+    public class EmployeeDomainServiceEfCoreInMemoryComponentTests : EmployeeDomainServiceBaseComponentTests
     {
-        public EmployeeDomainServiceEfCoreInMemoryIntegrationTests() :
+        public EmployeeDomainServiceEfCoreInMemoryComponentTests() :
             base(new EmployeeDomainService(Factory_DataService()))
         {
             
