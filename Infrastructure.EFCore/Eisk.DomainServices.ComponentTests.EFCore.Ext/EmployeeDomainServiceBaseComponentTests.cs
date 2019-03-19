@@ -4,7 +4,7 @@ using Eisk.Domains.Entities;
 using Eisk.Test.Core.TestBases;
 using Xunit;
 
-namespace Eisk.DomainServices.IntegrationTests.EFCore.Ext
+namespace Eisk.DomainServices.ComponentTests.EFCore.Ext
 {
     public abstract class EmployeeDomainServiceBaseIntegrationTests : DomainServiceBaseIntegrationTests<Employee, int>
     {
