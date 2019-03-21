@@ -5,7 +5,7 @@ using Eisk.Domains.Entities;
 
 namespace Eisk.DataServices.Interfaces
 {
-    public interface IEmployeeDataService: IEntityDataServiceAsync<Employee>
+    public interface IEmployeeDataService: IEntityDataService<Employee>
     {
         Task<IList<Employee>> GetByFirstName(string firstName);
 

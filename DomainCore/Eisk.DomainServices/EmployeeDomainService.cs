@@ -6,7 +6,7 @@ namespace Eisk.DomainServices
     using DataServices.Interfaces;
     using Domains.Entities;
 
-    public class EmployeeDomainService : DomainServiceAsync<Employee, int>
+    public class EmployeeDomainService : DomainService<Employee, int>
     {
         private readonly IEmployeeDataService _employeeDataService;
 
