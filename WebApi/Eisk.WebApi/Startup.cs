@@ -34,17 +34,17 @@ namespace Eisk.WebApi
 
             services.AddScoped<DbContext, InMemoryDbContext>();
 
-            services.AddTransient(typeof(IEntityDataService<>), typeof(EntityDataService<>));
+            services.AddScoped(typeof(IEntityDataService<>), typeof(EntityDataService<>));
 
-            services.AddTransient(typeof(DomainService<,>));
+            services.AddScoped(typeof(DomainService<,>));
 
             //custom services
 
             services.AddScoped<AppDbContext, InMemoryDbContext>();
 
-            services.AddTransient<IEmployeeDataService, EmployeeDataService>();
+            services.AddScoped<IEmployeeDataService, EmployeeDataService>();
 
-            services.AddTransient<EmployeeDomainService>();
+            services.AddScoped<EmployeeDomainService>();
 
             services.AddMvc();
 
