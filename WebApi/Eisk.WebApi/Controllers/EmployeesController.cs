@@ -4,7 +4,7 @@
     using Domains.Entities;
     using DomainServices;
 
-    public class EmployeesController : WebApiControllerBaseAsync<Employee,int>
+    public class EmployeesController : WebApiControllerBase<Employee,int>
     {
         public EmployeesController(EmployeeDomainService employeeDomainService):base(employeeDomainService)
         {
