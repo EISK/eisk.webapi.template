@@ -1,13 +1,13 @@
-namespace Eisk.DomainServices.IntegrationTests.EFCore
-{
-    using Domains.Entities;
-    using Eisk.DataServices.EFCore;
-    using Eisk.EFCore.Setup;
-    using Eisk.Test.Core.TestBases;
+using Eisk.DataServices.EFCore;
+using Eisk.Domains.Entities;
+using Eisk.EFCore.Setup;
+using Eisk.Test.Core.TestBases;
 
-    public class EmployeeDomainServiceIntegrationTests:DomainServiceBaseIntegrationTests<Employee, int>
+namespace Eisk.DomainServices.ComponentTests.EFCore
+{
+    public class EmployeeDomainServiceComponentTests : DomainServiceBaseComponentTests<Employee, int>
     {
-        public EmployeeDomainServiceIntegrationTests() :
+        public EmployeeDomainServiceComponentTests() :
             base(new EmployeeDomainService(Factory_DataService()), x => x.Id)
         {
             

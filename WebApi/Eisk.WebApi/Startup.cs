@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Eisk.Core.DataService.EFCore;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,7 +9,6 @@ using Swashbuckle.AspNetCore.Swagger;
 namespace Eisk.WebApi
 {
     using Core.DataService;
-    using Eisk.Core.DataService.EFCore;
     using Core.DomainService;
     using Eisk.DataServices.EFCore;
     using Eisk.DataServices.EFCore.DataContext;
@@ -34,9 +34,9 @@ namespace Eisk.WebApi
 
             services.AddScoped<DbContext, InMemoryDbContext>();
 
-            services.AddTransient(typeof(IEntityDataServiceAsync<>), typeof(EntityDataServiceAsync<>));
+            services.AddTransient(typeof(IEntityDataService<>), typeof(EntityDataService<>));
 
-            services.AddTransient(typeof(DomainServiceAsync<,>));
+            services.AddTransient(typeof(DomainService<,>));
 
             //custom services
 
