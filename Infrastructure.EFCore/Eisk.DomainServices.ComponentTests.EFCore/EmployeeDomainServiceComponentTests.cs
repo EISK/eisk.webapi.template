@@ -5,7 +5,7 @@ using Eisk.Test.Core.TestBases;
 
 namespace Eisk.DomainServices.ComponentTests.EFCore
 {
-    public class EmployeeDomainServiceComponentTests : DomainServiceBaseIntegrationTests<Employee, int>
+    public class EmployeeDomainServiceComponentTests : DomainServiceBaseComponentTests<Employee, int>
     {
         public EmployeeDomainServiceComponentTests() :
             base(new EmployeeDomainService(Factory_DataService()), x => x.Id)
