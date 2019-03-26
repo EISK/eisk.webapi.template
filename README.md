@@ -2,14 +2,15 @@
 
 ...
 
----
-uid: eisk-webapi-get-started
----
 # Getting Started with EISK Web Api
 
 EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies. 
 
 With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve.
+
+## Give a Star! :star:
+
+If you like or are using this project to learn or start your solution, please give it a [star](https://github.com/EISK/eisk.webapi). Thanks!
 
 ## Sample Use Case
 
