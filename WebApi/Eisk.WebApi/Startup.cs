@@ -15,6 +15,9 @@ namespace Eisk.WebApi
     using DataServices.Interfaces;
     using DomainServices;
     using EFCore.Setup;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.OpenApi.Models;
+    using System;
 
     public class Startup
     {
@@ -46,22 +49,23 @@ namespace Eisk.WebApi
 
             services.AddScoped<EmployeeDomainService>();
 
-            services.AddMvc();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
+                        
 
             // Register the Swagger generator, defining 1 or more Swagger documents
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info
+                c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Eisk.WebApi",
                     Version = "v1.0-preview-1",
                     Description = "EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.",
-                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact
+                    Contact = new OpenApiContact
                     {
                         Name = "EISK Web Api",
                         Email = string.Empty,
-                        Url = "https://eisk.github.io/eisk.webapi"
+                        Url = new Uri("https://eisk.github.io/eisk.webapi")
                     }
                 });
             });
@@ -88,7 +92,7 @@ namespace Eisk.WebApi
                 c.RoutePrefix = string.Empty;
             });
 
-            app.UseMvc();
+            //app.UseMvc();
         }
     }
 }
