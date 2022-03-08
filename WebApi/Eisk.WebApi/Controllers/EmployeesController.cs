@@ -3,12 +3,63 @@
     using Eisk.Core.WebApi;
     using Domains.Entities;
     using DomainServices;
+    using Microsoft.AspNetCore.Mvc;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using System.Linq;
+    using System;
 
-    public class EmployeesController : WebApiControllerBase<Employee,int>
+    //[ApiController]
+    //[Route("[controller]")]
+    //public class EmployeesController : ControllerBase
+    //{
+    //    EmployeeDomainService _employeeDomainService;
+    //    public EmployeesController(EmployeeDomainService employeeDomainService)
+    //    {
+    //        _employeeDomainService = employeeDomainService;
+    //    }
+
+    //    [HttpGet(Name = "Employees")]
+    //    public IEnumerable<Employee> Get()
+    //    {
+    //        return _employeeDomainService.GetAll().Result;
+    //    }
+    //}
+
+    [ApiController]
+    [Route("[controller]")]
+    public class WeatherForecastController : ControllerBase
     {
-        public EmployeesController(EmployeeDomainService employeeDomainService):base(employeeDomainService)
+        private static readonly string[] Summaries = new[]
+        {
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"};
+
+        public WeatherForecastController()
         {
             
         }
+
+        [HttpGet(Name = "GetWeatherForecast")]
+        public IEnumerable<WeatherForecast> Get()
+        {
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
+        public string? Summary { get; set; }
     }
 }

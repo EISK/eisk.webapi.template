@@ -33,6 +33,10 @@ namespace Eisk.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+
+            services.AddEndpointsApiExplorer();
+
             //generic services
 
             services.AddScoped<DbContext, InMemoryDbContext>();
@@ -48,9 +52,6 @@ namespace Eisk.WebApi
             services.AddScoped<IEmployeeDataService, EmployeeDataService>();
 
             services.AddScoped<EmployeeDomainService>();
-
-            services.AddMvc(option => option.EnableEndpointRouting = false);
-                        
 
             // Register the Swagger generator, defining 1 or more Swagger documents
 
@@ -91,8 +92,6 @@ namespace Eisk.WebApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Eisk.WebApi");
                 c.RoutePrefix = string.Empty;
             });
-
-            //app.UseMvc();
         }
     }
 }
