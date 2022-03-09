@@ -3,6 +3,7 @@ using Eisk.DataServices.EFCore.DataContext;
 using Eisk.DataServices.Interfaces;
 using Eisk.DomainServices;
 using Eisk.EFCore.Setup;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,21 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Eisk.WebApi",
+        Version = "v1.1",
+        Description = "EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.",
+        Contact = new OpenApiContact
+        {
+            Name = "EISK Web Api",
+            Email = string.Empty,
+            Url = new Uri("https://eisk.github.io/eisk.webapi")
+        }
+    });
+});
 
 //custom services
 
