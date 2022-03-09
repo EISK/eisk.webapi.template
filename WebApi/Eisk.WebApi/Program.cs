@@ -34,6 +34,8 @@ builder.Services.AddScoped<AppDbContext, InMemoryDbContext>();
 builder.Services.AddScoped<IEmployeeDataService, EmployeeDataService>();
 builder.Services.AddScoped<EmployeeDomainService>();
 
+DbContextDataInitializer.Initialize(new InMemoryDbContext());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
