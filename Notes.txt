@@ -22,3 +22,12 @@ Factors
 TODO:
 * include instruction for template build and publish
 ========================================================
+TODO:
+
+Code
+* added exception handler for controller
+
+Others
+* check better way to handle exception classes
+* test post and update methods
+========================================================
