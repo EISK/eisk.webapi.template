@@ -11,18 +11,12 @@
 
     [ApiController]
     [Route("[controller]")]
-    public class EmployeesController : ControllerBase
+    public class EmployeesController : WebApiControllerBase<Employee, int>
     {
         EmployeeDomainService _employeeDomainService;
-        public EmployeesController(EmployeeDomainService employeeDomainService)
+        public EmployeesController(EmployeeDomainService employeeDomainService):base(employeeDomainService)
         {
-            _employeeDomainService = employeeDomainService;
-        }
-
-        [HttpGet(Name = "Employees")]
-        public IEnumerable<Employee> Get()
-        {
-            return _employeeDomainService.GetAll().Result;
+            
         }
     }
 }
