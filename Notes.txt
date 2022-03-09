@@ -24,15 +24,16 @@ TODO:
 ========================================================
 TODO:
 
-Code
-* added exception handler for controller
-
 CI/CD
 DONE * Fix github connection
 DONE * Install Github App in Azure
 IN PROGRESS * Fix CI issue (template)
 * Fix CI issue (core)
 * Fix CI issue (docs)
+* Run template builder locally
+
+Code
+* added exception handler for controller
 
 Others
 * check better way to handle exception classes
