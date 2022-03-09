@@ -63,6 +63,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="Properties\project-icon.png" />
+    <Content Include="README.txt" />
     <Content Include="stylesheet.css" />
     <Content Include="template.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
