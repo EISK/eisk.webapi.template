@@ -33,7 +33,10 @@ IN PROGRESS * Fix CI issue (template)
 * Run template builder locally
 
 Code
+* fix unit tests
 * added exception handler for controller
+* add log functionality
+* apply custom business logic
 
 Others
 * check better way to handle exception classes
