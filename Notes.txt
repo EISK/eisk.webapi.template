@@ -20,25 +20,26 @@ Factors
 * Web UI Tests (in CD)
 ========================================================
 TODO:
-* include instruction for template build and publish
-========================================================
-TODO:
 
-CI/CD
+CI/CD (Remote)
 DONE * Fix github connection
 DONE * Install Github App in Azure
-IN PROGRESS * Fix CI issue (template)
-* Fix CI issue (core)
-* Fix CI issue (docs)
+DONE * Fix CI issue (core)
+DONE * Fix CI issue (template)
+DONE * Fix CI issue (docs)
+
+Build / packagaing
 * Run template builder locally
+* Run docs locally
 
 Code
-* fix unit tests
+DONE * fix unit tests
 * added exception handler for controller
 * add log functionality
 * apply custom business logic
 
 Others
+* include instruction for template build and publish
 * check better way to handle exception classes
 * test post and update methods
 ========================================================
