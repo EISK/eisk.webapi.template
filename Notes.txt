@@ -29,8 +29,8 @@ DONE * Fix CI issue (template)
 DONE * Fix CI issue (docs)
 
 Build / packagaing
+DONE * Run docs locally
 * Run template builder locally
-* Run docs locally
 
 Code
 DONE * fix unit tests
@@ -39,7 +39,109 @@ DONE * fix unit tests
 * apply custom business logic
 
 Others
+* Finalize versioning
 * include instruction for template build and publish
 * check better way to handle exception classes
 * test post and update methods
+========================================================
+DOCS
+
+DONE * Finalize repo structure for docs
+* Check versiona archive support in docfx
+* Fix home page image issue
+* Make automated deployment to home page (io/eisk.docs)
+* Place web api home page and content under eisk.webapi/io sub-folder?
+* Add blog site
+========================================================
+Modules
+
+Client Side
+* React (default)
+* React Native
+* Blazor
+
+Web API Layer
+* ASP.NET Web API (default)
+* Azure Function (http)
+* Graph API
+* gRPC
+
+Process Layer
+* Azure WebJob
+* Azure LogicApp
+* Azure Function (Scheduler)
+* AWS Lambda
+
+Domain Layer
+* DDD (default)
+* CQRS
+
+Data Service (in-memory)
+* Memory: EF/SQLLite In-memory (default)
+* Memory: SQL Server
+* Memory: Couchbase
+* Memory: Redis
+
+Data Service
+* RDBMS: SQL Server
+* Key-Value Pair: Azure Table Storage
+* Document database: COSMOS
+* Graph database: COSMOS (gremline)
+* Graph database: Neo4J
+* Columnar database: Cassandra
+
+========================================================
+Repo Dependencies
+
+- eisk.template (default)
+
+- eisk.webapi.template (template sub module or main module)
+- eisk.webapi (output repo)
+
+- eisk.domain-services
+- eisk.data-services (default)
+- eisk.data-services.sql-server
+- eisk.data-services.cosmosdb
+
+- eisk.test-core (default shared across all, can be used as sub-module or main module)
+- eisk.core (default shared across all, can be used as sub-module or main module)
+
+========================================================
+Docs Dependencies
+
+- eisk.io 
+	* single repo for site + docs, enables sharing common contents across modules
+	* contains content and rendered pages, in different branch
+	
+	- / index page only
+
+	- /eisk
+		* site contents, can be moved to separate repo as needed
+		* /eisk/why-eisk
+		
+	- /docs 
+		* in future may contain home page
+		* can be moved to separate repo as needed
+	
+	- /docs/eisk (default module)
+		- /docs/{default module?}/{latest?}/getting-started
+		- /docs/eisk/{latest?}/getting-started
+
+	- /docs/eisk.webapi
+		* in future may contain home page for WebAPI
+		* in future may have sub-module eisk.webapi under docs sub-module (will need to load sub-modules partially as needed under eisk.io, sub-module repo should be renamed as docs-eisk.webapi but should be downloaded as eisk.webapi)
+		* /docs/eisk.webapi/latest/getting-started
+		* /docs/eisk.webapi/v1/getting-started (archived)
+
+- eisk.io/shared-site-resources
+	* initially can be sub-folder which can be moved to separate repo
+	
+	- /assets
+		* contains common header and footer where applicable
+	
+	- /contents
+		* contains common contents
+
+- eisk.io/blog (separate repo to contain blog)
+
 ========================================================
