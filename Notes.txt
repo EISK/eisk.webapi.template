@@ -61,16 +61,16 @@ Client Side
 * Blazor
 
 Web API Layer
-* ASP.NET Web API (default)
-* Azure Function (http)
-* Graph API
-* gRPC
+* WebApi - ASP.NET Web API (default)
+* WebApi.Azure - Azure Function (http)
+* GraphAPI - Graph API
+* gRPC - gRPC
 
 Process Layer
-* Azure WebJob
-* Azure LogicApp
-* Azure Function (Scheduler)
-* AWS Lambda
+* Process.AzureWebJob
+* Process.AzureLogicApp
+* ServerLess.AzureFunction (Scheduler)
+* ServerLess.AWSLambda
 
 Domain Layer
 * DDD (default)
@@ -95,8 +95,8 @@ Repo Dependencies
 
 - eisk.template (default)
 
-- eisk.webapi.template (template sub module or main module)
 - eisk.webapi (output repo)
+- eisk.template.webapi (template sub module or main module)
 
 - eisk.domain-services
 - eisk.data-services (default)
@@ -127,11 +127,12 @@ Docs Dependencies
 		- /docs/{default module?}/{latest?}/getting-started
 		- /docs/eisk/{latest?}/getting-started
 
-	- /docs/eisk.webapi
+	- /docs/webapi
 		* in future may contain home page for WebAPI
-		* in future may have sub-module eisk.webapi under docs sub-module (will need to load sub-modules partially as needed under eisk.io, sub-module repo should be renamed as docs-eisk.webapi but should be downloaded as eisk.webapi)
-		* /docs/eisk.webapi/latest/getting-started
-		* /docs/eisk.webapi/v1/getting-started (archived)
+		* in future may have sub-module webapi under docs sub-module 
+		* will need to load sub-modules partially as needed under eisk.io, sub-module repo should be renamed as docs-webapi but should be downloaded as webapi)
+		* /docs/webapi/latest/getting-started
+		* /docs/webapi/v1/getting-started (archived)
 
 - eisk.io/shared-site-resources
 	* initially can be sub-folder which can be moved to separate repo
