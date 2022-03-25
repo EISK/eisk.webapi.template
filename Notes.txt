@@ -133,6 +133,26 @@ DONE * Restructure (docs) - navigations (individual top, top nav, breadcrumbs)
 DONE * Fix CD issues
 
 * Build locally (template)
+* CD to git-repo (as source)
+
+========================================================
+Release A New Version
+
+* Update version in code and package
+* Build the project in CI
+
+Releasing the Web Site
+* Staging - Web site will be deployed automatically
+* Prod - Web site will be deployed automatically if staging is successful
+
+Releasing in Nuget
+* Trigger the DevOps manually (as nuget releases immutable i.e. can't be updated once created)
+
+Releasing in Github Release
+* Create tah in github
+* Update version in DevOps release
+* Template repo project readme.md will be included automatically in the release notes.
+* Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
 
 ========================================================
 Release Instructions
@@ -141,7 +161,7 @@ CD Contains the following
 
 Staging (Web/github)
 * Web to Azure
-* Github Release (edit) - for draft, keeps adding drafts releases. no need to create tags
+* Github Release (edit) - for draft, no need to create tags
 
 Prod (Web/github/Nuget)
 * Web to Azure
