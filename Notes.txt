@@ -41,7 +41,7 @@ DONE * fix unit tests
 Others
 DONE * Finalize repo structure
 DONE * Finalize doc structure
-* Finalize versioning
+DONE * Finalize versioning
 * Rename eisk.webapi.template to eisk.template
 * include instruction for template build and publish
 * check better way to handle exception classes
