@@ -110,7 +110,10 @@ v8.0 - Web API Edition	.NET Core 2.0,	VS2017,	15.0.28307.168	- 10.0.40219.1 (Cor
 v9.0 - Web API Edition	.NET 6.0		VS2022, 17.0.32112.339	- 10.0.40219.1
 ========================================================
 Update Versions:
-* Eisk.WebApi.proj
-* source.extension.vsixmanifest
 
+Eisk.WebApi.TemplatePack
+	* Eisk.WebApi.proj
+	* source.extension.vsixmanifest
+Eisk.WebApi
+	* Program.cs (for Swagger doc)
 ========================================================
