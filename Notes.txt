@@ -21,12 +21,18 @@ Factors
 ========================================================
 TODO:
 
-CI/CD (Remote)
+Fix CI (Remote)
 DONE * Fix github connection
 DONE * Install Github App in Azure
 DONE * Fix CI issue (core)
 DONE * Fix CI issue (template)
 DONE * Fix CI issue (docs)
+
+Fix CD (Remote)
+DONE * Fix Azure Web (Staging)
+DONE * Fix Azure Web (Prod)
+DONE * Fix Nuget publish (.new new)
+* Fix Github Release
 
 Build / packagaing
 DONE * Run docs locally
@@ -116,4 +122,32 @@ Eisk.WebApi.TemplatePack
 	* source.extension.vsixmanifest
 Eisk.WebApi
 	* Program.cs (for Swagger doc)
+========================================================
+Phases
+
+DONE * Upgrade Template Pack to .NET 6.0
+DONE * Fix CI issues
+DONE * Build locally (docs)
+DONE * Restructure (docs) - folder structure
+DONE * Restructure (docs) - navigations (individual top, top nav, breadcrumbs)
+In-progress * Fix CD issues
+
+* Build locally (template)
+
+========================================================
+Release Instructions
+
+CD Contains the following
+
+Staging (Web/github)
+* Web to Azure
+* Github Release (edit) - for draft, keeps adding drafts releases. no need to create tags
+
+Prod (Web/github/Nuget)
+* Web to Azure
+* Github Release (add) - for non-draft, only published once
+* Github Release (edit)
+* Published to nuget gallery
+
+
 ========================================================
