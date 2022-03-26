@@ -20,25 +20,153 @@ Factors
 * Web UI Tests (in CD)
 ========================================================
 TODO:
-* include instruction for template build and publish
-========================================================
-TODO:
 
-CI/CD
+Fix CI (Remote)
 DONE * Fix github connection
 DONE * Install Github App in Azure
-IN PROGRESS * Fix CI issue (template)
-* Fix CI issue (core)
-* Fix CI issue (docs)
+DONE * Fix CI issue (core)
+DONE * Fix CI issue (template)
+DONE * Fix CI issue (docs)
+
+Fix CD (Remote)
+DONE * Fix Azure Web (Staging)
+DONE * Fix Azure Web (Prod)
+DONE * Fix Nuget publish (.new new)
+* Fix Github Release
+
+Build / packagaing
+DONE * Run docs locally
 * Run template builder locally
 
 Code
-* fix unit tests
+DONE * fix unit tests
 * added exception handler for controller
 * add log functionality
 * apply custom business logic
 
 Others
+DONE * Finalize repo structure
+DONE * Finalize doc structure
+DONE * Finalize versioning
+* Rename eisk.webapi.template to eisk.template
+* include instruction for template build and publish
 * check better way to handle exception classes
 * test post and update methods
+========================================================
+Modules
+
+Client Side
+* React (default)
+* React Native
+* Blazor
+
+Web API Layer
+* WebApi - ASP.NET Web API (default)
+* WebApi.Azure - Azure Function (http)
+* GraphAPI - Graph API
+* gRPC - gRPC
+
+Process Layer
+* Process.AzureWebJob
+* Process.AzureLogicApp
+* ServerLess.AzureFunction (Scheduler)
+* ServerLess.AWSLambda
+
+Domain Layer
+* DDD (default)
+* CQRS
+
+Data Service (in-memory)
+* Memory: EF/SQLLite In-memory (default)
+* Memory: SQL Server
+* Memory: Couchbase
+* Memory: Redis
+
+Data Service
+* RDBMS: SQL Server
+* Key-Value Pair: Azure Table Storage
+* Document database: COSMOS
+* Graph database: COSMOS (gremline)
+* Graph database: Neo4J
+* Columnar database: Cassandra
+
+========================================================
+Repo Dependencies
+
+- eisk.template (default)
+
+- eisk.webapi (output repo)
+- eisk.template.webapi (template sub module or main module)
+
+- eisk.domain-services
+- eisk.data-services (default)
+- eisk.data-services.sql-server
+- eisk.data-services.cosmosdb
+
+- eisk.test-core (default shared across all, can be used as sub-module or main module)
+- eisk.core (default shared across all, can be used as sub-module or main module)
+
+========================================================
+EISK Version
+
+v5.0 - Web Form Edition	.NET 4.0		VS2010,	10.0
+v6.0 - MVC Edition		.NET 4.0		VS2012, 11.0
+v7.0 - MVC Edition		.NET 4.5.1,		VS2013, 12.0.21005.1	- 10.0.40219.1
+v8.0 - Web API Edition	.NET Core 2.0,	VS2017,	15.0.28307.168	- 10.0.40219.1 (Core V1.0)
+v9.0 - Web API Edition	.NET 6.0		VS2022, 17.0.32112.339	- 10.0.40219.1
+========================================================
+Update Versions:
+
+Eisk.WebApi.TemplatePack
+	* Eisk.WebApi.proj
+	* source.extension.vsixmanifest
+Eisk.WebApi
+	* Program.cs (for Swagger doc)
+========================================================
+Phases
+
+DONE * Upgrade Template Pack to .NET 6.0
+DONE * Fix CI issues
+DONE * Build locally (docs)
+DONE * Restructure (docs) - folder structure
+DONE * Restructure (docs) - navigations (individual top, top nav, breadcrumbs)
+DONE * Fix CD issues
+
+* Build locally (template)
+* CD to git-repo (as source)
+
+========================================================
+Release A New Version
+
+* Update version in code and package
+* Build the project in CI
+
+Releasing the Web Site
+* Staging - Web site will be deployed automatically
+* Prod - Web site will be deployed automatically if staging is successful
+
+Releasing in Nuget
+* Trigger the DevOps manually (as nuget releases immutable i.e. can't be updated once created)
+
+Releasing in Github Release
+* Create tah in github
+* Update version in DevOps release
+* Template repo project readme.md will be included automatically in the release notes.
+* Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
+
+========================================================
+Release Instructions
+
+CD Contains the following
+
+Staging (Web/github)
+* Web to Azure
+* Github Release (edit) - for draft, no need to create tags
+
+Prod (Web/github/Nuget)
+* Web to Azure
+* Github Release (add) - for non-draft, only published once or create tag manually
+* Github Release (edit)
+* Published to nuget gallery
+
 ========================================================
