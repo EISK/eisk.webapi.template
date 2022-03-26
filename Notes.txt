@@ -53,6 +53,16 @@ DONE * Finalize versioning
 * check better way to handle exception classes
 * test post and update methods
 ========================================================
+TODO Next:
+* Fix local run (web api)
+* Fix deploy to web service
+* Publish to git repo and 
+* Publish git repo to integrate with with git release task
+
+* build template and document
+* identify test strategy, check base tests usability
+* exclude non-default files from template
+========================================================
 Modules
 
 Client Side
