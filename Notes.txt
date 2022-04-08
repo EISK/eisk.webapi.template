@@ -53,6 +53,16 @@ DONE * Finalize versioning
 * check better way to handle exception classes
 * test post and update methods
 ========================================================
+V9.0.0 (basic only) Release Actions
+
+CD
+* Publish the rendered content to git repo
+
+Code
+* Remove obsolete methods (for .NET 6.0)
+* Exclude unused project files (test projects)
+
+========================================================
 TODO Next:
 
 DONE * Fix local run (web api) v8
@@ -197,6 +207,9 @@ VS2022/.NET 6.0
 	* Resolution: change App Plan from Linux to Windows
 * Issue: web api not showing after deployment
 	* the api json was available, but the issue was due to swagger is not being accessible: https://stackoverflow.com/questions/55658948/asp-net-core-api-get-404-on-azure-app-service-but-works-ok-on-localhost
+* Issue: App service not being deployed
+	* Error: Web Deploy cannot modify the file 'Eisk.Core.dll' on the destination because it is locked by an external process.  In order to allow the publish operation to succeed, you may need to either restart your application to release the lock, or use the AppOffline rule handler for .Net applications on your next publish attempt.  Learn more at: http://go.microsoft.com/fwlink/?LinkId=221672#ERROR_FILE_IN_USE.  Learn more at: https://go.microsoft.com/fwlink/?LinkId=221672#ERROR_FILE_IN_USE. Error count: 1.
+	* Solution: In Azure DevOps, releas task for app service, set, Use Offline settings as true
 
 VS2017/.NET 2.0
 * Issue: An error occurred while starting the application. .NET Core 4.6.26614.01 X86 v4.0.0.0    Microsoft.AspNetCore.Hosting version 2.0.3-rtm-10026    |    Microsoft Windows 10.0.14393
