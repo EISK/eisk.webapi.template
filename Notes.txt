@@ -54,8 +54,16 @@ DONE * Finalize versioning
 * test post and update methods
 ========================================================
 TODO Next:
-* Fix local run (web api)
-* Fix deploy to web service
+
+DONE * Fix local run (web api) v8
+DONE * Update version specific trigger for CD
+* Fix deploy to web service v8
+
+DONE * Fix local run (web api) v9
+DONE * Update version specific trigger for CD
+DONE * Create new app service for v9
+* Deploy to web service v9
+
 * Publish to git repo and 
 * Publish git repo to integrate with with git release task
 
@@ -178,5 +186,22 @@ Prod (Web/github/Nuget)
 * Github Release (add) - for non-draft, only published once or create tag manually
 * Github Release (edit)
 * Published to nuget gallery
+
+========================================================
+CD Troubleshoot
+
+VS2022/.NET 6.0
+* Chaange VS2017 hosting to azure pipeline, 
+	* Resolution: change in the edit release -> app service
+* Error on Deployment, 
+	* Resolution: change App Plan from Linux to Windows
+* Issue: web api not showing after deployment
+	* the api json was available, but the issue was due to swagger is not being accessible: https://stackoverflow.com/questions/55658948/asp-net-core-api-get-404-on-azure-app-service-but-works-ok-on-localhost
+
+VS2017/.NET 2.0
+* Issue: An error occurred while starting the application. .NET Core 4.6.26614.01 X86 v4.0.0.0    Microsoft.AspNetCore.Hosting version 2.0.3-rtm-10026    |    Microsoft Windows 10.0.14393
+	* Enable detailed errors in azure portal: https://stackoverflow.com/questions/47134657/azure-webapp-asp-net-core-2-error-an-error-occurred-while-starting-the-applicat
+* Issue: Could not load file or assembly 'System.Runtime, Version=6.0.0.0
+	* In the build use specific .net sdk (2.0.0): https://stackoverflow.com/questions/59474379/failed-to-use-net-sdk-agent-in-azure-devops-build-pipeline
 
 ========================================================
