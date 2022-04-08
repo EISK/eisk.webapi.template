@@ -201,7 +201,7 @@ Prod (Web/github/Nuget)
 CD Troubleshoot
 
 VS2022/.NET 6.0
-* Chaange VS2017 hosting to azure pipeline, 
+* Change VS2017 hosting to azure pipeline, 
 	* Resolution: change in the edit release -> app service
 * Error on Deployment, 
 	* Resolution: change App Plan from Linux to Windows
@@ -216,5 +216,6 @@ VS2017/.NET 2.0
 	* Enable detailed errors in azure portal: https://stackoverflow.com/questions/47134657/azure-webapp-asp-net-core-2-error-an-error-occurred-while-starting-the-applicat
 * Issue: Could not load file or assembly 'System.Runtime, Version=6.0.0.0
 	* In the build use specific .net sdk (2.0.0): https://stackoverflow.com/questions/59474379/failed-to-use-net-sdk-agent-in-azure-devops-build-pipeline
+	* Delete and re-create app service with .NET 3.1/2.1 LTS
 
 ========================================================
