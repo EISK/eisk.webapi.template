@@ -219,3 +219,9 @@ VS2017/.NET 2.0
 	* Delete and re-create app service with .NET 3.1/2.1 LTS
 
 ========================================================
+
+<ExcludeFromPackage Include="$(TemplateSourceRoot)Infrastructure.EFCore/Eisk.DataServices.EFCore.IntegrationTests*/**/*" />
+<ExcludeFromPackage Include="$(TemplateSourceRoot)*.txt" />
+
+========================================================
+    
