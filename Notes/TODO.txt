@@ -1,0 +1,73 @@
+========================================================
+TODO: Today
+
+* Check rendered output for template with VS
+
+* Fix project load issue for rendered content
+* Exclude unused project files (test projects)
+* Remove obsolete methods (for .NET 6.0)
+
+* Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
+
+========================================================
+TODO:
+
+Fix CI (Remote)
+* Rename eisk.webapi.template to eisk.template
+DONE * Fix github connection
+DONE * Install Github App in Azure
+DONE * Fix CI issue (core)
+DONE * Fix CI issue (template)
+DONE * Fix CI issue (docs)
+
+Fix CD (Remote)
+* Publish to git repo 
+* Publish git repo to integrate with with git release task
+DONE * Fix Azure Web (Staging)
+DONE * Fix Azure Web (Prod)
+DONE * Fix Nuget publish (.new new)
+DONE * Update version specific trigger for CD
+DONE * Update version specific trigger for CD
+DONE * Create new app service for v9
+DONE * Deploy to web service v9
+DONE * Fix deploy to web service v8
+
+Build / packagaing
+DONE * Run docs locally
+DONE * Fix local run (web api) v8
+DONE * Fix local run (web api) v9
+
+Code
+* added exception handler for controller
+* add log functionality
+* apply custom business logic
+DONE * fix unit tests
+
+Testing
+* test post and update methods
+* identify test strategy, check base tests usability
+
+Doc
+
+
+Others
+* include instruction for template build and publish
+DONE * Finalize repo structure
+DONE * Finalize doc structure
+DONE * Finalize versioning
+
+========================================================
+Phases
+
+DONE * Upgrade Template Pack to .NET 6.0
+DONE * Fix CI issues
+DONE * Build locally (docs)
+DONE * Restructure (docs) - folder structure
+DONE * Restructure (docs) - navigations (individual top, top nav, breadcrumbs)
+DONE * Fix CD issues
+
+* Build locally (template)
+* CD to git-repo (as source)
+
+========================================================
+

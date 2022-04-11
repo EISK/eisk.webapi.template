@@ -1,0 +1,22 @@
+========================================================
+Default set-up
+
+Api Controller (in memory web)
+DomainServices + Unit Tests
+DataServices + Integration Tests (in memory db)
+========================================================
+Define test strategies
+* Api Automated test (RestSharp or postman): minimal
+* Domain Service Tests: business logic only (base methods of the domain services should be part of library test)
+* Data Service Tests: Infrastructure tests - base tests, custom methods
+
+========================================================
+Factors
+
+* In-memory database tests (in CI) 
+* In-memory web tests (in CI) 
+
+* Database tests (in CD) 
+* Web UI Tests (in CD)
+========================================================
+    

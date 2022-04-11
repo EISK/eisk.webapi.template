@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.Core", "Core\Eisk.Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E93D3D8-EC59-4DE2-A1E1-3F0258277780}"
 	ProjectSection(SolutionItems) = preProject
-		Notes.txt = Notes.txt
 		.template.config\template.json = .template.config\template.json
 		.template.config\template.vstemplate = .template.config\template.vstemplate
 	EndProjectSection
@@ -49,6 +48,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DomainServices.ComponentTests.EFCore", "Infrastructure.EFCore\Eisk.DomainServices.ComponentTests.EFCore\Eisk.DomainServices.ComponentTests.EFCore.csproj", "{CB7B38B4-9AE5-4B86-BC31-CD74F8690D79}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.WebApi", "WebApi\Eisk.WebApi\Eisk.WebApi.csproj", "{B99A94EA-9D76-4C67-88E2-A1814930E8B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ACEB7D4D-4789-49F0-A552-3D7C0A419FB9}"
+	ProjectSection(SolutionItems) = preProject
+		Notes\Modules.txt = Notes\Modules.txt
+		Notes\Notes.txt = Notes\Notes.txt
+		Notes\Release-Instructions.txt = Notes\Release-Instructions.txt
+		Notes\Test-Strategy.txt = Notes\Test-Strategy.txt
+		Notes\TODO.txt = Notes\TODO.txt
+		Notes\Troubleshoot.txt = Notes\Troubleshoot.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

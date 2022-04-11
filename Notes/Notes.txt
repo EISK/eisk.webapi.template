@@ -1,0 +1,7 @@
+========================================================
+
+<ExcludeFromPackage Include="$(TemplateSourceRoot)Infrastructure.EFCore/Eisk.DataServices.EFCore.IntegrationTests*/**/*" />
+<ExcludeFromPackage Include="$(TemplateSourceRoot)*.txt" />
+
+========================================================
+    
