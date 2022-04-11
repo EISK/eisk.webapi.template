@@ -16,7 +16,8 @@ Fix CI (Remote)
 R * Rename eisk.webapi.template to eisk.template
 
 Fix CD (Remote)
-R * Publish to git repo 
+DONE * Publish to git repo (V9)
+* Publish to git repo (V8)
 * Publish git repo to integrate with with git release task
 
 Build / packagaing
