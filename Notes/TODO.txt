@@ -3,8 +3,10 @@ TODO: Today
 
 * Check rendered output for template with VS
 
-* Fix project load issue for rendered content
-* Exclude unused project files (test projects)
+DONE * Fix project load issue for rendered content. issue: long file path
+DONE * Exclude unused project files (test projects)
+DONE * Exclude unused project files (notes)
+
 * Remove obsolete methods (for .NET 6.0)
 
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
@@ -13,15 +15,16 @@ TODO: Today
 TODO:
 
 Fix CI (Remote)
-* Rename eisk.webapi.template to eisk.template
+R * Rename eisk.webapi.template to eisk.template
 DONE * Fix github connection
 DONE * Install Github App in Azure
 DONE * Fix CI issue (core)
 DONE * Fix CI issue (template)
 DONE * Fix CI issue (docs)
+DONE * Finalize repo structure
 
 Fix CD (Remote)
-* Publish to git repo 
+R * Publish to git repo 
 * Publish git repo to integrate with with git release task
 DONE * Fix Azure Web (Staging)
 DONE * Fix Azure Web (Prod)
@@ -38,9 +41,10 @@ DONE * Fix local run (web api) v8
 DONE * Fix local run (web api) v9
 
 Code
+R * apply custom business logic
+* explore new .net features
 * added exception handler for controller
 * add log functionality
-* apply custom business logic
 DONE * fix unit tests
 
 Testing
@@ -48,12 +52,13 @@ Testing
 * identify test strategy, check base tests usability
 
 Doc
-
+R * Doc content writing
+R * Create new doc CI
+R * Create new doc CD
+DONE * Finalize doc structure
 
 Others
 * include instruction for template build and publish
-DONE * Finalize repo structure
-DONE * Finalize doc structure
 DONE * Finalize versioning
 
 ========================================================

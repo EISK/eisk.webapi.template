@@ -26,6 +26,10 @@
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.vs/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.git/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/packages/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)Infrastructure.EFCore/Eisk.DataServices.EFCore.IntegrationTests*/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)Notes/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)**/*Core.Tests/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)**/*DomainServices.UnitTests/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)Eisk.WebApi.TemplatePack.sln" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)Eisk.WebApi.TemplatePack/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)build/**/*" />
