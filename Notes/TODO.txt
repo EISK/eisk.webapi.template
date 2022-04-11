@@ -1,15 +1,16 @@
 ========================================================
 TODO: Today
 
-* Check rendered output for template with VS
+* generate template from nuget package
+* check rendered output for template with VS
+* review template documentations
+
+* Remove obsolete methods (for .NET 6.0)
+* Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 DONE * Fix project load issue for rendered content. issue: long file path
 DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
-
-* Remove obsolete methods (for .NET 6.0)
-
-* Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 ========================================================
 TODO:
