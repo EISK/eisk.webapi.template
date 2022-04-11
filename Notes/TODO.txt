@@ -85,9 +85,6 @@ DONE * Fix project load issue for rendered content. issue: long file path
 DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
 
-Doc
-DONE * Finalize doc structure
-
 Others
 DONE * Finalize versioning
 
