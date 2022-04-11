@@ -17,6 +17,12 @@ Data Service Tests:
     * To be used with empty sql server with test seed data (in dev envrionment)
     * To be used with existing sql server with test seed data (in UAT envrionment) - smoke tests only
 
+System Tests:
+    * Health check 
+        ** to be tested locally, dev, prod
+        ** Includes db configuration tests
+        ** Any other external dependencies, like email server, blob storage
+        ** Can inlcude asp.net core feature, azure feature
 ========================================================
 Factors
 

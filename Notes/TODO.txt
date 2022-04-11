@@ -7,7 +7,6 @@ TODO: Today
 	* check conditional rendering (file)
 	* check conditional rendering (text)
 
-DONE * Remove obsolete methods (for .NET 6.0)
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 ========================================================
@@ -80,6 +79,7 @@ DONE * Fix local run (web api) v8
 DONE * Fix local run (web api) v9
 
 Code
+DONE * Remove obsolete methods (for .NET 6.0)
 DONE * fix unit tests
 DONE * Fix project load issue for rendered content. issue: long file path
 DONE * Exclude unused project files (test projects)
