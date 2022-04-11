@@ -2,51 +2,31 @@
 TODO: Today
 
 * generate template from nuget package
-* check rendered output for template with VS
 * review template documentations
+	* check rendered output for template with VS
+	* check conditional rendering (file)
+	* check conditional rendering (text)
 
-* Remove obsolete methods (for .NET 6.0)
+DONE * Remove obsolete methods (for .NET 6.0)
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
-
-DONE * Fix project load issue for rendered content. issue: long file path
-DONE * Exclude unused project files (test projects)
-DONE * Exclude unused project files (notes)
 
 ========================================================
 TODO:
 
 Fix CI (Remote)
 R * Rename eisk.webapi.template to eisk.template
-DONE * Fix github connection
-DONE * Install Github App in Azure
-DONE * Fix CI issue (core)
-DONE * Fix CI issue (template)
-DONE * Fix CI issue (docs)
-DONE * Finalize repo structure
 
 Fix CD (Remote)
 R * Publish to git repo 
 * Publish git repo to integrate with with git release task
-DONE * Fix Azure Web (Staging)
-DONE * Fix Azure Web (Prod)
-DONE * Fix Nuget publish (.new new)
-DONE * Update version specific trigger for CD
-DONE * Update version specific trigger for CD
-DONE * Create new app service for v9
-DONE * Deploy to web service v9
-DONE * Fix deploy to web service v8
 
 Build / packagaing
-DONE * Run docs locally
-DONE * Fix local run (web api) v8
-DONE * Fix local run (web api) v9
 
 Code
 R * apply custom business logic
 * explore new .net features
 * added exception handler for controller
 * add log functionality
-DONE * fix unit tests
 
 Testing
 * test post and update methods
@@ -56,11 +36,9 @@ Doc
 R * Doc content writing
 R * Create new doc CI
 R * Create new doc CD
-DONE * Finalize doc structure
 
 Others
 * include instruction for template build and publish
-DONE * Finalize versioning
 
 ========================================================
 Phases
@@ -76,4 +54,41 @@ DONE * Fix CD issues
 * CD to git-repo (as source)
 
 ========================================================
+TODO: ARCHIVE
 
+Fix CI (Remote)
+DONE * Fix github connection
+DONE * Install Github App in Azure
+DONE * Fix CI issue (core)
+DONE * Fix CI issue (template)
+DONE * Fix CI issue (docs)
+DONE * Finalize repo structure
+
+Fix CD (Remote)
+DONE * Fix Azure Web (Staging)
+DONE * Fix Azure Web (Prod)
+DONE * Fix Nuget publish (.new new)
+DONE * Update version specific trigger for CD
+DONE * Update version specific trigger for CD
+DONE * Create new app service for v9
+DONE * Deploy to web service v9
+DONE * Fix deploy to web service v8
+
+Build / packagaing
+DONE * Run docs locally
+DONE * Fix local run (web api) v8
+DONE * Fix local run (web api) v9
+
+Code
+DONE * fix unit tests
+DONE * Fix project load issue for rendered content. issue: long file path
+DONE * Exclude unused project files (test projects)
+DONE * Exclude unused project files (notes)
+
+Doc
+DONE * Finalize doc structure
+
+Others
+DONE * Finalize versioning
+
+========================================================
