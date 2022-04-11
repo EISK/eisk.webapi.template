@@ -1,22 +1,29 @@
 ========================================================
-Default set-up
+Test Strategy
 
-Api Controller (in memory web)
-DomainServices + Unit Tests
-DataServices + Integration Tests (in memory db)
-========================================================
-Define test strategies
-* Api Automated test (RestSharp or postman): minimal
-* Domain Service Tests: business logic only (base methods of the domain services should be part of library test)
-* Data Service Tests: Infrastructure tests - base tests, custom methods
+Api Controller Tests
+    * In-memory web tests
+    * All http codes tests only (200, 404)
+    * Can be used with build server
+Domain Service Tests
+    * In-memory tests (default): for smaller projects (assumes empty database in each test case)
+    * Unit tests: for large projects
+    * Tests only the business rules
+    * Can be used with build server
+Data Service Tests:
+    * SQL Server integration tests (not included in solution by default)
+    * Tests all database queries/operations
+    * To be used in post-deployment (in dev/UAT environment)
+    * To be used with empty sql server with test seed data (in dev envrionment)
+    * To be used with existing sql server with test seed data (in UAT envrionment) - smoke tests only
 
 ========================================================
 Factors
 
 * In-memory database tests (in CI) 
 * In-memory web tests (in CI) 
-
 * Database tests (in CD) 
 * Web UI Tests (in CD)
+* Generic utility base classes
 ========================================================
     
