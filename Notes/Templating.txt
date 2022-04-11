@@ -1,0 +1,8 @@
+========================================================
+
+========================================================
+References
+* https://devblogs.microsoft.com/dotnet/how-to-create-your-own-templates-for-dotnet-new/
+* https://github.com/dotnet/dotnet-template-samples
+========================================================
+    
