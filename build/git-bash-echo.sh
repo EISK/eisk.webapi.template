@@ -1,4 +1,4 @@
-echo "############################# Passed Params (before) 1 - $1, 2 - $2, 3 - $3, 4 - $4, 5 - $5"
+echo "############################# Passed Params (before) 1 - $1, 2 - $2, 3 - $3, 4 - $4, 5 - $5 6 - $6"
 
 ContentTargetGitAddress=${1:-https://github.com/EISK/eisk.webapi.git}
 echo "############################# ContentTargetGitAddress ContentTargetGitAddress"
@@ -26,4 +26,4 @@ echo "############################# SOURCE_DIR $SOURCE_DIR"
 TEMP_REPO_DIR=$PWD/$ContentTargetGitRepoDownloadFolder
 echo "############################# TEMP_REPO_DIR $TEMP_REPO_DIR"
 
-echo "############################# Passed Params (after) 1 - $1, 2 - $2, 3 - $3, 4 - $4, 5 - $5"
+echo "############################# Passed Params (after) 1 - $1, 2 - $2, 3 - $3, 4 - $4, 5 - $5 6 - $6"
