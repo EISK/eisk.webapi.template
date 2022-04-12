@@ -24,8 +24,10 @@ git rm -r *
 echo "Copy documentation into the repo"
 cp -r $SOURCE_DIR/$ContentSrc/* .
 
+echo $PWD
+
 echo "Copy gitignore"
-cp ./../.gitignore .
+cp ./../../.gitignore .
 
 echo "############################# Setting git identity"
 if [ "$2" != "" ]; then
