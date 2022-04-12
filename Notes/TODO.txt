@@ -16,8 +16,6 @@ Fix CI (Remote)
 R * Rename eisk.webapi.template to eisk.template
 
 Fix CD (Remote)
-* Fix publish to git repo (V9) - exclude binaries check-in
-* Fix publish to git repo (V8) - exclude binaries check-in
 * Publish git repo to integrate with with git release task
 
 Build / packagaing
@@ -65,6 +63,8 @@ DONE * Fix CI issue (docs)
 DONE * Finalize repo structure
 
 Fix CD (Remote)
+DONE * Fix publish to git repo (V9) - exclude binaries check-in
+DONE * Fix publish to git repo (V8) - exclude binaries check-in
 DONE * Publish to git repo (V9)
 DONE * Publish to git repo (V8)
 DONE * Fix Azure Web (Staging)
