@@ -6,7 +6,7 @@ echo "############################# ContentTargetGitAddress ContentTargetGitAddr
 ContentTargetGitUserName=${2:-AshrafAlam}
 echo "############################# ContentTargetGitUserName $ContentTargetGitUserName"
 
-ContentTargetGitUserEmail=${3:-joy_csharp@yahoo.com}
+ContentTargetGitUserEmail=${3:-joycsc@gmail.com}
 echo "############################# ContentTargetGitUserEmail $ContentTargetGitUserEmail"
 
 ContentSrc=${4:-content}
@@ -15,7 +15,7 @@ echo "############################# ContentSrc $ContentSrc"
 ContentTargetGitBranch=${5:-V9.0}
 echo "############################# ContentTargetGitBranch $ContentTargetGitBranch"
 
-ContentTargetGitRepoDownloadFolder=${6:-content-repo}
+ContentTargetGitRepoDownloadFolder="content-repo"
 echo "############################# ContentTargetGitRepoDownloadFolder (where content will be pushed) $ContentTargetGitRepoDownloadFolder"
 
 echo "############################# PWD $PWD"

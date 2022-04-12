@@ -1,11 +1,11 @@
 ContentTargetGitAddress=${1:-https://github.com/EISK/eisk.webapi.git}
 ContentTargetGitUserName=${2:-AshrafAlam}
-ContentTargetGitUserEmail=${3:-joy_csharp@yahoo.com}
+ContentTargetGitUserEmail=${3:-joycsc@gmail.com}
 
 ContentSrc=${4:-content}
 
 ContentTargetGitBranch=${5:-V9.0}
-ContentTargetGitRepoDownloadFolder=${6:-content-repo}
+ContentTargetGitRepoDownloadFolder="content-repo"
 
 SOURCE_DIR=$PWD
 TEMP_REPO_DIR=$PWD/$ContentTargetGitRepoDownloadFolder
