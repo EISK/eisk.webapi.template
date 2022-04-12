@@ -16,6 +16,8 @@ Fix CI (Remote)
 R * Rename eisk.webapi.template to eisk.template
 
 Fix CD (Remote)
+* Create staging api app service for V8
+* Update CI for Windows-2019 (V8)
 * Publish git repo to integrate with with git release task
 
 Build / packagaing
@@ -31,9 +33,8 @@ Testing
 * identify test strategy, check base tests usability
 
 Doc
+R * Point new doc under root
 R * Doc content writing
-R * Create new doc CI
-R * Create new doc CD
 
 Others
 * include instruction for template build and publish
@@ -55,6 +56,7 @@ DONE * Fix CD issues
 TODO: ARCHIVE
 
 Fix CI (Remote)
+DONE R * Create new doc CI/CD
 DONE * Fix github connection
 DONE * Install Github App in Azure
 DONE * Fix CI issue (core)
@@ -63,6 +65,8 @@ DONE * Fix CI issue (docs)
 DONE * Finalize repo structure
 
 Fix CD (Remote)
+DONE * Update CI for Windows-2022 (V9, V8 Docs)
+DONE * Update all CD for Windows-2022
 DONE * Fix publish to git repo (V9) - exclude binaries check-in
 DONE * Fix publish to git repo (V8) - exclude binaries check-in
 DONE * Publish to git repo (V9)
