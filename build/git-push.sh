@@ -4,7 +4,7 @@ ContentTargetGitUserEmail=${3:-joycsc@gmail.com}
 
 ContentSrc=${4:-content}
 
-ContentTargetGitBranch=${5:-V9.0}
+ContentTargetGitBranch=${5:-content-branch}
 ContentTargetGitRepoDownloadFolder="content-repo"
 
 SOURCE_DIR=$PWD

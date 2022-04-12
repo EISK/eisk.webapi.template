@@ -12,7 +12,7 @@ echo "############################# ContentTargetGitUserEmail $ContentTargetGitU
 ContentSrc=${4:-content}
 echo "############################# ContentSrc $ContentSrc"
 
-ContentTargetGitBranch=${5:-V9.0}
+ContentTargetGitBranch=${5:-content-branch}
 echo "############################# ContentTargetGitBranch $ContentTargetGitBranch"
 
 ContentTargetGitRepoDownloadFolder="content-repo"
