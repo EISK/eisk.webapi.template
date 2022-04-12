@@ -43,14 +43,18 @@ Others
 Phases
 
 DONE * Upgrade Template Pack to .NET 6.0
-DONE * Fix CI issues
-DONE * Build locally (docs)
-DONE * Restructure (docs) - folder structure
-DONE * Restructure (docs) - navigations (individual top, top nav, breadcrumbs)
-DONE * Fix CD issues
+DONE * Complete CI/CD - for V8, nuget, git repo, app service
+DONE * Complete CI/CD - for V9 git repo, app service
+DONE * Complete CI/CD - for Docs
+DONE * Restructure (docs) - build locally, folder structure, navigations (individual top, top nav, breadcrumbs)
 
-* Build locally (template)
-* CD to git-repo (as source)
+* Custom development (template) - build locally, document process, custom logic implementation
+* Doc - initial documenation
+* Blog - release post
+* Blog - tutorial
+* VSIX Release - CD, documentation
+* Github Release - CD, documentation
+* Doc - advansed documentation documenation
 
 ========================================================
 TODO: ARCHIVE
