@@ -1,5 +1,5 @@
 ContentTargetGitAddress=${1:-https://github.com/EISK/eisk.webapi.git}
-echo "############################# ContentTargetGitAddress $ContentTargetGitAddress"
+echo "############################# ContentTargetGitAddress ContentTargetGitAddress"
 
 ContentTargetGitUserName=${2:-AshrafAlam}
 echo "############################# ContentTargetGitUserName $ContentTargetGitUserName"
