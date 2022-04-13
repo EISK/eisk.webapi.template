@@ -8,7 +8,7 @@ namespace Eisk.Domains.TestData
 
     public class EmployeeDataFactory:EntityDataFactory<Employee>
     {
-        public Employee Factory_Entity()
+        public override Employee Factory_Entity(Action<Employee> action)
         {
             return base.Factory_Entity(AssignEmployee);
         }

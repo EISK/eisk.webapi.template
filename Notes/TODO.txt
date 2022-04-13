@@ -1,6 +1,9 @@
 ========================================================
 TODO: Today
 
+* Complete custom data generator implementation
+* Check-in submodule
+
 R * apply custom business logic
 * review template documentations
 	* check rendered output for template with VS
