@@ -1,6 +1,7 @@
 ========================================================
 TODO: Today
 
+R * apply custom business logic
 * review template documentations
 	* check rendered output for template with VS
 	* check conditional rendering (file)
@@ -20,20 +21,20 @@ Fix CD (Remote)
 Build / packagaing
 
 Code
-R * apply custom business logic
-* explore new .net features
 * added exception handler for controller
 * add log functionality
 
 Testing
 * test post and update methods
 * identify test strategy, check base tests usability
+* test data service with sql server local instance
 
 Release Tasks
 * Merge V9.0 branch to master
 * Publish nuget package to nuget gallery
 
 Others
+* explore new .net features
 * include instruction for template build and publish
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 

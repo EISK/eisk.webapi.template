@@ -16,7 +16,7 @@ namespace Eisk.Domains.ValueObjects
         public string Region { get; set; }
 
         [StringLength(10)]
-        [RegularExpression("\\d{1,10}", ErrorMessage = "Not a valid postal code. Please consider upto 10 digit for valid phone format.")]
+        [RegularExpression("\\d{1,10}", ErrorMessage = "Not a valid postal code. Please consider upto 10 digit for valid postal format.")]
         [Display(Name = "Postal Code")]
         public string PostalCode { get; set; }
 
