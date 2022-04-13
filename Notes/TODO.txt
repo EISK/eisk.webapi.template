@@ -1,13 +1,10 @@
 ========================================================
 TODO: Today
 
-* generate template from nuget package
 * review template documentations
 	* check rendered output for template with VS
 	* check conditional rendering (file)
 	* check conditional rendering (text)
-
-* Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 ========================================================
 TODO:
@@ -32,12 +29,13 @@ Testing
 * test post and update methods
 * identify test strategy, check base tests usability
 
-Doc
-R * Point new doc under root
-R * Doc content writing
+Release Tasks
+* Merge V9.0 branch to master
+* Publish nuget package to nuget gallery
 
 Others
 * include instruction for template build and publish
+* Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 ========================================================
 Phases
@@ -85,6 +83,7 @@ DONE * Deploy to web service v9
 DONE * Fix deploy to web service v8
 
 Build / packagaing
+DONE * generate template from nuget package
 DONE * Run docs locally
 DONE * Fix local run (web api) v8
 DONE * Fix local run (web api) v9
@@ -95,6 +94,12 @@ DONE * fix unit tests
 DONE * Fix project load issue for rendered content. issue: long file path
 DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
+
+Testing
+DONE * Add test data generator for employee (with meaningful sample data)
+
+Release Tasks
+DONE * Update readme.md
 
 Others
 DONE * Finalize versioning
