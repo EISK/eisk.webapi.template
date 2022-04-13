@@ -2,9 +2,8 @@
 
 namespace Eisk.EFCore.Setup
 {
-    using Eisk.DataServices.EFCore.DataContext;
-    using Domains.Entities;
-    using Eisk.Test.Core.DataGen;
+    using DataServices.EFCore.DataContext;
+    using Domains.TestData;
 
     public static class DbContextDataInitializer
     {
@@ -20,8 +19,10 @@ namespace Eisk.EFCore.Setup
                 return; // DB has been seeded
             }
 
+            var employeeDataFactory = new EmployeeDataFactory();
+
             for (int i = 0; i < 10; i++)
-                context.Employees.Add(new EmployeeDataFactory().Factory_Entity());
+                context.Employees.Add(employeeDataFactory.Factory_Entity());
 
             context.SaveChanges();
         }
