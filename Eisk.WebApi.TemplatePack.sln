@@ -55,6 +55,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.WebApi", "WebApi\Eisk.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ACEB7D4D-4789-49F0-A552-3D7C0A419FB9}"
 	ProjectSection(SolutionItems) = preProject
+		Notes\Commands.txt = Notes\Commands.txt
 		Notes\Modules.txt = Notes\Modules.txt
 		Notes\Notes.txt = Notes\Notes.txt
 		Notes\Release-Instructions.txt = Notes\Release-Instructions.txt
@@ -64,7 +65,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ACEB7D4D
 		Notes\Troubleshoot.txt = Notes\Troubleshoot.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eisk.Domains.TestData", "DomainCore\Eisk.Domains.TestData\Eisk.Domains.TestData.csproj", "{D0227185-3F9D-41B4-9314-C7B3CBC38D6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.Domains.TestData", "DomainCore\Eisk.Domains.TestData\Eisk.Domains.TestData.csproj", "{D0227185-3F9D-41B4-9314-C7B3CBC38D6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
