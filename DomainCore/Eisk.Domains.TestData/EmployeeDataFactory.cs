@@ -2,8 +2,8 @@
 
 namespace Eisk.Domains.TestData
 {
-    using Domains.Entities;
-    using Domains.Enums;
+    using Entities;
+    using Enums;
     using Test.Core.DataGen;
 
     public class EmployeeDataFactory:EntityDataFactory<Employee>
@@ -28,7 +28,7 @@ namespace Eisk.Domains.TestData
             employee.BirthDate = faker.Date.Past();
 
             var fakerAddress = faker.Address;
-            employee.Address = new Domains.ValueObjects.Address
+            employee.Address = new ValueObjects.Address
             {
                 AddressLine = fakerAddress.StreetAddress(),
                 City = fakerAddress.City(),
