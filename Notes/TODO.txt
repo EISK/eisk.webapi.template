@@ -25,6 +25,7 @@ Code
 * add log functionality
 
 Testing
+* Include custom entity data factory in entity test base
 * test post and update methods
 * identify test strategy, check base tests usability
 * test data service with sql server local instance
