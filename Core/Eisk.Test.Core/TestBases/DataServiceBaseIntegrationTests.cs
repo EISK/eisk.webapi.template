@@ -1,10 +1,9 @@
-﻿using System;
-using System.Data.SqlClient;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
-using Eisk.Core.DataService;
+﻿using Eisk.Core.DataService;
 using Eisk.Test.Core.DataGen;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Xunit;
 
 namespace Eisk.Test.Core.TestBases
@@ -111,7 +110,7 @@ namespace Eisk.Test.Core.TestBases
             var dataService = GetServiceInstance();
 
             //Act
-            var returnedEntity = await dataService.GetById(100);//TODO: make it generic random
+            var returnedEntity = await dataService.GetById(RANDOM_ID);//TODO: make it generic random
 
             //Assert
             Assert.Null(returnedEntity);

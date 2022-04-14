@@ -9,19 +9,19 @@ namespace Eisk.Domains.ValueObjects
         [Display(Name = "Address line")]
         public string AddressLine { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string City { get; set; }
 
-        [StringLength(25)]
+        [StringLength(50)]
         public string Region { get; set; }
 
-        [StringLength(10)]
-        [RegularExpression("\\d{1,10}", ErrorMessage = "Not a valid postal code. Please consider upto 10 digit for valid postal format.")]
+        [StringLength(50)]
+        [RegularExpression("\\d{1,50}", ErrorMessage = "Not a valid postal code. Please consider upto 10 digit for valid postal format.")]
         [Display(Name = "Postal Code")]
         public string PostalCode { get; set; }
 
         [Required(ErrorMessage = "Country required.")]
-        [StringLength(25)]
+        [StringLength(50)]
         public string Country { get; set; }
                 
     }

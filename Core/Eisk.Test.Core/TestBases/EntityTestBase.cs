@@ -22,6 +22,7 @@ namespace Eisk.Test.Core.TestBases
             }
         }
 
+        protected const int RANDOM_ID = 10000;
         protected EntityTestBase(Expression<Func<TEntity, TId>> idExpression, EntityDataFactory<TEntity> entityDataFactory = null)
         {
             DbIdExpression = idExpression;
@@ -44,7 +45,7 @@ namespace Eisk.Test.Core.TestBases
         {
             var entity = Factory_Entity(action, false);
 
-            SetIdValueToEntity(entity, 1000);//TODO: to be randomize
+            SetIdValueToEntity(entity, RANDOM_ID);//TODO: to be randomize
 
             return entity;
         }
