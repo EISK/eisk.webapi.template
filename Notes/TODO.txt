@@ -1,9 +1,7 @@
 ========================================================
 TODO: Today
 
-* Test data service with sql server local instance
 
-* Investigate with length field is not causing issue when saving
 * Re-visit exception classes
 
 * Apply custom business logic
@@ -17,6 +15,8 @@ TODO: Today
 	* check conditional rendering (file)
 	* check conditional rendering (text)
 
+DONE * Investigate with length field is not causing issue when saving (for in-memory db constraints not applied)
+DONE * Test data service with sql server local instance
 DONE * Remove sub-module
 DONE * Complete custom data generator implementation
 DONE * Test string size implementor

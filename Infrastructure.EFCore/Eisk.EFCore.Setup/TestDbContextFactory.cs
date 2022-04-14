@@ -4,7 +4,7 @@ namespace Eisk.EFCore.Setup
 {
     public static class TestDbContextFactory
     {
-        public static AppDbContext CreateDbContext()
+        public static AppDbContext CreateInMemoryDbContext()
         {
             return new InMemoryDbContext(true);
         }
