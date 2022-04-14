@@ -4,7 +4,10 @@ TODO: Today
 * Test data service with sql server local instance
 * Re-visit exception classes
 
-R * apply custom business logic
+* apply custom business logic
+* Add field for email
+* Add field for URL
+
 * review template documentations
 	* check rendered output for template with VS
 	* check conditional rendering (file)
