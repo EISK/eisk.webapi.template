@@ -1,7 +1,7 @@
 using Eisk.EFCore.Setup;
 using System;
 
-namespace Eisk.DataServices.EFCore.IntegrationTests
+namespace Eisk.DataServices.IntegrationTests.EFCore.SqlServer
 {
     public class DatabaseFixture : IDisposable
     {

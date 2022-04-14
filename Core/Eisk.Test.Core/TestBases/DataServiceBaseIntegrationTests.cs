@@ -49,17 +49,6 @@ namespace Eisk.Test.Core.TestBases
         }
 
         [Fact]
-        public virtual async Task Add_ValidDomainWithRandomIdPassed_ShouldThrowException()
-        {
-            //Arrange
-            var inputEntityWithRandomId = Factory_EntityWithRandomId();
-            var dataService = GetServiceInstance();
-
-            //Assert
-            await Assert.ThrowsAsync<DbUpdateException>(() => dataService.Add(inputEntityWithRandomId));
-        }
-
-        [Fact]
         public virtual async Task Add_NullDomainPassed_ShouldThrowArgumentNullException()
         {
             //Arrange
