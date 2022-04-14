@@ -29,8 +29,6 @@ namespace Eisk.Test.Core.TestBases
 
         protected virtual async Task CreateTestEntityToStore(TEntity testEntity)
         {
-            //might pass for sql lite, but fail for sql server
-            //SetIdValueToEntity(testEntity, 100);//TODO: support for generic
             await _dataService.Add(testEntity);
         }
 
@@ -39,8 +37,6 @@ namespace Eisk.Test.Core.TestBases
         {
             //Arrange
             var inputEntity = Factory_Entity();
-            //might pass for sql lite, but fail for sql server
-            SetIdValueToEntity(inputEntity, 100);//TODO: support for generic
             var dataService = GetServiceInstance();
 
             //Act
@@ -56,8 +52,6 @@ namespace Eisk.Test.Core.TestBases
         {
             //Arrange
             var inputEntity = Factory_Entity();
-            //might pass for sql lite, but fail for sql server
-            SetIdValueToEntity(inputEntity, 100);//TODO: support for generic
             var dataService = GetServiceInstance();
 
             //Act
@@ -168,7 +162,6 @@ namespace Eisk.Test.Core.TestBases
         {
             //Arrange
             var entityWithRandomId = Factory_Entity();
-            SetIdValueToEntity(entityWithRandomId, 100);//TODO: support generic
             var dataService = GetServiceInstance();
 
             //Act
@@ -225,7 +218,6 @@ namespace Eisk.Test.Core.TestBases
         {
             //Arrange
             var inputEntity = Factory_Entity();
-            SetIdValueToEntity(inputEntity, 100);//TODO: support generic
             var dataService = GetServiceInstance();
 
             //Act

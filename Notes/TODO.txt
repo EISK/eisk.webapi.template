@@ -1,8 +1,9 @@
 ========================================================
 TODO: Today
 
-* Investigate with length field is not causing issue when saving
 * Test data service with sql server local instance
+
+* Investigate with length field is not causing issue when saving
 * Re-visit exception classes
 
 * Apply custom business logic

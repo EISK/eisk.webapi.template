@@ -9,10 +9,10 @@ namespace Eisk.Domains.ValueObjects
         [Display(Name = "Address line")]
         public string AddressLine { get; set; }
 
-        [StringLength(15)]
+        [StringLength(25)]
         public string City { get; set; }
 
-        [StringLength(15)]
+        [StringLength(25)]
         public string Region { get; set; }
 
         [StringLength(10)]
@@ -21,7 +21,7 @@ namespace Eisk.Domains.ValueObjects
         public string PostalCode { get; set; }
 
         [Required(ErrorMessage = "Country required.")]
-        [StringLength(15)]
+        [StringLength(25)]
         public string Country { get; set; }
                 
     }
