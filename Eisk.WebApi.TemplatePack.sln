@@ -56,11 +56,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ACEB7D4D-4789-49F0-A552-3D7C0A419FB9}"
 	ProjectSection(SolutionItems) = preProject
 		Notes\Business-Rules.txt = Notes\Business-Rules.txt
-		Notes\Commands.txt = Notes\Commands.txt
 		Notes\Modules.txt = Notes\Modules.txt
 		Notes\Notes.txt = Notes\Notes.txt
 		Notes\Release-Instructions.txt = Notes\Release-Instructions.txt
-		Notes\Templating.txt = Notes\Templating.txt
+		Notes\Set-up.txt = Notes\Set-up.txt
 		Notes\Test-Strategy.txt = Notes\Test-Strategy.txt
 		Notes\TODO.txt = Notes\TODO.txt
 		Notes\Troubleshoot.txt = Notes\Troubleshoot.txt
