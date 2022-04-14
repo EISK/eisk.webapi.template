@@ -25,7 +25,7 @@ namespace Eisk.Domains.TestData
         void AssignEmployee(Employee employee)
         {
             var faker = new Faker();
-
+            
             employee.Id = 0;
             employee.ReportsTo = null;
             employee.ReportsToId = null;
@@ -49,7 +49,7 @@ namespace Eisk.Domains.TestData
             employee.HireDate = faker.Date.Future();
             employee.Title = null;
             employee.Phone = faker.Person.Phone;
-            employee.Extension = null;
+            //employee.Extension = null;
 
             employee.Photo = null;
 

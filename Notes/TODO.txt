@@ -1,10 +1,6 @@
 ========================================================
 TODO: Today
 
-DONE * Remove sub-module
-DONE * Complete custom data generator implementation
-* Apply rules logic in custom data generator
-* Test string size implementor
 * Test data service with sql server local instance
 * Re-visit exception classes
 
@@ -13,6 +9,11 @@ R * apply custom business logic
 	* check rendered output for template with VS
 	* check conditional rendering (file)
 	* check conditional rendering (text)
+
+DONE * Remove sub-module
+DONE * Complete custom data generator implementation
+DONE * Test string size implementor
+N/A * Apply rules logic in custom data generator
 
 ========================================================
 TODO:

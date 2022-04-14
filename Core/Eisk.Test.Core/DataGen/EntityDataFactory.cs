@@ -29,7 +29,7 @@ namespace Eisk.Test.Core.DataGen
 
             fixture.Customizations.Add(new RangeAttributeRelay());
 
-            //fixture.Customizations.Add(new StringAttributeAggregatedRelay());
+            fixture.Customizations.Add(new StringAttributeAggregatedRelay());
 
             return fixture;
         }
