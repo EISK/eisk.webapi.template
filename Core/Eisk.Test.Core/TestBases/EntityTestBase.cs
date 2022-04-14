@@ -40,6 +40,15 @@ namespace Eisk.Test.Core.TestBases
             return entity;
         }
 
+        protected virtual TEntity Factory_EntityWithRandomId(Action<TEntity> action = null)
+        {
+            var entity = Factory_Entity(action, false);
+
+            SetIdValueToEntity(entity, 1000);//TODO: to be randomize
+
+            return entity;
+        }
+
         protected TId GetIdValueFromEntity(TEntity entity)
         {
             return (TId)ExpressionUtil<TEntity>.GetPropertyValue(DbIdExpression, entity);

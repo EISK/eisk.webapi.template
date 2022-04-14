@@ -33,7 +33,7 @@ namespace Eisk.Domains.BaseEntities
         public Address Address { get; set; }
 
         [Required(ErrorMessage = "Phone required")]
-        [StringLength(20)]
+        [StringLength(25)]
         public string Phone { get; set; }
 
         [StringLength(4)]

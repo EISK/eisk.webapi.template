@@ -53,12 +53,11 @@ namespace Eisk.Test.Core.TestBases
         public virtual async Task Add_ValidDomainWithRandomIdPassed_ShouldThrowException()
         {
             //Arrange
-            var inputEntity = Factory_Entity();
-            SetIdValueToEntity(inputEntity, 1000);
+            var inputEntityWithRandomId = Factory_EntityWithRandomId();
             var dataService = GetServiceInstance();
 
             //Assert
-            await Assert.ThrowsAsync<DbUpdateException>(() => dataService.Add(inputEntity));
+            await Assert.ThrowsAsync<DbUpdateException>(() => dataService.Add(inputEntityWithRandomId));
         }
 
         [Fact]
@@ -156,8 +155,7 @@ namespace Eisk.Test.Core.TestBases
         public virtual async Task Update_ValidDomainWithRandomIdPassed_ShouldThrowException()
         {
             //Arrange
-            var entityWithRandomId = Factory_Entity();
-            SetIdValueToEntity(entityWithRandomId, 1000);
+            var entityWithRandomId = Factory_EntityWithRandomId();
             
             var dataService = GetServiceInstance();
 
@@ -215,8 +213,7 @@ namespace Eisk.Test.Core.TestBases
         public virtual async Task Delete_DomainWithRandomIdPassed_ShouldThrowException()
         {
             //Arrange
-            var inputEntity = Factory_Entity();
-            SetIdValueToEntity(inputEntity, 1000);
+            var inputEntity = Factory_EntityWithRandomId();
             var dataService = GetServiceInstance();
             
             //Act

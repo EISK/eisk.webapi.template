@@ -24,7 +24,7 @@ namespace Eisk.EFCore.Setup
             var employeeDataFactory = new EmployeeDataFactory();
             var testEmployees = new List<Employee>();
 
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < 100; i++)
                 testEmployees.Add(employeeDataFactory.Factory_Entity());
 
             context.Employees.AddRange(testEmployees);
