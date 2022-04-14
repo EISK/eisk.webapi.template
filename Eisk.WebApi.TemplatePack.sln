@@ -65,8 +65,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.Domains.TestData", "Do
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DataServices.IntegrationTests.EFCore.InMemory", "Infrastructure.EFCore\Eisk.DataServices.IntegrationTests.EFCore.InMemory\Eisk.DataServices.IntegrationTests.EFCore.InMemory.csproj", "{6FDA83B9-3E99-47AB-B232-E161C817BD1D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DataServices.IntegrationTests.EFCore.SqlServer", "Infrastructure.EFCore\Eisk.DataServices.IntegrationTests.EFCore.SqlServer\Eisk.DataServices.IntegrationTests.EFCore.SqlServer.csproj", "{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,10 +131,6 @@ Global
 		{6FDA83B9-3E99-47AB-B232-E161C817BD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FDA83B9-3E99-47AB-B232-E161C817BD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FDA83B9-3E99-47AB-B232-E161C817BD1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,7 +151,6 @@ Global
 		{B99A94EA-9D76-4C67-88E2-A1814930E8B5} = {9611B3D6-810A-4E98-9166-2DA770E38B81}
 		{D0227185-3F9D-41B4-9314-C7B3CBC38D6F} = {07B09CE7-77B7-4F0F-9BF1-1CA13B8501D8}
 		{6FDA83B9-3E99-47AB-B232-E161C817BD1D} = {8D09A735-BB55-4075-9B06-EAAA18F59781}
-		{BE2F6BCA-1D2F-45E5-BD93-F23DA0293931} = {8D09A735-BB55-4075-9B06-EAAA18F59781}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4370F72B-9D16-4EBF-8EF5-1F0925FC7CC6}
