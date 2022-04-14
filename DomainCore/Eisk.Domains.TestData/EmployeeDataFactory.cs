@@ -10,7 +10,9 @@ namespace Eisk.Domains.TestData
     {
         public override Employee Factory_Entity(Action<Employee> action)
         {
-            return base.Factory_Entity(AssignEmployee);
+            var employee = base.Factory_Entity(AssignEmployee);
+            action(employee);
+            return employee;
         }
 
         void AssignEmployee(Employee employee)
