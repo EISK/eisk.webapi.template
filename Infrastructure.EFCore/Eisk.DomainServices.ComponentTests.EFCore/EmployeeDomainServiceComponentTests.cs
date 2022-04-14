@@ -6,9 +6,9 @@ using Eisk.Test.Core.TestBases;
 
 namespace Eisk.DomainServices.ComponentTests.EFCore
 {
-    public class EmployeeDataServiceTestsWithSqlServer : DomainServiceBaseComponentTests<Employee, int>
+    public class EmployeeDomainServiceComponentTests : DomainServiceBaseComponentTests<Employee, int>
     {
-        public EmployeeDataServiceTestsWithSqlServer() :
+        public EmployeeDomainServiceComponentTests() :
             base(new EmployeeDomainService(Factory_DataService()), x => x.Id, new EmployeeDataFactory())
         {
             
