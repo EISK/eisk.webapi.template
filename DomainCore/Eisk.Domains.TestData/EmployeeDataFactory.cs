@@ -11,9 +11,14 @@ namespace Eisk.Domains.TestData
     {
         public override Employee Factory_Entity(Action<Employee>? action = null)
         {
-            var employee = base.Factory_Entity(action);
-            AssignEmployee(employee);
-            action?.Invoke(employee);//TODO: to be refactored
+            var employee = base.Factory_Entity( e =>
+            {
+                AssignEmployee(e);
+
+                //supporting custom overrides from user
+                action?.Invoke(e);
+            });
+
             return employee;
         }
 

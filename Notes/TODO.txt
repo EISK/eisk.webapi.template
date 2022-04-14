@@ -1,8 +1,12 @@
 ========================================================
 TODO: Today
 
-* Complete custom data generator implementation
-* Check-in submodule
+DONE * Remove sub-module
+DONE * Complete custom data generator implementation
+* Apply rules logic in custom data generator
+* Test string size implementor
+* Test data service with sql server local instance
+* Re-visit exception classes
 
 R * apply custom business logic
 * review template documentations
@@ -31,7 +35,6 @@ Testing
 * Include custom entity data factory in entity test base
 * test post and update methods
 * identify test strategy, check base tests usability
-* test data service with sql server local instance
 
 Release Tasks
 * Merge V9.0 branch to master
