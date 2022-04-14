@@ -4,14 +4,16 @@ namespace Eisk.Domains.TestData
 {
     using Entities;
     using Enums;
+    using System;
     using Test.Core.DataGen;
 
     public class EmployeeDataFactory:EntityDataFactory<Employee>
     {
-        public override Employee Factory_Entity(Action<Employee> action)
+        public override Employee Factory_Entity(Action<Employee>? action = null)
         {
-            var employee = base.Factory_Entity(AssignEmployee);
-            action(employee);
+            var employee = base.Factory_Entity(action);
+            AssignEmployee(employee);
+            action?.Invoke(employee);//TODO: to be refactored
             return employee;
         }
 
