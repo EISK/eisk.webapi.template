@@ -1,12 +1,15 @@
 ========================================================
 TODO: Today
 
+* Investigate with length field is not causing issue when saving
 * Test data service with sql server local instance
 * Re-visit exception classes
 
-* apply custom business logic
+* Apply custom business logic
 * Add field for email
 * Add field for URL
+* Include view model example
+* Firing exception when field constraint (i.e. length) is not applied
 
 * review template documentations
 	* check rendered output for template with VS
