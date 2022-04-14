@@ -4,6 +4,8 @@ namespace Eisk.EFCore.Setup
 {
     using DataServices.EFCore.DataContext;
     using Domains.TestData;
+    using Eisk.Domains.Entities;
+    using System.Collections.Generic;
 
     public static class DbContextDataInitializer
     {
@@ -20,11 +22,14 @@ namespace Eisk.EFCore.Setup
             }
 
             var employeeDataFactory = new EmployeeDataFactory();
+            var testEmployees = new List<Employee>();
 
             for (int i = 0; i < 1; i++)
-                context.Employees.Add(employeeDataFactory.Factory_Entity());
+                testEmployees.Add(employeeDataFactory.Factory_Entity());
 
+            context.Employees.AddRange(testEmployees);
             context.SaveChanges();
+
         }
     }
 }
