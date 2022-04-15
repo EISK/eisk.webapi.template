@@ -1,7 +1,6 @@
 ========================================================
 TODO: Today
 
-
 * Re-visit exception classes
 
 * Apply custom business logic
@@ -15,6 +14,7 @@ TODO: Today
 	* check conditional rendering (file)
 	* check conditional rendering (text)
 
+DONE * Apply title, extension in entity data generator
 DONE * Investigate with length field is not causing issue when saving (for in-memory db constraints not applied)
 DONE * Test data service with sql server local instance
 DONE * Remove sub-module
