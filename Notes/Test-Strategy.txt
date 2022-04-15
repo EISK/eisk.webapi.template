@@ -23,6 +23,24 @@ System Tests:
         ** Includes db configuration tests
         ** Any other external dependencies, like email server, blob storage
         ** Can inlcude asp.net core feature, azure feature
+
+========================================================
+Reasons to consider testing base integration tests
+
+Sql Server (in-memory)
+- To verify if the ORM data model is not breaking (unsupported binding)
+- To verify if the ORM is working as expected (may not be needed if ORM documentation is available)
+
+Sql Server (generated from ORM)
+- To verify if the ORM data model is not breaking (unsupported binding)
+- To verify if the ORM is working as expected (may not be needed if ORM documentation is available)
+- To verify if the valid test data working (column size)
+
+Sql Server (live environment)
+- To check if the schema is same (can be achieved via schema comparison tool)
+- To check if the functionality is working as expected even if schema and database version is not identical
+
+========================================================
 ========================================================
 Factors
 
