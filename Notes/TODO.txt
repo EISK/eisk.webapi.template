@@ -40,9 +40,11 @@ Code
 * add log functionality
 
 Testing
-* Include custom entity data factory in entity test base
+DONE * Include custom entity data factory in entity test base
 * test post and update methods
 * identify test strategy, check base tests usability
+* In-memory web tests
+* Perform post deployment health check
 
 Release Tasks
 * Merge V9.0 branch to master
