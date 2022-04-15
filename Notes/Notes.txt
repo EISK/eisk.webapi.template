@@ -12,7 +12,7 @@ Sql Server (generated from ORM)
 
 Sql Server (live environment)
 - To check if the schema is same (can be achieved via schema comparison tool)
-- To check if the functionality is working as expected even if schema is not identical
+- To check if the functionality is working as expected even if schema and database version is not identical
 
 ========================================================
     
