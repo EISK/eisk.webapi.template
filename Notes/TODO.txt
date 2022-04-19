@@ -14,12 +14,6 @@ TODO: Today
 	* check conditional rendering (file)
 	* check conditional rendering (text)
 
-DONE * Apply title, extension in entity data generator
-DONE * Investigate with length field is not causing issue when saving (for in-memory db constraints not applied)
-DONE * Test data service with sql server local instance
-DONE * Remove sub-module
-DONE * Complete custom data generator implementation
-DONE * Test string size implementor
 N/A * Apply rules logic in custom data generator
 
 ========================================================
@@ -29,28 +23,33 @@ Fix CI (Remote)
 R * Rename eisk.webapi.template to eisk.template
 
 Fix CD (Remote)
-* Create staging api app service for V8
-* Update CI for Windows-2019 (V8)
 * Publish git repo to integrate with with git release task
+* Publish to VS Gallery
+* Create staging api app service for V8
 
 Build / packagaing
 
 Code
-* added exception handler for controller
-* add log functionality
+* Added exception handler for controller
+* Add log functionality
+* Integrate azure insight
 
 Testing
-* Include custom entity data factory in entity test base
-* test post and update methods
-* identify test strategy, check base tests usability
+* Sql server integration tests: load from config
+* Create postman based test file (for template only)
+* Test post and update methods
+* Include ORM tests
+* Identify test strategy, check base tests usability
 
 Release Tasks
 * Merge V9.0 branch to master
 * Publish nuget package to nuget gallery
+* Publish documentation (soft release)
+* Publish to VS Gallery
 
 Others
-* explore new .net features
-* include instruction for template build and publish
+* Explore new .net features
+* Include instruction for template build and publish
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
 
 ========================================================
@@ -68,7 +67,7 @@ DONE * Restructure (docs) - build locally, folder structure, navigations (indivi
 * Blog - tutorial
 * VSIX Release - CD, documentation
 * Github Release - CD, documentation
-* Doc - advansed documentation documenation
+* Doc - advansed documentation
 
 ========================================================
 TODO: ARCHIVE
@@ -105,6 +104,9 @@ DONE * Fix local run (web api) v8
 DONE * Fix local run (web api) v9
 
 Code
+DONE * Remove sub-module
+DONE * Apply title, extension in entity data generator
+DONE * Investigate with length field is not causing issue when saving (for in-memory db constraints not applied)
 DONE * Remove obsolete methods (for .NET 6.0)
 DONE * fix unit tests
 DONE * Fix project load issue for rendered content. issue: long file path
@@ -112,6 +114,10 @@ DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
 
 Testing
+DONE * Test data service with sql server local instance
+DONE * Complete custom data generator implementation
+DONE * Test string size implementor
+DONE * Include custom entity data factory in entity test base
 DONE * Add test data generator for employee (with meaningful sample data)
 
 Release Tasks
