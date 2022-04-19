@@ -114,6 +114,7 @@ DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
 
 Testing
+DONE * Refactor entity test data generator as an abstract class
 DONE * Test data service with sql server local instance
 DONE * Complete custom data generator implementation
 DONE * Test string size implementor
