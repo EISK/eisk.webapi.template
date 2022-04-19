@@ -1,9 +1,9 @@
 namespace Eisk.DataServices.IntegrationTests.EFCore.InMemory;
 
 using Domains.Entities;
-using Test.Core.TestBases;
-using Eisk.EFCore.Setup;
 using Eisk.DataServices.EFCore;
+using Eisk.EFCore.Setup;
+using Test.Core.TestBases;
 
 public class EmployeeDataServiceTestsWithInMemoryDb : DataServiceBaseIntegrationTests<Employee, int>
 {
