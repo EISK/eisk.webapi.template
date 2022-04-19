@@ -3,9 +3,9 @@ using System;
 
 namespace Eisk.DataServices.IntegrationTests.EFCore.SqlServer;
 
-public class DatabaseFixture : IDisposable
+public class DatabaseSetup : IDisposable
 {
-    public DatabaseFixture()
+    public DatabaseSetup()
     {
         var db = TestDbContextFactory.CreateSqlServerDbContext();
         DbContextDataInitializer.Initialize(db);

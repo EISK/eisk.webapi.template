@@ -8,7 +8,7 @@ using Domains.TestData;
 using Eisk.EFCore.Setup;
 using Eisk.DataServices.EFCore;
 
-public class EmployeeDataServiceTestsWithSqlServer: DataServiceSqlServerBaseIntegrationTests<Employee, int>, IClassFixture<DatabaseFixture>
+public class EmployeeDataServiceTestsWithSqlServer: DataServiceSqlServerBaseIntegrationTests<Employee, int>, IClassFixture<DatabaseSetup>
 {
     public EmployeeDataServiceTestsWithSqlServer(): base(new EmployeeDataService(TestDbContextFactory.CreateSqlServerDbContext()), x => x.Id, new EmployeeDataFactory())
     {
