@@ -16,6 +16,7 @@ TODO:
 Fix CI (Remote)
 
 R * Rename eisk.webapi.template to eisk.template
+* Convert generated template CI to Yml 
 
 Fix CD (Remote)
 
