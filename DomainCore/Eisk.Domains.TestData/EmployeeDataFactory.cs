@@ -4,26 +4,12 @@ namespace Eisk.Domains.TestData
 {
     using Entities;
     using Enums;
-    using System;
     using Test.Core.DataGen;
 
-    public class EmployeeDataFactory:EntityDataFactory<Employee>
+    public class EmployeeDataFactory:EntityCustomDataFactory<Employee>
     {
-        public override Employee Factory_Entity(Action<Employee>? action = null)
-        {
-            var employee = base.Factory_Entity( e =>
-            {
-                AssignEmployee(e);
-
-                //supporting custom overrides from user
-                action?.Invoke(e);
-            });
-
-            return employee;
-        }
-
         string[] _jobTitles = new string[] { "Vice President", "Director", "Manager", "Executive", "Sales Executive", "Management Trainee" };
-        void AssignEmployee(Employee employee)
+        protected override void AssignEntity(Employee employee)
         {
             var faker = new Faker();
             
