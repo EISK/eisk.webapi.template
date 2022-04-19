@@ -6,7 +6,7 @@ namespace Eisk.Test.Core.DataGen
     {
         public override TEntity Factory_Entity(Action<TEntity>? action = null)
         {
-            var employee = base.Factory_Entity(e =>
+            var entity = base.Factory_Entity(e =>
             {
                 AssignEntity(e);
 
@@ -14,7 +14,7 @@ namespace Eisk.Test.Core.DataGen
                 action?.Invoke(e);
             });
 
-            return employee;
+            return entity;
         }
 
         protected abstract void AssignEntity(TEntity e);
