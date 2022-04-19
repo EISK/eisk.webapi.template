@@ -35,6 +35,7 @@ Code
 * Integrate azure insight
 
 Testing
+* Set db fixture with assesbmly set-up
 * Sql server integration tests: load from config
 * Create postman based test file (for template only)
 * Test post and update methods
@@ -104,16 +105,18 @@ DONE * Fix local run (web api) v8
 DONE * Fix local run (web api) v9
 
 Code
-DONE * Remove sub-module
+DONE * Convert to file scope namespace
 DONE * Apply title, extension in entity data generator
 DONE * Investigate with length field is not causing issue when saving (for in-memory db constraints not applied)
 DONE * Remove obsolete methods (for .NET 6.0)
 DONE * fix unit tests
+DONE * Remove sub-module
 DONE * Fix project load issue for rendered content. issue: long file path
 DONE * Exclude unused project files (test projects)
 DONE * Exclude unused project files (notes)
 
 Testing
+DONE * Refactor entity data generator with domain 
 DONE * Refactor entity test data generator as an abstract class
 DONE * Test data service with sql server local instance
 DONE * Complete custom data generator implementation
