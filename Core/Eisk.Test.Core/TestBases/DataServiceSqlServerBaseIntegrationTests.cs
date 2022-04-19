@@ -12,8 +12,6 @@ public abstract class DataServiceSqlServerBaseIntegrationTests<TEntity, TId> : D
     IServiceTest<IEntityDataService<TEntity>>
     where TEntity : class, new()
 {
-    private readonly IEntityDataService<TEntity> _dataService;
-
     protected DataServiceSqlServerBaseIntegrationTests(IEntityDataService<TEntity> dataService, Expression<Func<TEntity, TId>> idExpression, EntityDataFactory<TEntity> entityDataFactory = null)
         :base(dataService, idExpression, entityDataFactory)
     {
