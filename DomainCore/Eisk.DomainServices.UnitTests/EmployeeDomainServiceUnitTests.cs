@@ -21,7 +21,7 @@ public class EmployeeDomainServiceUnitTests
 
     static EmployeeDomainService Factory_DomainService()
     {
-        return new EmployeeDomainService(Factory_DataService().Object) ;
+        return new EmployeeDomainService(Factory_DataService().Object);
     }
 
     #endregion
@@ -30,7 +30,7 @@ public class EmployeeDomainServiceUnitTests
     public async Task Add_NullEmployeePassed_ShouldThrowExceptionAsync()
     {
         //Act + Assert
-        var error =  await Assert.ThrowsAsync<NullInputEntityException<Employee>>(testCode: () => Factory_DomainService().Add(null));
+        var error = await Assert.ThrowsAsync<NullInputEntityException<Employee>>(testCode: () => Factory_DomainService().Add(null));
 
         //Assert
         Assert.Equal("Input object to be created or updated is null.", error.Message);
