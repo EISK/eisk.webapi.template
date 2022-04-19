@@ -3,12 +3,6 @@ TODO: Today
 
 * Re-visit exception classes
 
-* Apply custom business logic
-* Add field for email
-* Add field for URL
-* Include view model example
-* Firing exception when field constraint (i.e. length) is not applied
-
 * review template documentations
 	* check rendered output for template with VS
 	* check conditional rendering (file)
@@ -20,9 +14,11 @@ N/A * Apply rules logic in custom data generator
 TODO:
 
 Fix CI (Remote)
+
 R * Rename eisk.webapi.template to eisk.template
 
 Fix CD (Remote)
+
 * Publish git repo to integrate with with git release task
 * Publish to VS Gallery
 * Create staging api app service for V8
@@ -30,26 +26,41 @@ Fix CD (Remote)
 Build / packagaing
 
 Code
-* Added exception handler for controller
-* Implement http error on exception for controller
-* Add log functionality
-* Integrate azure insight
+
+R * Custom logic
+	* Apply custom business logic
+	* Add field for email
+	* Add field for URL
+R * Error handling
+	* Added exception handler for controller
+	* Implement http error on exception for controller
+	* Firing exception when field constraint (i.e. length) is not applied
+* Log
+	* Add log functionality
+	* Integrate azure insight
+
+* Include view model example
 
 Testing
+
 * Set db fixture with assesbmly set-up
 * Sql server integration tests: load from config
+* Add web tests
 * Create postman based test file (for template only)
 * Test post and update methods
 * Include ORM tests
 * Identify test strategy, check base tests usability
 
 Release Tasks
+
 * Merge V9.0 branch to master
 * Publish nuget package to nuget gallery
 * Publish documentation (soft release)
+
 * Publish to VS Gallery
 
 Others
+
 * Explore new .net features
 * Include instruction for template build and publish
 * Rename Eisk.DomainServices.ComponentTests.EFCore -> Eisk.DomainServices.ComponentTests?
