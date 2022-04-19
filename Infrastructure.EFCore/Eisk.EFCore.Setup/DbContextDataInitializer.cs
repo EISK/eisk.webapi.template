@@ -24,7 +24,7 @@ public static class DbContextDataInitializer
         var employeeDataFactory = new EmployeeDataFactory();
         var testEmployees = new List<Employee>();
 
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 10; i++)
             testEmployees.Add(employeeDataFactory.Factory_Entity());
 
         context.Employees.AddRange(testEmployees);
