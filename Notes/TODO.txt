@@ -31,6 +31,7 @@ Build / packagaing
 
 Code
 * Added exception handler for controller
+* Implement http error on exception for controller
 * Add log functionality
 * Integrate azure insight
 
