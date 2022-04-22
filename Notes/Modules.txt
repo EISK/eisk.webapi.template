@@ -15,21 +15,29 @@ Web API Layer
 Process Layer
 * Process.AzureWebJob
 * Process.AzureLogicApp
-* ServerLess.AzureFunction (Scheduler)
+* ServerLess.AzureFunction (Scheduler) (default)
 * ServerLess.AWSLambda
 
 Domain Layer
 * DDD (default)
 * CQRS
 
-Data Service (in-memory)
-* Memory: EF In-memory (default?)
+Data Service Layer Interface
+* Persistence ignorant interface
+
+Data Access Layer
+* Entity Framework (default)
+* Dapper
+* NHibernate
+
+Data Storage (in-memory)
+* Memory: EF In-memory (default)
 * Memory: SQLLite In-memory
 * Memory: SQL Server In-memory
 * Memory: Couchbase In-memory
 * Memory: Redis
 
-Data Service
+Data Storage
 * RDBMS: SQL Server (default)
 * Key-Value Pair: Azure Table Storage
 * Document database: COSMOS
