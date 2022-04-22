@@ -1,5 +1,6 @@
 ========
-Samples Use Cases
+Samples Use Cases (platform agonistic)
+
 * Empty (no domain)
 
 Single Entity
@@ -17,7 +18,7 @@ Multiple Entities
 * m:1
 * m:m
 
-Query features
+Query Features
 * Raw text query
 * Aggregate query (count, sum)
 * Stored procedure
