@@ -1,6 +1,11 @@
 ========
 Samples Use Cases (platform agonistic)
 
+* Different samples for same employee entity to illustrate how to use eisk differently as per design choices.
+* The respective sample will be loaded as provided in the optional parameter when creating project from template.
+* A default sample will be loaded when no option is provided.
+========
+
 * Empty (no domain)
 
 Single Entity
