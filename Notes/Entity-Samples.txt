@@ -13,7 +13,7 @@ Single Entity (Base Classes)
 * Minimal code domain crud - Web controller base, with generic domain and data service
 
 * All base classes (no custom rules)
-* All base classes (with custom rules)
+* (default) All base classes (with custom rules)
 
 Single Entity (No Base Classes)
 - using service utility class as property instead of using as base class
