@@ -46,6 +46,16 @@ Data Storage
 * Graph database: Neo4J
 * Columnar database: Cassandra
 
+DevOps
+* AzureDevOps
+* Github Actions
+
+Hosting
+* Azure App Services
+* AWS
+* Docker
+* Kubernetes
+
 ========================================================
 Repo Modules and Dependencies
 
