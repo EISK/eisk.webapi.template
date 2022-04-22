@@ -76,6 +76,7 @@ Hosting
 DevOps
 * AzureDevOps
 * Github Actions
+* Vercel
 
 ========================================================
 Repo Modules and Dependencies
