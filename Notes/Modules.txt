@@ -46,6 +46,12 @@ Data Storage
 * Graph database: Neo4J
 * Columnar database: Cassandra
 
+Authentication
+* ASP.NET Identity
+* Azure AD b2c
+* Azure AD
+* Auth 0
+
 DevOps
 * AzureDevOps
 * Github Actions
