@@ -1,0 +1,11 @@
+* Web API base classes with supported in-memory web tests
+* Swagger support
+* Exception handling classes and filters
+
+* Domain Service base classes with supported base component tests with in-memory databases
+* Data Service base classes with supported base integration tests with sql server databases
+
+* Meaningful test data generators
+
+* DevOps pipeline to build and run tests
+* DevOps pipeline to deploy in azure app services
