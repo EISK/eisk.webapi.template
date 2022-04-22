@@ -2,6 +2,7 @@
 Business Rules
 ========================================================
 * Single Field Level (Property)
+    * Required
     * Length 
     * Regular Expression (phone, email)
 * Single Field Level (Logic)
