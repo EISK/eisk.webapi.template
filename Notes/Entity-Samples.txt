@@ -20,6 +20,8 @@ Single Entity (No Base Classes)
 
 * No base classes (with no custom rules and partial crud) - for instance create and get only
 * No base classes (with custom rules and partial crud) - for instance create and get only
+
+* No base classes (with no custom rules and all crud)
 * No base classes (with custom rules and all crud)
 
 View Model (Base Classes)
