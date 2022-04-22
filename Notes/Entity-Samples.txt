@@ -10,7 +10,7 @@ Single Entity
 * All base classes (no custom method)
 * All base classes (with custom method)
 
-* No base classes (with custom method)
+* No base classes (with custom method and crud)
 * On demand base classes (create and get only?) - using service utility class as property instead of using as base class
 
 Multiple Entities
