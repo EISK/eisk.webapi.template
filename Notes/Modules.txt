@@ -12,12 +12,6 @@ Web API Layer
 * gRPC - gRPC
 * GraphAPI - Graph API
 
-Process Layer
-* Process.AzureWebJob
-* Process.AzureLogicApp
-* ServerLess.AzureFunction (Scheduler) (default)
-* ServerLess.AWSLambda
-
 Domain Layer
 * Onion Architecture (default)
 * DDD
@@ -57,15 +51,21 @@ Authentication
 * ASP.NET Identity
 * Auth0
 
-Messagging
-* Azure Storage Queue
-* Azure Service Bus
-* AWS Simple Queue Service
-
 Logging
 * Log4Net
 * SeriLog
 * Azure Insight
+
+Backgeound Process
+* Process.AzureWebJob
+* Process.AzureLogicApp
+* ServerLess.AzureFunction (Scheduler) (default)
+* ServerLess.AWSLambda
+
+Messagging
+* Azure Storage Queue
+* Azure Service Bus
+* AWS Simple Queue Service
 
 Hosting
 * Azure App Services
