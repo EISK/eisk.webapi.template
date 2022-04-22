@@ -29,8 +29,6 @@ Data Storage (in-memory)
 * Memory: EF In-memory (default)
 * Memory: SQLLite In-memory
 * Memory: SQL Server In-memory
-* Memory: Couchbase In-memory
-* Memory: Redis
 
 Data Storage
 * RDBMS: SQL Server (default)
@@ -55,6 +53,10 @@ Logging
 * Log4Net
 * SeriLog
 * Azure Insight
+
+Caching
+* Memory: Couchbase
+* Memory: Redis
 
 Backgeound Process
 * Process.AzureWebJob
