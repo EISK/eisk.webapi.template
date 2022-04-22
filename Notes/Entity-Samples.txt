@@ -30,6 +30,14 @@ View Model (Base Classes)
 * With base classes, editor + view model, no custom rules
 * With base classes, editor + view model, with custom rules
 
+View Model (With out Base Classes)
+
+* With out base classes, single view model, no custom rules
+* With out base classes, single view model, with custom rules
+
+* With out base classes, editor + view model, no custom rules
+* With out base classes, editor + view model, with custom rules
+
 Multiple Entities
 
 * 1:m
