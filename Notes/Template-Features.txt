@@ -2,7 +2,10 @@
 * Swagger support
 * Exception handling classes and filters
 
+* Domain class example with property attribute, inheritance, value object and enumeration support
+
 * Domain Service base classes with supported base component tests with in-memory databases
+
 * Data Service base classes with supported base integration tests with sql server databases
 
 * Meaningful test data generators
