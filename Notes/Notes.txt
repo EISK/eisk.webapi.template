@@ -8,6 +8,8 @@ Single Entity
 * All base classes (with custom method)
 * No base classes (with custom method)
 
+* On demand base classes (create and get only?)
+
 Multiple Entities
 * 1:m
 * m:1
