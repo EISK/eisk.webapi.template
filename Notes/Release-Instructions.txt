@@ -40,19 +40,3 @@ Releasing in Github Release (manual)
    * Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
 
 ========================================================
-Release Instructions
-
-CD Contains the following
-
-Staging (Web/github)
-* Web to Azure
-* Github Release (edit) - for draft, no need to create tags
-
-Prod (Web/github/Nuget)
-* Web to Azure
-* Github Release (add) - for non-draft, only published once or create tag manually
-* Github Release (edit)
-* Published to nuget gallery
-
-========================================================
-    
