@@ -28,7 +28,6 @@ Data Access Layer
 Data Storage (in-memory)
 * Memory: EF In-memory (default)
 * Memory: SQLLite In-memory
-* Memory: SQL Server In-memory
 
 Data Storage
 * RDBMS: SQL Server (default)
@@ -55,8 +54,9 @@ Logging
 * Azure Insight
 
 Caching
-* Memory: Couchbase
-* Memory: Redis
+* Redis
+* Couchbase
+* SQL Server In-memory
 
 Backgeound Process
 * Process.AzureWebJob
