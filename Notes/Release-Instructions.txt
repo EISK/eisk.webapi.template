@@ -9,21 +9,35 @@ Eisk.WebApi
 ========================================================
 Release A New Version
 
+Release Prep
 * Update version in code and package
 * Build the project in CI
 
-Releasing the Web Site
-* Staging - Web site will be deployed automatically
-* Prod - Web site will be deployed automatically if staging is successful
+Releasing the Web Site (semi-manual)
+* Release will be created automatically
+* Staging - will be deployed automatically
+* Prod - Web site needs to be deployed manually
 
-Releasing in Nuget
-* Trigger the DevOps manually (as nuget releases immutable i.e. can't be updated once created)
+Releasing in Nuget (semi-manual)
+* Trigger will create release automatically
+* Release needs to be deployed by manual trigger (as nuget releases immutable i.e. canreleasepdated once created)
 
-Releasing in Github Release
+Releasing to VS Gallery (semi-manual)
+* Release will be created automatically
+* Deploy need to be triggered manually 
+
+Releasing in git repo (semi-manual)
+* Cd will deploy the changes in version branch, 
+* version branch needs to be merged manually
+
+Releasing in Github Release (manual)
+* ** Merge the repo master branch (mentioned above) **
 * Create tag in github
 * Update version in DevOps release
-* Template repo project readme.md will be included automatically in the release notes.
-* Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
+* Release needs be created manually as master branch is merged
+* Trigger deploy manually
+   * Template repo project readme.md will be included automatically in the release notes.
+   * Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
 
 ========================================================
 Release Instructions
