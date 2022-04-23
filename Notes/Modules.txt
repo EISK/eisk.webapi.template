@@ -58,6 +58,9 @@ Caching
 * Couchbase
 * SQL Server In-memory
 
+Search
+* Azure Search
+
 Backgeound Process
 * Process.AzureWebJob
 * Process.AzureLogicApp
