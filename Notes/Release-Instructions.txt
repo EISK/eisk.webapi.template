@@ -18,17 +18,18 @@ Releasing the Web Site (semi-manual)
 * Staging - will be deployed automatically
 * Prod - Web site needs to be deployed manually
 
+Releasing in git repo (semi-manual)
+* Release will be created automatically
+* Cd will deploy the changes in version branch automatically  
+* Version branch needs to be merged manually
+
 Releasing in Nuget (semi-manual)
-* Trigger will create release automatically
+* Release will be created automatically
 * Release needs to be deployed by manual trigger (as nuget releases immutable i.e. canreleasepdated once created)
 
 Releasing to VS Gallery (semi-manual)
 * Release will be created automatically
 * Deploy need to be triggered manually 
-
-Releasing in git repo (semi-manual)
-* Cd will deploy the changes in version branch, 
-* version branch needs to be merged manually
 
 Releasing in Github Release (manual)
 * ** Merge the repo master branch (mentioned above) **
