@@ -13,7 +13,7 @@ Web API Layer
 * GraphAPI - Graph API
 
 Domain Layer
-* Onion Architecture (default)
+* Clean Architecture (default)
 * DDD
 * CQRS
 
