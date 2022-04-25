@@ -45,6 +45,8 @@ R * Error handling
 Testing
 
 R * Add web tests
+		* Employee web tests
+		* Web test base class
 * Set db fixture with assesbmly set-up
 * Sql server integration tests: load from config
 * Create postman based test file (for template only)
