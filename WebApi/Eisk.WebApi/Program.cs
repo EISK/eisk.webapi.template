@@ -1,3 +1,6 @@
+using Eisk.Core.DataService;
+using Eisk.Core.DataService.EFCore;
+using Eisk.Core.DomainService;
 using Eisk.DataServices.EFCore;
 using Eisk.DataServices.EFCore.DataContext;
 using Eisk.DataServices.Interfaces;
