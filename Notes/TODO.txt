@@ -56,11 +56,12 @@ R * Add web tests
 
 Release Tasks
 
-* Merge V9.0 branch to master
-* Publish nuget package to nuget gallery
-* Publish documentation (soft release)
+DONE * Merge V9.0 branch to master
+DONE * Publish nuget package to nuget gallery
+DONE * Publish documentation (soft release)
 
 * Publish to VS Gallery
+* Experiement tag, release and branch (what happens when branch is deleted after release is created?)
 
 Others
 
