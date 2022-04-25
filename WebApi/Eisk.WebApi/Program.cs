@@ -28,6 +28,11 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+//generic services
+
+builder.Services.AddScoped(typeof(IEntityDataService<>), typeof(EntityDataService<>));
+builder.Services.AddScoped(typeof(DomainService<,>));
+
 //custom services
 
 builder.Services.AddScoped<AppDbContext, InMemoryDbContext>();
