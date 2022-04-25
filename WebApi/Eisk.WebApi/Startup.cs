@@ -55,7 +55,7 @@ namespace Eisk.WebApi
                 c.SwaggerDoc("v1", new Info
                 {
                     Title = "Eisk.WebApi",
-                    Version = "v1.0-preview-1",
+                    Version = "v8.0.12",
                     Description = "EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies.",
                     Contact = new Swashbuckle.AspNetCore.Swagger.Contact
                     {
