@@ -12,24 +12,24 @@ Web API Layer
 * gRPC - gRPC
 * GraphAPI - Graph API
 
-Process Layer
-* Process.AzureWebJob
-* Process.AzureLogicApp
-* ServerLess.AzureFunction (Scheduler)
-* ServerLess.AWSLambda
-
 Domain Layer
-* DDD (default)
+* Clean Architecture (default)
+* DDD
 * CQRS
 
-Data Service (in-memory)
-* Memory: EF In-memory (default?)
-* Memory: SQLLite In-memory
-* Memory: SQL Server In-memory
-* Memory: Couchbase In-memory
-* Memory: Redis
+Data Service Layer Interface
+* Persistence ignorant interface
 
-Data Service
+Data Access Layer
+* Entity Framework (default)
+* Dapper
+* NHibernate
+
+Data Storage (in-memory)
+* Memory: EF In-memory (default)
+* Memory: SQLLite In-memory
+
+Data Storage
 * RDBMS: SQL Server (default)
 * Key-Value Pair: Azure Table Storage
 * Document database: COSMOS
@@ -37,6 +37,51 @@ Data Service
 * Graph database: COSMOS (gremline)
 * Graph database: Neo4J
 * Columnar database: Cassandra
+
+===========================================
+Cross Cutting Concerns and Services
+
+Authentication
+* Azure AD B2C
+* Azure AD
+* Identity Server
+* ASP.NET Identity
+* Auth0
+
+Logging
+* Log4Net
+* SeriLog
+* Azure Insight
+
+Caching
+* Redis
+* Couchbase
+* SQL Server In-memory
+
+Search
+* Azure Search
+
+Backgeound Process
+* Process.AzureWebJob
+* Process.AzureLogicApp
+* ServerLess.AzureFunction (Scheduler) (default)
+* ServerLess.AWSLambda
+
+Messagging
+* Azure Storage Queue
+* Azure Service Bus
+* AWS Simple Queue Service
+
+Hosting
+* Azure App Services
+* AWS
+* Docker
+* Kubernetes
+
+DevOps
+* AzureDevOps
+* Github Actions
+* Vercel
 
 ========================================================
 Repo Modules and Dependencies
