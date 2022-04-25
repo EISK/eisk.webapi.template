@@ -15,7 +15,7 @@ TODO:
 
 Fix CI (Remote)
 
-R * Rename eisk.webapi.template to eisk.template
+* Rename eisk.webapi.template to eisk.template
 * Convert generated template CI to Yml 
 
 Fix CD (Remote)
@@ -44,9 +44,11 @@ R * Error handling
 
 Testing
 
+R * Add web tests
+		* Employee web tests
+		* Web test base class
 * Set db fixture with assesbmly set-up
 * Sql server integration tests: load from config
-* Add web tests
 * Create postman based test file (for template only)
 * Test post and update methods
 * Include ORM tests

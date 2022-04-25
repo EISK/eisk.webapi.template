@@ -40,6 +40,13 @@ View Model (With out Base Classes)
 * With out base classes, editor + view model, no custom rules
 * With out base classes, editor + view model, with custom rules
 
+Search, Filtering, Sortng, Paging
+
+* Search
+* Filtering
+* Paging 
+* Sorting
+
 Multiple Entities
 
 * 1:m
