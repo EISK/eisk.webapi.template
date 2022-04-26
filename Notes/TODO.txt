@@ -1,6 +1,10 @@
 ========================================================
 TODO: Today
 
+DONE * Include nuge badge
+* Include github badge
+* Include support help for stackoverflow
+
 * Re-visit exception classes
 
 * review template documentations
@@ -13,14 +17,14 @@ N/A * Apply rules logic in custom data generator
 ========================================================
 TODO:
 
-Fix CI (Remote)
+CI (Remote)
 
 * Rename eisk.webapi.template to eisk.template
 * Convert generated template CI to Yml 
 
-Fix CD (Remote)
+CD (Remote)
 
-* Publish git repo to integrate with with git release task
+DONE * Integrate with with git release task
 * Publish to VS Gallery
 * Create staging api app service for V8
 
@@ -36,7 +40,7 @@ R * Error handling
 	* Added exception handler for controller
 	* Implement http error on exception for controller
 	* Firing exception when field constraint (i.e. length) is not applied
-* Log
+R * Log
 	* Add log functionality
 	* Integrate azure insight
 
@@ -61,7 +65,7 @@ DONE * Publish nuget package to nuget gallery
 DONE * Publish documentation (soft release)
 
 * Publish to VS Gallery
-* Experiement tag, release and branch (what happens when branch is deleted after release is created?)
+DONE * Experiement tag, release and branch (what happens when branch is deleted after release is created?)
 
 Others
 
