@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.Core", "Core\Eisk.Core\Eisk.Core.csproj", "{8E6823DD-60AB-4772-AB9C-E5786BEF2B50}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E93D3D8-EC59-4DE2-A1E1-3F0258277780}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4E93D3D8-EC59-4DE2-A1E1-3F0258277780}"
 	ProjectSection(SolutionItems) = preProject
 		build\dnn-install-from-local.cmd = build\dnn-install-from-local.cmd
 		build\dnn-install-from-remote.cmd = build\dnn-install-from-remote.cmd
@@ -68,6 +68,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DataServices.IntegrationTests.EFCore.InMemory", "Infrastructure.EFCore\Eisk.DataServices.IntegrationTests.EFCore.InMemory\Eisk.DataServices.IntegrationTests.EFCore.InMemory.csproj", "{6FDA83B9-3E99-47AB-B232-E161C817BD1D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DataServices.IntegrationTests.EFCore.SqlServer", "Infrastructure.EFCore\Eisk.DataServices.IntegrationTests.EFCore.SqlServer\Eisk.DataServices.IntegrationTests.EFCore.SqlServer.csproj", "{1502582C-70E8-492E-8366-D85699C405E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D6C07FAD-F2A3-4C45-83C4-219E4EC79384}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

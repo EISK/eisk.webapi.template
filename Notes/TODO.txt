@@ -4,9 +4,9 @@ TODO: Today
 DONE * Include nuge badge
 * Include github badge
 * Include support help for stackoverflow
+* Include readme for nuget package
 
 * Re-visit exception classes
-
 * review template documentations
 	* check rendered output for template with VS
 	* check conditional rendering (file)
