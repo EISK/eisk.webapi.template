@@ -2,7 +2,7 @@
 
 ...
 
-EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net core technologies. 
+EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net based technologies. 
 
 With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve.
 
@@ -26,9 +26,9 @@ Here is a simple CRUD use case illustrated in the default template:
 ## Project Features
 
 * Clean Architecture based implementation 
-* Swagger based Web API documentation
-* Base classes for common CRUD functionalities (where applicable) for logical layers
-* Base classes for common test scenarios
+* Swagger/OpenAPI based Web API specification
+* Base classes for common CRUD functionalities for logical layers (where applicable)
+* Base classes for common test scenarios (component tests, integration tests)
 * Support for database integration tests with both in-memory database and SQL server
 * Test data generator with meaningful, real-world data
 
