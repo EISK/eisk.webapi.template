@@ -4,6 +4,7 @@ TODO: Today
 DONE * Include nuge badge
 DONE * Include support help for stackoverflow
 DONE * Update git repo as template
+DONE N/A * Apply rules logic in custom data generator
 
 * Update project image in read me
 * Include github badge
@@ -16,8 +17,6 @@ DONE * Update git repo as template
 	* check rendered output for template with VS
 	* check conditional rendering (file)
 	* check conditional rendering (text)
-
-N/A * Apply rules logic in custom data generator
 
 ========================================================
 TODO:
