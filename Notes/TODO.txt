@@ -3,7 +3,9 @@ TODO: Today
 
 DONE * Include nuge badge
 DONE * Include support help for stackoverflow
-* Update git repo as template
+DONE * Update git repo as template
+
+* Update project image in read me
 * Include github badge
 * Include uptime robot badge
 * Include readme for nuget package
