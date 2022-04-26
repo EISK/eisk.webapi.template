@@ -2,9 +2,9 @@
 TODO: Today
 
 DONE * Include nuge badge
+DONE * Include support help for stackoverflow
 * Include github badge
 * Include uptime robot badge
-* Include support help for stackoverflow
 * Include readme for nuget package
 
 * Re-visit exception classes
