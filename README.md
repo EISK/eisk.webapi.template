@@ -20,7 +20,7 @@ If you like or are using this project to learn or start your solution, please gi
 * Database: Sql Server (optional)
 * Build and Deployment: Azure DevOps Pipelines / App Service (optional)
 
-## Use Case Sample
+## Simple Use Case
 
 Using a simple data entity 'Employee', EISK shows how we can build scalable web api's easily along with addressing real-world domain and business use cases, including: 
 
