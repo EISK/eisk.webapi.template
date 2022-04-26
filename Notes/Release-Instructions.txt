@@ -31,13 +31,23 @@ Releasing to VS Gallery (semi-manual)
 * Release will be created automatically
 * Deploy need to be triggered manually 
 
-Releasing in Github Release (manual)
+Releasing in Github Release (manual) - Create Tag
 * ** Merge the repo master branch (mentioned above) **
 * Create tag in github
+* Create release in github from the created tag
 * Update version in DevOps release
-* Release needs be created manually as master branch is merged
-* Trigger deploy manually
+* Create release and trigger deploy manually
    * Template repo project readme.md will be included automatically in the release notes.
-   * Respective release as menionted in DevOps rlease will be updated automatically when master branch changed.
+   * Respective release assests as menionted in DevOps rlease will be updated automatically when master branch changed.
+
+Releasing in Github Release (manual) - Update Tag in Existing Release
+* Go to the corresponding release
+* Create a new tag from the release page (based on target commit)
+* Update version in DevOps release
+* Create release and trigger deploy manually
+
+Releasing in Github Release (manual) - Update Content
+* Relase Created Automatically
+* Trigger deploy manually (it doesn't update the source in the release, but updates the contents (notes, binaries in release page)
 
 ========================================================

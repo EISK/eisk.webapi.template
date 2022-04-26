@@ -7,6 +7,7 @@ DONE * Include support help for stackoverflow
 * Include github badge
 * Include uptime robot badge
 * Include readme for nuget package
+* Fix nuget package warnings
 
 * Re-visit exception classes
 * review template documentations
