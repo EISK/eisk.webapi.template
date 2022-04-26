@@ -28,9 +28,9 @@ Here is a simple CRUD use case illustrated in the default template:
 * Clean Architecture based implementation 
 * Swagger/OpenAPI based Web API specification
 * Base classes for common CRUD functionalities for logical layers (where applicable)
+* Utility classes to generate real-world test data
 * Base classes for common test scenarios (component tests, integration tests)
 * Support for database integration tests with both in-memory database and SQL server
-* Test data generator with meaningful, real-world data
 
 ## Core Technologies
 
