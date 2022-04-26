@@ -25,7 +25,7 @@ Here is a simple CRUD use case illustrated in the default template:
 
 ## Project Features
 
-* Clean Architecture based implementation (clean separation bewteen domain model, domain service and insfrastructure layers)
+* Clean Architecture based implementation 
 * Swagger based Web API documentation
 * Base classes for common CRUD functionalities (where applicable) for logical layers
 * Base classes for common test scenarios
