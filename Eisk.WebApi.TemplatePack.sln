@@ -11,7 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4E93D3D8
 		build\dnn-install-from-remote.cmd = build\dnn-install-from-remote.cmd
 		build\git-bash-echo.sh = build\git-bash-echo.sh
 		build\git-push.sh = build\git-push.sh
-		README.md = README.md
 		.template.config\template.json = .template.config\template.json
 		.template.config\template.vstemplate = .template.config\template.vstemplate
 	EndProjectSection

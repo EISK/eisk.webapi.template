@@ -33,7 +33,6 @@ Here is a simple CRUD use case illustrated in the default template:
 * ASP.NET Core (Web Api)
 * Entity Framework Core
 * C# Programming Language
-* Visual Studio
 
 ## System Requirements (Development)
 

@@ -3,6 +3,7 @@ TODO: Today
 
 DONE * Include nuge badge
 * Include github badge
+* Include uptime robot badge
 * Include support help for stackoverflow
 * Include readme for nuget package
 
