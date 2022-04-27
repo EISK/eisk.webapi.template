@@ -70,9 +70,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.DataServices.Integrati
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{D6C07FAD-F2A3-4C45-83C4-219E4EC79384}"
 	ProjectSection(SolutionItems) = preProject
-		Docs\README-github-release.md = Docs\README-github-release.md
 		Docs\README-nuget.md = Docs\README-nuget.md
-		Docs\README-VS-gallery.md = Docs\README-VS-gallery.md
 		README.md = README.md
 	EndProjectSection
 EndProject
