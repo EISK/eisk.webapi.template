@@ -10,6 +10,10 @@
 		<Authors>Ashraf Alam</Authors>
 		<Description>Project template with simple CRUD to get started ASP.NET Web Api quickly.</Description>
 		<Copyright>Copyright © Ashraf Alam. All rights Reserved</Copyright>
+		<PackageProjectUrl>https://eisk.github.io</PackageProjectUrl>
+		<PackageReleaseNotes>https://github.com/EISK/eisk.webapi/releases</PackageReleaseNotes>
+		<RepositoryUrl>https://github.com/EISK/eisk.webapi</RepositoryUrl>
+		<PackageTags>Template, ASP.NET, Web API, VS2022, Visual Studio 2022</PackageTags>
 		<Version>9.0.11</Version>
 	</PropertyGroup>
 
