@@ -69,6 +69,7 @@ DONE * Include readme, license file for nuget package (automatic) : https://docs
 * Include github badge (in readme.md)
 * Include github badge (in docs footer)
 * Include facebook badge (in docs footer)
+* Include Icon in nuget package
 * Include uptime robot badge
 
 DONE * Merge V9.0 branch to master
