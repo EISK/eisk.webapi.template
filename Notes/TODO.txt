@@ -61,9 +61,9 @@ R * Add web tests
 Release Tasks
 
 DONE * Include readme for nuget package (manual)
-* Include readme for nuget package (automatic) : https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#packagereadmefile
-* Include project site, repo into in nuget gallery
-* Include tag into in nuget gallery
+DONE * Include project site, repo into in nuget gallery
+DONE * Include tag into in nuget gallery
+* Include readme, license file for nuget package (automatic) : https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#packagereadmefile
 
 * Update project image in read me
 * Include github badge (in readme.md)
