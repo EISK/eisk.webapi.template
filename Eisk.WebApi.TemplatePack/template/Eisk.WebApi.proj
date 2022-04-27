@@ -18,7 +18,9 @@
 		<RepositoryUrl>https://github.com/EISK/eisk.webapi</RepositoryUrl>
 		<PackageTags>template, ASP.NET, web-api, vs2022, visual-studio-2022, boilerplate, starter-kit, efcore, dotnet, dotnet6, clean-architecture, architecture</PackageTags>
 		<PackageType>DotnetTool, Template</PackageType>
-		<Version>9.0.12</Version>
+		<PackageLicenseFile>Content/LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>Content/README.md</PackageReadmeFile>
+		<Version>9.0.13</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Label="PackageConfiguration">
