@@ -6,12 +6,6 @@ DONE * Include support help for stackoverflow
 DONE * Update git repo as template
 DONE N/A * Apply rules logic in custom data generator
 
-* Update project image in read me
-* Include github badge
-* Include uptime robot badge
-* Include readme for nuget package
-* Fix nuget package warnings
-
 * Re-visit exception classes
 * review template documentations
 	* check rendered output for template with VS
@@ -33,6 +27,8 @@ DONE * Integrate with with git release task
 * Create staging api app service for V8
 
 Build / packagaing
+* Include code coverage in main build
+* Fix nuget package warnings
 
 Code
 
@@ -63,6 +59,17 @@ R * Add web tests
 * Identify test strategy, check base tests usability
 
 Release Tasks
+
+DONE * Include readme for nuget package (manual)
+* Include readme for nuget package (automatic) : https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#packagereadmefile
+* Include project site, repo into in nuget gallery
+* Include tag into in nuget gallery
+
+* Update project image in read me
+* Include github badge (in readme.md)
+* Include github badge (in docs footer)
+* Include facebook badge (in docs footer)
+* Include uptime robot badge
 
 DONE * Merge V9.0 branch to master
 DONE * Publish nuget package to nuget gallery
