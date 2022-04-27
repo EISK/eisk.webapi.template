@@ -13,7 +13,7 @@
 		<PackageProjectUrl>https://eisk.github.io</PackageProjectUrl>
 		<PackageReleaseNotes>https://github.com/EISK/eisk.webapi/releases</PackageReleaseNotes>
 		<RepositoryUrl>https://github.com/EISK/eisk.webapi</RepositoryUrl>
-		<PackageTags>template, ASP.NET, web-aPI, vs2022, visual-studio-2022, boilerplate, starter-kit, efcore, dotnet, dotnet6</PackageTags>
+		<PackageTags>template, ASP.NET, web-api, vs2022, visual-studio-2022, boilerplate, starter-kit, efcore, dotnet, dotnet6, clean-architecture, architecture</PackageTags>
 		<Version>9.0.12</Version>
 	</PropertyGroup>
 
