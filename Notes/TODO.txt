@@ -62,7 +62,7 @@ Release Tasks
 
 DONE * Include readme for nuget package (manual)
 DONE * Include project site, repo into in nuget gallery
-DONE * Include tag into in nuget gallery
+DONE * Include tag into in nuget gallery : https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#pack-target
 DONE * Include readme, license file for nuget package (automatic) : https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#packagereadmefile
 
 * Update project image in read me
