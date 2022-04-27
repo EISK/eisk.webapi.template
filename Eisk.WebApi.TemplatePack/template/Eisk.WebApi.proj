@@ -8,7 +8,10 @@
 
 	<PropertyGroup Label="TemplatePackInfo">
 		<Authors>Ashraf Alam</Authors>
-		<Description>Project template with simple CRUD to get started ASP.NET Web Api quickly.</Description>
+		<Description>
+			EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net based technologies.
+			With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve..
+		</Description>
 		<Copyright>Copyright © Ashraf Alam. All rights Reserved</Copyright>
 		<PackageProjectUrl>https://eisk.github.io</PackageProjectUrl>
 		<PackageReleaseNotes>https://github.com/EISK/eisk.webapi/releases</PackageReleaseNotes>
