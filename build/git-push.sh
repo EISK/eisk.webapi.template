@@ -1,11 +1,11 @@
 ContentTargetGitAddress=${1:-https://github.com/EISK/eisk.webapi.git}
 ContentTargetGitUserName=${2:-AshrafAlam}
-ContentTargetGitUserEmail=${3:-joy_csharp@yahoo.com}
+ContentTargetGitUserEmail=${3:-joycsc@gmail.com}
 
 ContentSrc=${4:-content}
 
-ContentTargetGitBranch=${5:-master}
-ContentTargetGitRepoDownloadFolder=${6:-content-repo}
+ContentTargetGitBranch=${5:-content-branch}
+ContentTargetGitRepoDownloadFolder="content-repo"
 
 SOURCE_DIR=$PWD
 TEMP_REPO_DIR=$PWD/$ContentTargetGitRepoDownloadFolder
@@ -23,6 +23,11 @@ git rm -r *
 
 echo "Copy documentation into the repo"
 cp -r $SOURCE_DIR/$ContentSrc/* .
+
+echo $PWD
+
+echo "Copy gitignore"
+cp ./../../.gitignore .
 
 echo "############################# Setting git identity"
 if [ "$2" != "" ]; then

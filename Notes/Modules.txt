@@ -1,0 +1,111 @@
+========================================================
+Core Modules and Releases
+
+Client Side
+* React (default)
+* Blazor
+* React Native
+
+Web API Layer
+* WebApi - ASP.NET Web API (default)
+* WebApi.Azure - Azure Function (http)
+* gRPC - gRPC
+* GraphAPI - Graph API
+
+Domain Layer
+* Clean Architecture (default)
+* DDD
+* CQRS
+
+Data Service Layer Interface
+* Persistence ignorant interface
+
+Data Access Layer
+* Entity Framework (default)
+* Dapper
+* NHibernate
+
+Data Storage (in-memory)
+* Memory: EF In-memory (default)
+* Memory: SQLLite In-memory
+
+Data Storage
+* RDBMS: SQL Server (default)
+* Key-Value Pair: Azure Table Storage
+* Document database: COSMOS
+* Document database: Couchbase
+* Graph database: COSMOS (gremline)
+* Graph database: Neo4J
+* Columnar database: Cassandra
+
+===========================================
+Cross Cutting Concerns and Services
+
+Authentication
+* Azure AD B2C
+* Azure AD
+* Identity Server
+* ASP.NET Identity
+* Auth0
+
+Logging
+* Log4Net
+* SeriLog
+* Azure Insight
+
+Caching
+* Redis
+* Couchbase
+* SQL Server In-memory
+
+Search
+* Azure Search
+
+Backgeound Process
+* Process.AzureWebJob
+* Process.AzureLogicApp
+* ServerLess.AzureFunction (Scheduler) (default)
+* ServerLess.AWSLambda
+
+Messagging
+* Azure Storage Queue
+* Azure Service Bus
+* AWS Simple Queue Service
+
+Hosting
+* Azure App Services
+* AWS
+* Docker
+* Kubernetes
+
+DevOps
+* AzureDevOps
+* Github Actions
+* Vercel
+
+========================================================
+Repo Modules and Dependencies
+
+- eisk.template (default)
+
+- eisk.webapi (output repo)
+- eisk.template.webapi (template sub module or main module)
+
+- eisk.domain-services
+- eisk.data-services (default)
+- eisk.data-services.sql-server
+- eisk.data-services.cosmosdb
+
+- eisk.test-core (default shared across all, can be used as sub-module or main module)
+- eisk.core (default shared across all, can be used as sub-module or main module)
+
+========================================================
+EISK Version History
+
+v9.0 - Web API Edition	.NET 6.0		VS2022, 17.0.32112.339	- 10.0.40219.1
+v8.0 - Web API Edition	.NET Core 2.0	VS2017,	15.0.28307.168	- 10.0.40219.1 (Core V1.0)
+v7.0 - MVC Edition		.NET 4.5.1		VS2013, 12.0.21005.1	- 10.0.40219.1
+v6.0 - MVC Edition		.NET 4.0		VS2012, 11.0
+v5.0 - Web Form Edition	.NET 4.0		VS2010,	10.0
+
+========================================================

@@ -9,7 +9,7 @@
   <PropertyGroup Label="TemplatePackInfo">
     <Authors>Ashraf Alam</Authors>
     <Description>Project template with simple CRUD to get started ASP.NET Web Api quickly.</Description>
-    <Version>1.0.6</Version>
+    <Version>9.0.10</Version>
   </PropertyGroup>
 
   <PropertyGroup Label="PackageConfiguration">
@@ -26,6 +26,10 @@
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.vs/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/.git/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)**/packages/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)Infrastructure.EFCore/Eisk.DataServices.IntegrationTests.EFCore.InMemory/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)Notes/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)**/*Core.Tests/**/*" />
+	<ExcludeFromPackage Include="$(TemplateSourceRoot)**/*DomainServices.UnitTests/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)Eisk.WebApi.TemplatePack.sln" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)Eisk.WebApi.TemplatePack/**/*" />
     <ExcludeFromPackage Include="$(TemplateSourceRoot)build/**/*" />
