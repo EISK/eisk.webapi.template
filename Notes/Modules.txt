@@ -72,7 +72,7 @@ Template Options
 		-- No
 	- SampleIncludeBaseClass
 		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
-		-- No: contains HasA relation type, where DomainService utility class will be used as property
+		-- No: contains HasA relation type, where DomainService utility class will be used as property. CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
 	- AuthType
 		-- None (default)
 		-- IdentityServer
