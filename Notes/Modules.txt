@@ -87,6 +87,13 @@ Template Options
 	- ApplicationInsightType
 		- None (default)
 		- AzureInsight
+	- Include gitignore
+		- Yes
+		- No (default)
+
+Utilities
+	- CleanSample
+		- Provide PowerShell script to clean included samples (without changing existing code)
 
 Project: Eisk.Bazor
 	- Dedicated repo and devops ecosystem 
