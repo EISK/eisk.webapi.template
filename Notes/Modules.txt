@@ -1,4 +1,34 @@
 ========================================================
+Project Structure
+
+- Core
+- DomainCore
+	-- Eisk.DomainServices
+		* EmployeeDomainService.cs
+			** default domain service
+		* EmployeeDomainServiceWithViewModel.cs, EmployeeDomainServiceWithViewAndEditorModel.cs, EmployeeDomainServiceWithNoCustomRuleAndBaseClass.cs
+			** to be excluded by default, with "EmployeeDomainServiceWith*" wildcard.
+			** should be transformed to EmployeeDomainService.cs when view model option is selected
+- Infrastructure (actual folder name, in solution, it can be according to framework, platform, i.e. Infrsatructure.EFCore)
+	-- Eisk.DataServices.EFCore 
+		* default data service
+	-- Eisk.DataServices.CosmosDb.DocumentDatabase
+		* to be also included in Repo sample. For dotnet new should be available based on selected param
+- WebApi (actual folder name, in solution, it can be according to framework, platform i.e. Eisk.WebApi.GraphQL)
+	-- Eisk.WebApi.RESTFul
+		* default api service
+		* in Program.cs where dependency injection is associated can include combinational template params to select preferred data service provider (i.e EFCore, COSMOS Db)
+	-- Eisk.WebApi.RESTFul.AzureFunction
+		* RESTFul service with AzureFunction
+	-- Eisk.WebApi.GraphQL
+		* to be also included in Repo sample. For dotnet new should be available based on selected param
+	- Eisk.WebApi.gRPC
+- Bridge: includes projects with different combinations. Useful to test and experiment with different options and configurations. Should be excluded from Template output
+	-- Eisk.WebApi.RESTFul + Eisk.DataServices.EFCore
+		* Folder to contain group of projects related to Eisk.WebApi.RESTFul with configuration to connect Eisk.DataServices.EFCore
+	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
+
+========================================================
 Core Modules and Releases
 
 Client Side
