@@ -1,7 +1,7 @@
 ========================================================
 Project Structure
 
-Project: Eisk.WebAPI
+Project: Eisk.WebApi
 	- All components shares as common domain model and rules
 	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
 
@@ -54,6 +54,13 @@ Project: Eisk.WebAPI
 	-- Eisk.WebApi.RESTFul + Eisk.DataServices.EFCore
 		* Folder to contain group of projects related to Eisk.WebApi.RESTFul with configuration to connect Eisk.DataServices.EFCore
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
+
+Web API to Data Provider 
+	* Original source: contains all web all to all data provider (nXm) - special codes for testing cross provider functionalies for various api options
+	* Samples: contains all web all to all data provider (nXm) - can be generated from dotnet new
+	* Repo: contains all web api to default data provider (EF Core)
+	* dotnet new template: creates connections dynamically
+	* VSIX: (to be decided, dynamically or statically)
 
 Template Options
 	- DataProvider
@@ -108,9 +115,9 @@ Project: Eisk.Bazor
 
 Project: Eisk.Samples
 	- There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
-	- Code samples from Bridge (special folder)
-	- Additional samples (with different combinations of template options)
-	- Blazor samples
+	- WebApi samples: to be created from dotnet new options
+	- Blazor sample: single sample with Blazor + EFcore 
+	- Multi-domain samples: i.e. e-commerce, blog
 
 ========================================================
 Core Modules and Releases
