@@ -6,7 +6,7 @@ Project: Eisk.WebAPI
 	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
 
 - Core
-
+	- Utlities should be created based on param options
 - DomainCore
 	-- Eisk.DomainServices
 		-- Eisk.DomainServices.csproj
@@ -34,17 +34,21 @@ Project: Eisk.WebAPI
 		-- Eisk.WebApi.RESTFul.csproj
 		* Repo default, template default
 		* in Program.cs where dependency injection is associated can include combinational template params to select preferred data service provider (i.e EFCore, COSMOS Db)
+		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.RESTFul.AzureFunction
 		-- Eisk.WebApi.RESTFul.AzureFunction.csproj
 		* Repo default
 		* RESTFul service with AzureFunction
+		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.GraphQL
-	-- Eisk.WebApi.GraphQL.csproj
+		-- Eisk.WebApi.GraphQL.csproj
 		* Repo default
 		* to be also included in Repo sample. For dotnet new should be available based on selected param
+		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.gRPC
 		-- Eisk.WebApi.gRPC.csproj
 		* Repo default
+		* Should connect to Eisk.DataServices.EFCore as default data provider
 
 - Bridge: includes projects with different combinations. Useful to test and experiment with different options and configurations. Should be excluded from Template output
 	-- Eisk.WebApi.RESTFul + Eisk.DataServices.EFCore
