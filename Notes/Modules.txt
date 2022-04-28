@@ -57,9 +57,9 @@ Project: Eisk.WebApi
 
 Web API to Data Provider 
 	* Original source: contains all web all to all data provider (nXm) - special codes for testing cross provider functionalies for various api options
-	* Samples: contains all web all to all data provider (nXm) - can be generated from dotnet new
-	* Repo: contains all web api to default data provider (EF Core) (nX1)
 	* dotnet new template: creates connections dynamically (nXm)
+	* Repo: contains all web api to default data provider (EF Core) (nX1)
+	* Samples: contains all web all to all data provider (nXm) - can be generated from dotnet new
 	* VSIX: (to be decided, dynamically or statically)
 
 Template Options
