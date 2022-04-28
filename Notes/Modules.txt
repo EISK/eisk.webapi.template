@@ -3,6 +3,7 @@ Project Structure
 
 Project: Eisk.WebAPI
 	- All components shares as common domain model and rules
+	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
 
 - Core
 
@@ -51,10 +52,41 @@ Project: Eisk.WebAPI
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
 
 Template Options
-	- Database Provider
+	- DataProvider
 		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
 		-- CosmosDb.DocumentDatabase
-
+	- ApiType
+		-- REST (rst) (default)
+		-- GrapghQL (gql)
+		-- gRPC (grpc)
+	- SampleInclude
+		-- Yes (default): creates required logical layers and configurations based on a single domain
+		-- No: no domain specific sample is provided (i.e. Employee domain)
+	- SampleModelType
+		- Creates singe entity sample for Controller and Domain Class
+		-- Entity (default)
+		-- Editor
+		-- ViewAndEditor
+	- SampleIncludeBusinessRule
+		-- Yes (default)
+		-- No
+	- SampleIncludeBaseClass
+		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
+		-- No: contains HasA relation type, where DomainService utility class will be used as property
+	- AuthType
+		-- None (default)
+		-- IdentityServer
+		-- AzureB2C
+	- ErrorHandlingFilter
+		-- None (default)
+		-- Custom (default)
+	- LogType
+		-- None (default)
+		-- Log4Net
+		-- SeriLog
+	- ApplicationInsightType
+		- None (default)
+		- AzureInsight
 
 Project: Eisk.Bazor
 	- Dedicated repo and devops ecosystem 
