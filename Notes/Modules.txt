@@ -78,7 +78,7 @@ Template Options
 		-- IdentityServer
 		-- AzureB2C
 	- ErrorHandlingFilter
-		-- None (default)
+		-- None
 		-- Custom (default)
 	- LogType
 		-- None (default)
