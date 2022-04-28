@@ -56,10 +56,10 @@ Project: Eisk.WebApi
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
 
 Web API to Data Provider (cross functionality)
-	* Original source: contains all web all to all data provider (nXm) - special codes for testing cross provider functionalies for various api options
-	* dotnet new template: creates connections dynamically (nXm)
-	* Repo: contains all web api to default data provider (EF Core) (nX1)
-	* Samples: contains all web all to all data provider (nXm) - can be generated from dotnet new
+	* Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
+	* dotnet new template (nXm): creates connections dynamically
+	* Public Repo (nX1): contains all web api to default data provider (EF Core)
+	* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
 	* VSIX: (to be decided, dynamically or statically)
 
 Template Options
