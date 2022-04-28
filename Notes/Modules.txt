@@ -65,8 +65,8 @@ Template Options
 	- SampleModelType
 		- Creates singe entity sample for Controller and Domain Class
 		-- Entity (default)
-		-- Editor
-		-- ViewAndEditor
+		-- Editor: same editor model will be used for View and Create/Edit
+		-- ViewAndEditor: separate model will be used for View and Create/Edit
 	- SampleIncludeBusinessRule
 		-- Yes (default)
 		-- No
