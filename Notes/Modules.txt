@@ -63,9 +63,7 @@ Web API to Data Provider (cross functionality)
 	* VSIX: (to be decided, dynamically or statically)
 
 Template Options
-	- DataProvider
-		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
-		-- CosmosDb.DocumentDatabase
+
 	- AppType
 		-- None (no app specific template generated)
 		-- Blazor
@@ -75,6 +73,10 @@ Template Options
 		-- REST (rst) (default)
 		-- GrapghQL (gql)
 		-- gRPC (grpc)
+	- DataProvider
+		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
+		-- CosmosDb.DocumentDatabase
+
 	- SampleInclude
 		-- None: no domain specific sample is provided (i.e. Employee domain)
 		-- SingleEntity (default): creates required logical layers and configurations based on a single domain
@@ -93,6 +95,7 @@ Template Options
 		- Applicable when SampleInclude is not None
 		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
 		-- No: contains HasA relation type, where DomainService utility class will be used as property. CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
+
 	- AuthType
 		-- None (default)
 		-- IdentityServer
@@ -107,6 +110,7 @@ Template Options
 	- ApplicationInsightType
 		- None (default)
 		- AzureInsight
+
 	- Include gitignore
 		- Yes
 		- No (default)
