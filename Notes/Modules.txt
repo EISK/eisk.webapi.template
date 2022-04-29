@@ -66,15 +66,21 @@ Template Options
 	- DataProvider
 		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
 		-- CosmosDb.DocumentDatabase
+	- AppType
+		-- None (no app specific template generated)
+		-- Blazor
+		-- React
 	- ApiType
+		-- None (no api specific template generated)
 		-- REST (rst) (default)
 		-- GrapghQL (gql)
 		-- gRPC (grpc)
 	- SampleInclude
-		-- Yes (default): creates required logical layers and configurations based on a single domain
-		-- No: no domain specific sample is provided (i.e. Employee domain)
+		-- None: no domain specific sample is provided (i.e. Employee domain)
+		-- SingleEntity (default): creates required logical layers and configurations based on a single domain
+		-- MultipleEntities: creates required logical layers and configurations based on a single domain
 	- SampleModelType
-		- Creates singe entity sample for Controller and Domain Class
+		- Creates entity based samples for Controller and Domain Class
 		-- Entity (default)
 		-- Editor: same editor model will be used for View and Create/Edit
 		-- ViewAndEditor: separate model will be used for View and Create/Edit
