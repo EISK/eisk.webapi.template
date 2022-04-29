@@ -81,13 +81,16 @@ Template Options
 		-- MultipleEntities: creates required logical layers and configurations based on a single domain
 	- SampleModelType
 		- Creates entity based samples for Controller and Domain Class
+		- Applicable when SampleInclude is not None
 		-- Entity (default)
 		-- Editor: same editor model will be used for View and Create/Edit
 		-- ViewAndEditor: separate model will be used for View and Create/Edit
 	- SampleIncludeBusinessRule
+		- Applicable when SampleInclude is not None
 		-- Yes (default)
 		-- No
 	- SampleIncludeBaseClass
+		- Applicable when SampleInclude is not None
 		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
 		-- No: contains HasA relation type, where DomainService utility class will be used as property. CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
 	- AuthType
@@ -146,6 +149,7 @@ All template structure
 	- WebCore
 		-- Eisk.Web.SPA.Blazor.Shared
 		* May not be needed
+		* Only Web UI related shard components based on application entity 
 		* If the shared components are application entity specific domain, which can be included inside DomainCore
 		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
 		* If the shared components are just utilities, which can be included inside Core
