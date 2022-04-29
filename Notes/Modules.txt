@@ -120,6 +120,32 @@ Project: Eisk.Samples
 	- Multi-domain samples: i.e. e-commerce, blog
 
 ========================================================
+All template structure
+
+- Eisk.WebApi.TemplatePack
+	- Eisk.WebApi.TemplatePack.csproj
+- CleanArchitecture
+	- Web
+		-- Eisk.Web.SPA.Blazor
+		-- Eisk.Web.SPA.React
+		-- Eisk.Web.MVC
+	- WebApi
+		-- Eisk.WebApi.RESTFul
+			-- Eisk.WebApi.RESTFul.csproj
+	- Infrastructure
+		-- Eisk.DataServices.EFCore 
+			-- Eisk.DataServices.EFCore.csproj
+	- WebCore
+		-- Eisk.Web.SPA.Blazor.Shared
+		* May not be needed
+		* If the shared components are application entity specific domain, which can be included inside DomainCore
+		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
+		* If the shared components are just utilities, which can be included inside Core
+	- DomainCore
+	- Core
+- CQRS
+
+========================================================
 Core Modules and Releases
 
 Client Side
