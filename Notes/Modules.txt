@@ -124,7 +124,9 @@ All template structure
 
 - Eisk.WebApi.TemplatePack
 	- Eisk.WebApi.TemplatePack.csproj
+	* Connects and combines all contents into a single pack
 - CleanArchitecture
+	* Architecture specific folder
 	- Web
 		-- Eisk.Web.SPA.Blazor
 		-- Eisk.Web.SPA.React
