@@ -1,6 +1,14 @@
 ========================================================
 TODO: Today
 
+* VSIX fix namespace issues
+* Include template category in VS gallery
+* Include template category in VS 
+* Create read-me for VS gallery specific
+* VS should always install latest nuget package (currently its doing when no dotnet template is installed)
+
+========================================================
+
 * Re-visit exception classes
 * review template documentations
 	* check rendered output for template with VS
