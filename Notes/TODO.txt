@@ -1,7 +1,8 @@
 ========================================================
 TODO: Today
 
-* VSIX fix namespace issues
+DONE * VSIX fix namespace issues
+* Fix metadata and asset issue, due to nuget restore (errors happens when open VS and create project from template for first time)
 * Include template category in VS gallery
 * Include template category in VS 
 * Create read-me for VS gallery specific
