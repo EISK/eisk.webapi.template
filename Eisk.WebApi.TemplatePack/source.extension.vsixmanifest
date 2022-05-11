@@ -14,7 +14,6 @@
         </InstallationTarget>
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
     </Dependencies>
     <Prerequisites>
         <Prerequisite Id="Microsoft.NetCore.Component.Runtime.6.0" Version="[17.1.32210.238,18.0)" DisplayName=".NET 6.0 Runtime" />

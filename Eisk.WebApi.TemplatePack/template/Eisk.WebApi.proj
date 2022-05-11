@@ -20,7 +20,7 @@
 		<PackageType>DotnetTool, Template</PackageType>
 		<PackageLicenseFile>Content/LICENSE.txt</PackageLicenseFile>
 		<PackageReadmeFile>Content/README.md</PackageReadmeFile>
-		<Version>9.0.19</Version>
+		<Version>9.0.20</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Label="PackageConfiguration">
