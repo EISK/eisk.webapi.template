@@ -20,6 +20,9 @@
       "path": ".\\DomainCore\\Eisk.Domains\\Eisk.Domains.csproj"
     },
     {
+      "path": ".\\DomainCore\\Eisk.Domains.TestData\\Eisk.Domains.TestData.csproj"
+    },
+    {
       "path": ".\\DomainCore\\Eisk.DataServices.Interfaces\\Eisk.DataServices.Interfaces.csproj"
     },
     {
