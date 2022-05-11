@@ -1,4 +1,32 @@
 ========================================================
+All template structure
+
+- Eisk.WebApi.TemplatePack
+	- Eisk.WebApi.TemplatePack.csproj
+	* Connects and combines all contents into a single pack
+- CleanArchitecture
+	* Architecture specific folder
+	- Web
+		-- Eisk.Web.SPA.Blazor
+		-- Eisk.Web.SPA.React
+		-- Eisk.Web.MVC
+	- WebApi
+		-- Eisk.WebApi.RESTFul
+			-- Eisk.WebApi.RESTFul.csproj
+	- Infrastructure
+		-- Eisk.DataServices.EFCore 
+			-- Eisk.DataServices.EFCore.csproj
+	- WebCore
+		-- Eisk.Web.SPA.Blazor.Shared
+		* May not be needed
+		* Only Web UI related shard components based on application entity 
+		* If the shared components are application entity specific domain, which can be included inside DomainCore
+		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
+		* If the shared components are just utilities, which can be included inside Core
+	- DomainCore
+	- Core
+- CQRS
+========================================================
 Project Structure
 
 Project: Eisk.WebApi
@@ -131,35 +159,6 @@ Project: Eisk.Samples
 	- WebApi samples: to be created from dotnet new options
 	- Blazor sample: single sample with Blazor + EFcore 
 	- Multi-domain samples: i.e. e-commerce, blog
-
-========================================================
-All template structure
-
-- Eisk.WebApi.TemplatePack
-	- Eisk.WebApi.TemplatePack.csproj
-	* Connects and combines all contents into a single pack
-- CleanArchitecture
-	* Architecture specific folder
-	- Web
-		-- Eisk.Web.SPA.Blazor
-		-- Eisk.Web.SPA.React
-		-- Eisk.Web.MVC
-	- WebApi
-		-- Eisk.WebApi.RESTFul
-			-- Eisk.WebApi.RESTFul.csproj
-	- Infrastructure
-		-- Eisk.DataServices.EFCore 
-			-- Eisk.DataServices.EFCore.csproj
-	- WebCore
-		-- Eisk.Web.SPA.Blazor.Shared
-		* May not be needed
-		* Only Web UI related shard components based on application entity 
-		* If the shared components are application entity specific domain, which can be included inside DomainCore
-		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
-		* If the shared components are just utilities, which can be included inside Core
-	- DomainCore
-	- Core
-- CQRS
 
 ========================================================
 Core Modules and Releases
