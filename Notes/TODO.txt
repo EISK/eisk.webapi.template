@@ -5,6 +5,7 @@ TODO: Today
 * Include template category in VS gallery
 * Include template category in VS Project dialogue
 * VS should always install latest nuget package (currently its doing when no dotnet template is installed)
+* Make sure the VSIX read me html is visible after creating the project
 
 DONE * VSIX fix namespace issues
 DONE * Create read-me for VS gallery specific
