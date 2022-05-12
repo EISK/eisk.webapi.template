@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="192D1106-CA79-4E6E-8A4E-837B3E7F819F" Version="9.0.23" Language="en-US" Publisher="Ashraf Alam" />
-        <DisplayName>Eisk.WebApi</DisplayName>
+        <Identity Id="68FBFB63-9273-47F5-AC83-57A8BC8AD851" Version="9.0.24" Language="en-US" Publisher="Ashraf Alam" />
+        <DisplayName>Eisk</DisplayName>
         <Description xml:space="preserve">Project template with simple CRUD to get started ASP.NET Web Api quickly.</Description>
         <GettingStartedGuide>https://eisk.github.io/docs/webapi/get-started/index.html</GettingStartedGuide>
         <ReleaseNotes>https://github.com/EISK/eisk.webapi/releases</ReleaseNotes>
