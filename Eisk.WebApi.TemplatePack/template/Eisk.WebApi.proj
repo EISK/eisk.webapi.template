@@ -10,7 +10,7 @@
 		<Authors>Ashraf Alam</Authors>
 		<Description>
 			EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net based technologies.
-			With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve..
+			With an optional set of customizable utility classes, samples and tools, it lets you creating new web api straight away without wide technical experience or learning curve.
 		</Description>
 		<Copyright>Copyright © Ashraf Alam. All rights Reserved</Copyright>
 		<PackageProjectUrl>https://eisk.github.io</PackageProjectUrl>
@@ -20,7 +20,7 @@
 		<PackageType>DotnetTool, Template</PackageType>
 		<PackageLicenseFile>Content/LICENSE.txt</PackageLicenseFile>
 		<PackageReadmeFile>Content/README.md</PackageReadmeFile>
-		<Version>9.0.24</Version>
+		<Version>9.0.25</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Label="PackageConfiguration">
