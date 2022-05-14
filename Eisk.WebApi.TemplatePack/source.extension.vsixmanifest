@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Employee Info Starter Kit.27981211-e214-4cab-b69b-baefccdeab0c" Version="9.0.25" Language="en-US" Publisher="Ashraf Alam" />
+        <Identity Id="Employee Info Starter Kit.27981211-e214-4cab-b69b-baefccdeab0c" Version="9.0.26" Language="en-US" Publisher="Ashraf Alam" />
         <DisplayName>Eisk</DisplayName>
         <Description xml:space="preserve">EISK makes it easy to write scalable and secured web api on top of Microsoft's new cutting edge .net based technologies.</Description>
         <MoreInfo>https://eisk.github.io</MoreInfo>
