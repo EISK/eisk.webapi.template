@@ -32,6 +32,7 @@ CD (Remote)
 * Convert genrated CD to Yml
 
 Packaging (vsix/nuget)
+
 * Fix nuget package warnings
 * Fix metadata and asset issue, due to nuget restore (errors happens when open VS and create project from template for first time)
 * Include template category in VS gallery
