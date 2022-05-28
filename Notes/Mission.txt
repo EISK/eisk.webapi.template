@@ -5,5 +5,5 @@ Philosophy
 * Example based: Example based, over documentation and books
 * Single entity based example: Common, single entity based simple standards and ecosystem for all tech examples, to get familier with new tech quickly
 
-* Paretto rule: Paretto rule to cover 80% common use cases with 20 effort. Over 150 optimized solutions that developers do google/stackoverflow when develiping a new application
+* Paretto rule: Paretto rule to cover 80% common use cases with 20% effort. Over 150 optimized solutions that developers do google/stackoverflow when develiping a new application
 
