@@ -1,9 +1,3 @@
-Phylosophy
-* Paretto rule
-* Single entity 
-* Example based
-* New tech rapid learning to production
-
 User Stories
 
 * To be added
