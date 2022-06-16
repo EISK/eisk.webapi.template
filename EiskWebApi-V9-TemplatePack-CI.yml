@@ -17,6 +17,12 @@ jobs:
   steps:
   - checkout: self
     submodules: recursive
+  - task: UseDotNet@2
+    displayName: 'Use .NET 6 Core sdk'
+    inputs:
+      packageType: 'sdk'
+      version: '6.0.x'
+      includePreviewVersions: true    
   - task: DotNetCoreCLI@2
     displayName: 'Template: dotnet restore '
     inputs:
