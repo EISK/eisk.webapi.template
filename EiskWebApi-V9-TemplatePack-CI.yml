@@ -29,7 +29,7 @@ jobs:
       command: restore
       projects: '**/*.csproj'
   - task: MSBuild@1
-    displayName: Build solution Eisk.WebApi.TemplatePack.sln
+    displayName: Build solution **/*.sln
     inputs:
       clean: true
   - task: VSTest@2
@@ -37,11 +37,8 @@ jobs:
     inputs:
       testAssemblyVer2: >
         **\*tests*.dll
-
         !**\*base*.dll
-
         !**\*TestAdapter.dll
-
         !**\obj\**
       diagnosticsEnabled: True
   - task: CmdLine@2
