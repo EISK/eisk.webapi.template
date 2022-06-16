@@ -1,0 +1,66 @@
+# Agent Queue 'Azure Pipelines' was used with unrecognized Agent Specification, vmImage property must be specified to determine image - https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software
+trigger:
+  branches:
+    include:
+    - refs/heads/net-6.0-upgrade
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/net-6.0-upgrade
+jobs:
+- job: Phase_1
+  displayName: Agent job 1
+  cancelTimeoutInMinutes: 1
+  pool:
+    name: Azure Pipelines
+  steps:
+  - checkout: self
+    submodules: recursive
+  - task: DotNetCoreCLI@2
+    displayName: 'Template: dotnet restore '
+    inputs:
+      command: restore
+      projects: '**/*.csproj'
+  - task: MSBuild@1
+    displayName: Build solution **/*.sln
+    inputs:
+      clean: true
+  - task: VSTest@2
+    displayName: 'Template: VsTest - testAssemblies'
+    inputs:
+      testAssemblyVer2: >
+        **\*tests*.dll
+
+        !**\*base*.dll
+
+        !**\*TestAdapter.dll
+
+        !**\obj\**
+      diagnosticsEnabled: True
+  - task: CmdLine@2
+    displayName: Render template content
+    inputs:
+      script: dnn-install-from-local.cmd
+      workingDirectory: build
+  - task: DotNetCoreCLI@2
+    displayName: 'Rendered: dotnet build '
+    inputs:
+      projects: build/content/**/*.sln
+  - task: DotNetCoreCLI@2
+    displayName: 'Rendered: dotnet test'
+    inputs:
+      command: test
+      projects: build/content/**/*tests*.csproj
+      publishTestResults: false
+  - task: DotNetCoreCLI@2
+    displayName: 'Template: dotnet publish'
+    inputs:
+      command: publish
+      publishWebProjects: false
+      projects: WebApi/Eisk.WebApi/Eisk.WebApi.csproj
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: drop'
+    inputs:
+      PathtoPublish: $(System.DefaultWorkingDirectory)
+...
