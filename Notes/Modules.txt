@@ -1,7 +1,7 @@
 ========================================================
 All template structure
 
-- Eisk.WebApi.TemplatePack
+- Eisk.TemplatePack
 	- Eisk.WebApi.TemplatePack.csproj
 	* Connects and combines all contents into a single pack
 - CleanArchitecture
@@ -29,9 +29,10 @@ All template structure
 ========================================================
 Project Structure
 
-Project: Eisk.WebApi
+Repository: Eisk, Branch: template
 	- All components shares as common domain model and rules
 	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
+	- The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
 
 - Core
 	- Utlities should be created based on param options
@@ -147,14 +148,7 @@ Utilities
 	- CleanSample
 		- Provide PowerShell script to clean included samples (without changing existing code)
 
-Project: Eisk.Bazor
-	- Dedicated repo and devops ecosystem 
-	- Dedicated doc tab
-	- Required different object model: Server, Client, Shared
-	- Consider Web API + Entity Framework + SQL Server as backend
-	- Consider different domain architecture (i.e. CQRS)
-
-Project: Eisk.Samples
+Repository: Eisk.Samples
 	- There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
 	- WebApi samples: to be created from dotnet new options
 	- Blazor sample: single sample with Blazor + EFcore 
@@ -164,8 +158,8 @@ Project: Eisk.Samples
 Core Modules and Releases
 
 Client Side
-* React (default)
-* Blazor
+* Blazor (default)
+* React
 * React Native
 
 Web API Layer
@@ -178,9 +172,6 @@ Domain Layer
 * Clean Architecture (default)
 * DDD
 * CQRS
-
-Data Service Layer Interface
-* Persistence ignorant interface
 
 Data Access Layer
 * Entity Framework (default)
@@ -211,8 +202,8 @@ Authentication
 * Auth0
 
 Logging
-* Log4Net
 * SeriLog
+* Log4Net
 * Azure Insight
 
 Caching
@@ -222,6 +213,8 @@ Caching
 
 Search
 * Azure Search
+* SQL Server full text search
+* Solr
 
 Backgeound Process
 * Process.AzureWebJob
@@ -242,6 +235,7 @@ Hosting
 
 DevOps
 * AzureDevOps
+* AppVeyor
 * Github Actions
 * Vercel
 
@@ -264,10 +258,10 @@ Repo Modules and Dependencies
 ========================================================
 EISK Version History
 
-v9.0 - Web API Edition	.NET 6.0		VS2022, 17.0.32112.339	- 10.0.40219.1
+v9.0 - Web API Edition	.NET 6.0	VS2022, 17.0.32112.339	- 10.0.40219.1
 v8.0 - Web API Edition	.NET Core 2.0	VS2017,	15.0.28307.168	- 10.0.40219.1 (Core V1.0)
-v7.0 - MVC Edition		.NET 4.5.1		VS2013, 12.0.21005.1	- 10.0.40219.1
-v6.0 - MVC Edition		.NET 4.0		VS2012, 11.0
-v5.0 - Web Form Edition	.NET 4.0		VS2010,	10.0
+v7.0 - MVC Edition	.NET 4.5.1	VS2013, 12.0.21005.1	- 10.0.40219.1
+v6.0 - MVC Edition	.NET 4.0	VS2012, 11.0
+v5.0 - Web Form Edition	.NET 4.0	VS2010,	10.0
 
 ========================================================
