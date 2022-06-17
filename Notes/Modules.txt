@@ -2,15 +2,15 @@
 Project Structure
 
 Repository: Eisk
-	- All components shares as common domain model and rules
-	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
-	- The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
+	* All components shares as common domain model and rules
+	* A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
+	* The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
 
 - TemplatePack
 	-- Eisk.TemplatePack
-		-- Eisk.TemplatePack.csproj
-	* Connects and combines all contents into a single pack
-	* Should be excluded from output folder
+		--- Eisk.TemplatePack.csproj
+		* Connects and combines all contents into a single pack
+		* Should be excluded from output folder
 
 - Web
 	-- Eisk.Web.SPA.Blazor
@@ -18,53 +18,53 @@ Repository: Eisk
 	-- Eisk.Web.MVC
 
 - WebApi 
-	- Actual folder name, in solution, it can be according to framework, platform (i.e. Eisk.WebApi.GraphQL)
+	* Actual folder name, in solution, it can be according to framework, platform (i.e. Eisk.WebApi.GraphQL)
 	-- Eisk.WebApi.RESTFul
-		-- Eisk.WebApi.RESTFul.csproj
+		--- Eisk.WebApi.RESTFul.csproj
 		* Repo default, template default
-		* in Program.cs where dependency injection is associated can include combinational template params 
-		to select preferred data service provider (i.e EFCore, COSMOS Db)
+		* In Program.cs where dependency injection is associated can include combinational template params 
+		* to select preferred data service provider (i.e EFCore, COSMOS Db)
 		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.RESTFul.AzureFunction
-		-- Eisk.WebApi.RESTFul.AzureFunction.csproj
+		--- Eisk.WebApi.RESTFul.AzureFunction.csproj
 		* Repo default
 		* RESTFul service with AzureFunction
 		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.GraphQL
-		-- Eisk.WebApi.GraphQL.csproj
+		--- Eisk.WebApi.GraphQL.csproj
 		* Repo default
 		* to be also included in Repo sample. For dotnet new should be available based on selected param
 		* Should connect to Eisk.DataServices.EFCore as default data provider
 	-- Eisk.WebApi.gRPC
-		-- Eisk.WebApi.gRPC.csproj
+		--- Eisk.WebApi.gRPC.csproj
 		* Repo default
 		* Should connect to Eisk.DataServices.EFCore as default data provider
 
 - DomainCore
 	-- Eisk.DomainServices
-		-- Eisk.DomainServices.csproj
-		* Repo default, template default
-		* EmployeeDomainService.cs
-			** default domain service
-		* EmployeeDomainServiceWithViewModel.cs, EmployeeDomainServiceWithViewAndEditorModel.cs, EmployeeDomainServiceWithNoCustomRuleAndBaseClass.cs
-			** to be excluded by default, with "EmployeeDomainServiceWith*" wildcard.
-			** should be transformed to EmployeeDomainService.cs when view model option is selected
+		--- Eisk.DomainServices.csproj
+			* Repo default, template default
+		--- EmployeeDomainService.cs
+			* default domain service
+		--- EmployeeDomainServiceWithViewModel.cs, EmployeeDomainServiceWithViewAndEditorModel.cs, EmployeeDomainServiceWithNoCustomRuleAndBaseClass.cs
+			* to be excluded by default, with "EmployeeDomainServiceWith*" wildcard.
+			* should be transformed to EmployeeDomainService.cs when view model option is selected
 
 - Infrastructure
-	- Actual folder name, in solution, it can be according to framework, platform, i.e. Infrsatructure.EFCore)
+	* Actual folder name, in solution, it can be according to framework, platform, i.e. Infrsatructure.EFCore)
 	-- Eisk.DataServices.EFCore 
-		-- Eisk.DataServices.EFCore.csproj
+		--- Eisk.DataServices.EFCore.csproj
 		* Repo default, template default
 		* considers Domain Service Tests with Component Tests with EFCore In-memory database
 		* considers Data Service Tests with SQL Server
 	-- Eisk.DataServices.CosmosDb.DocumentDatabase
-		-- Eisk.DataServices.CosmosDb.DocumentDatabase.csproj
+		--- Eisk.DataServices.CosmosDb.DocumentDatabase.csproj
 		* Not available in Repo default or template default
 		* to be also included in Repo sample. For dotnet new should be available based on selected param
 		* when this database provider is selected, the DomainService test should include Unit Tests (instead of Component Tests with EFCore In-memory database)
 
 - Core
-	- Utlities should be created based on param options
+	* Utlities should be created based on param options
 	
 - Utilities
 	-- CleanSample
@@ -155,10 +155,10 @@ Sample Options
 
 ========================================================		
 Repository: Eisk.Samples
-	- There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
-	- WebApi samples: to be created from dotnet new options
-	- Blazor sample: single sample with Blazor + EFcore 
-	- Multi-domain samples: i.e. e-commerce, blog
+	* There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
+	* WebApi samples: to be created from dotnet new options
+	* Blazor sample: single sample with Blazor + EFcore 
+	* Multi-domain samples: i.e. e-commerce, blog
 
 ========================================================
 Application Components and Modules
