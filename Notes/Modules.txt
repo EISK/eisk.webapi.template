@@ -7,7 +7,7 @@ Repository: Eisk
 	- The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
 
 - TemplatePack
-	- Eisk.TemplatePack
+	-- Eisk.TemplatePack
 		-- Eisk.TemplatePack.csproj
 	* Connects and combines all contents into a single pack
 	* Should be excluded from output folder
@@ -16,8 +16,9 @@ Repository: Eisk
 	-- Eisk.Web.SPA.Blazor
 	-- Eisk.Web.SPA.React
 	-- Eisk.Web.MVC
+
 - WebApi 
-	- Actual folder name, in solution, it can be according to framework, platform i.e. Eisk.WebApi.GraphQL)
+	- Actual folder name, in solution, it can be according to framework, platform (i.e. Eisk.WebApi.GraphQL)
 	-- Eisk.WebApi.RESTFul
 		-- Eisk.WebApi.RESTFul.csproj
 		* Repo default, template default
@@ -38,6 +39,7 @@ Repository: Eisk
 		-- Eisk.WebApi.gRPC.csproj
 		* Repo default
 		* Should connect to Eisk.DataServices.EFCore as default data provider
+
 - DomainCore
 	-- Eisk.DomainServices
 		-- Eisk.DomainServices.csproj
@@ -47,6 +49,7 @@ Repository: Eisk
 		* EmployeeDomainServiceWithViewModel.cs, EmployeeDomainServiceWithViewAndEditorModel.cs, EmployeeDomainServiceWithNoCustomRuleAndBaseClass.cs
 			** to be excluded by default, with "EmployeeDomainServiceWith*" wildcard.
 			** should be transformed to EmployeeDomainService.cs when view model option is selected
+
 - Infrastructure
 	- Actual folder name, in solution, it can be according to framework, platform, i.e. Infrsatructure.EFCore)
 	-- Eisk.DataServices.EFCore 
@@ -59,6 +62,7 @@ Repository: Eisk
 		* Not available in Repo default or template default
 		* to be also included in Repo sample. For dotnet new should be available based on selected param
 		* when this database provider is selected, the DomainService test should include Unit Tests (instead of Component Tests with EFCore In-memory database)
+
 - Core
 	- Utlities should be created based on param options
 	
@@ -99,27 +103,6 @@ Application Type Options
 		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
 		-- CosmosDb.DocumentDatabase
 
-Sample Options
-
-	- SampleInclude
-		-- None: no domain specific sample is provided (i.e. Employee domain)
-		-- SingleEntity (default): creates required logical layers and configurations based on a single domain
-		-- MultipleEntities: creates required logical layers and configurations based on a single domain
-	- SampleModelType
-		- Creates entity based samples for Controller and Domain Class
-		- Applicable when SampleInclude is not None
-		-- Entity (default)
-		-- Editor: same editor model will be used for View and Create/Edit
-		-- ViewAndEditor: separate model will be used for View and Create/Edit
-	- SampleIncludeBusinessRule
-		- Applicable when SampleInclude is not None
-		-- Yes (default)
-		-- No
-	- SampleIncludeBaseClass
-		- Applicable when SampleInclude is not None
-		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
-		-- No: contains HasA relation type, where DomainService utility class will be used as property. CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
-
 Cross Cutting Concern Options
 
 	- AuthType
@@ -142,9 +125,33 @@ DevOps Options
 	- Include gitignore
 		- Yes
 		- No (default)
-	- Include DevOpsYaml
-		- Yes
-		- No (default)
+	- DevOpsTypeYaml
+		- None (default)
+		- AzureDevOps
+		- GithubActions
+		
+Sample Options
+
+	- SampleInclude
+		-- None: no domain specific sample is provided (i.e. Employee domain)
+		-- SingleEntity (default): creates required logical layers and configurations based on a single domain
+		-- MultipleEntities: creates required logical layers and configurations based on a single domain
+	- SampleModelType
+		- Creates entity based samples for Controller and Domain Class
+		- Applicable when SampleInclude is not None
+		-- Entity (default)
+		-- Editor: same editor model will be used for View and Create/Edit
+		-- ViewAndEditor: separate model will be used for View and Create/Edit
+	- SampleIncludeBusinessRule
+		- Applicable when SampleInclude is not None
+		-- Yes (default)
+		-- No
+	- SampleIncludeBaseClass
+		- Applicable when SampleInclude is not None
+		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. 
+			No custom override method will be provided when SampleIncludeBusinessRule: No
+		-- No: contains HasA relation type, where DomainService utility class will be used as property. 
+			CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
 
 ========================================================		
 Repository: Eisk.Samples
@@ -154,7 +161,7 @@ Repository: Eisk.Samples
 	- Multi-domain samples: i.e. e-commerce, blog
 
 ========================================================
-Core Modules and Releases
+Application Components and Modules
 
 Client Side
 * Blazor (default)
