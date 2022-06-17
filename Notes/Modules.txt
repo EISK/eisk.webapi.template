@@ -51,7 +51,7 @@ Repository: Eisk
 			* should be transformed to EmployeeDomainService.cs when view model option is selected
 
 - Infrastructure
-	* Actual folder name, in solution, it can be according to framework, platform, i.e. Infrsatructure.EFCore)
+	* Actual folder name, in solution, it can be according to framework, platform, (i.e. Infrsatructure.EFCore)
 	-- Eisk.DataServices.EFCore 
 		--- Eisk.DataServices.EFCore.csproj
 		* Repo default, template default
