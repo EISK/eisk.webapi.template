@@ -1,38 +1,16 @@
 ========================================================
-All template structure
-
-- Eisk.TemplatePack
-	- Eisk.TemplatePack.csproj
-	* Connects and combines all contents into a single pack
-- CleanArchitecture
-	* Architecture specific folder
-	- Web
-		-- Eisk.Web.SPA.Blazor
-		-- Eisk.Web.SPA.React
-		-- Eisk.Web.MVC
-	- WebApi
-		-- Eisk.WebApi.RESTFul
-			-- Eisk.WebApi.RESTFul.csproj
-	- Infrastructure
-		-- Eisk.DataServices.EFCore 
-			-- Eisk.DataServices.EFCore.csproj
-	- WebCore
-		-- Eisk.Web.SPA.Blazor.Shared
-		* May not be needed
-		* Only Web UI related shard components based on application entity 
-		* If the shared components are application entity specific domain, which can be included inside DomainCore
-		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
-		* If the shared components are just utilities, which can be included inside Core
-	- DomainCore
-	- Core
-- CQRS
-========================================================
 Project Structure
 
 Repository: Eisk
 	- All components shares as common domain model and rules
 	- A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
 	- The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
+
+- TemplatePack
+	- Eisk.TemplatePack
+		-- Eisk.TemplatePack.csproj
+	* Connects and combines all contents into a single pack
+	* Should be excluded from output folder
 
 - Web
 	-- Eisk.Web.SPA.Blazor
@@ -106,6 +84,8 @@ Web API to Data Provider (cross functionality)
 ========================================================
 Template Options
 
+Application Type Options
+
 	- AppType
 		-- None (no app specific template generated)
 		-- Blazor
@@ -118,6 +98,8 @@ Template Options
 	- DataProvider
 		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
 		-- CosmosDb.DocumentDatabase
+
+Sample Options
 
 	- SampleInclude
 		-- None: no domain specific sample is provided (i.e. Employee domain)
@@ -138,6 +120,8 @@ Template Options
 		-- Yes (default): contains IsA relation type, where DomainService utility class will be used as parent class. No custom override method will be provided when SampleIncludeBusinessRule: No
 		-- No: contains HasA relation type, where DomainService utility class will be used as property. CRUD methods will be avaible in the sample domain service class, even if  SampleIncludeBusinessRule: Yes
 
+Cross Cutting Concern Options
+
 	- AuthType
 		-- None (default)
 		-- IdentityServer
@@ -152,8 +136,13 @@ Template Options
 	- ApplicationInsightType
 		- None (default)
 		- AzureInsight
+		
+DevOps Options
 
 	- Include gitignore
+		- Yes
+		- No (default)
+	- Include DevOpsYaml
 		- Yes
 		- No (default)
 
@@ -264,6 +253,35 @@ Repo Modules and Dependencies
 
 - eisk.test-core (default shared across all, can be used as sub-module or main module)
 - eisk.core (default shared across all, can be used as sub-module or main module)
+
+========================================================
+All template structure (with architecture)
+
+- Eisk.TemplatePack
+	- Eisk.TemplatePack.csproj
+	* Connects and combines all contents into a single pack
+- CleanArchitecture
+	* Architecture specific folder
+	- Web
+		-- Eisk.Web.SPA.Blazor
+		-- Eisk.Web.SPA.React
+		-- Eisk.Web.MVC
+	- WebApi
+		-- Eisk.WebApi.RESTFul
+			-- Eisk.WebApi.RESTFul.csproj
+	- Infrastructure
+		-- Eisk.DataServices.EFCore 
+			-- Eisk.DataServices.EFCore.csproj
+	- WebCore
+		-- Eisk.Web.SPA.Blazor.Shared
+		* May not be needed
+		* Only Web UI related shard components based on application entity 
+		* If the shared components are application entity specific domain, which can be included inside DomainCore
+		* If the shared components are application entity specific infrastructure, which can be included inside Infrastructure
+		* If the shared components are just utilities, which can be included inside Core
+	- DomainCore
+	- Core
+- CQRS
 
 ========================================================
 EISK Version History
