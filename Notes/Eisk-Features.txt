@@ -7,14 +7,21 @@ Project Features
 * Web API base classes with supported in-memory web tests
 * Swagger support
 * Exception handling classes and filters
-
 * Domain class example with property attribute, inheritance, value object and enumeration support
-
 * Domain Service base classes with supported base component tests with in-memory databases
-
 * Data Service base classes with supported base integration tests with sql server databases
-
 * Meaningful test data generators
-
 * DevOps pipeline to build and run tests
 * DevOps pipeline to deploy in azure app services
+
+Template Features
+
+* Allow selecting data providers, web api and web application type
+* Allow selecting cross cutting concern providers
+* Allow selecting devops provider and script
+* Allow selecting types of samples to be generated
+
+Post Bootstrap Dev Features
+
+* Allow creating all services based on given domain in existing project
+* Allow cleaning sample domain created in bootstrap
