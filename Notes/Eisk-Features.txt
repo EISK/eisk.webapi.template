@@ -1,8 +1,4 @@
-User Stories
-
-* To be added
-
-Project Features
+Created Project - Dev Features
 
 * Web API base classes with supported in-memory web tests
 * Swagger support
@@ -14,6 +10,10 @@ Project Features
 * DevOps pipeline to build and run tests
 * DevOps pipeline to deploy in azure app services
 
+Created Project - User Stories
+
+* To be added
+
 Template Features
 
 * Allow selecting data providers, web api and web application type
@@ -21,7 +21,8 @@ Template Features
 * Allow selecting devops provider and script
 * Allow selecting types of samples to be generated
 
-Post Bootstrap Dev Features
+Tool Features (after creating projects)
 
+* Allow devs to start with minimal template and can add features as understood and needed
 * Allow creating all services based on given domain in existing project
-* Allow cleaning sample domain created in bootstrap
+* Allow cleaning sample domain and related classes created in bootstrap
