@@ -1,5 +1,6 @@
-Philosophy
+Mission
 
+* Making new technology adaptation easy to learn and use in real world usage with relatiely simple example and minimal documentation.
 * New tech: New tech rapid learning to production, as new tech brings benefits but not easy to bring production
 
 * Example based: Example based, over documentation and books
