@@ -1,6 +1,11 @@
+*****************************************************
+Project Structure (Repositories, Folder Structure, Application Components, Modules)
+*****************************************************
+
 ========================================================
 Repository: EISK
 ========================================================
+
 * All components shares as common domain model and rules
 * A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
 * The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
@@ -129,6 +134,7 @@ Data Storage
 
 ===========================================
 Cross Cutting Concerns and Services
+===========================================
 
 Authentication
 * Azure AD B2C
@@ -179,11 +185,12 @@ DevOps
 Web API to Data Provider (cross functionality)
 ========================================================
 
-	* Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
-	* dotnet new template (nXm): creates connections dynamically
-	* Public Repo (nX1): contains all web api to default data provider (EF Core)
-	* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
-	* VSIX: (to be decided, dynamically or statically)
+* Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
+* dotnet new template (nXm): creates connections dynamically
+* Public Repo (nX1): contains all web api to default data provider (EF Core)
+* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
+* VSIX: (to be decided, dynamically or statically)
+
 ========================================================
 Repo Modules and Dependencies
 ========================================================
@@ -206,6 +213,7 @@ Repo Modules and Dependencies
 
 ========================================================
 All template structure (with architecture)
+========================================================
 
 - Eisk.TemplatePack
 	- Eisk.TemplatePack.csproj
