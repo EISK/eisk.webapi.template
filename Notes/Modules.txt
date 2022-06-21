@@ -1,10 +1,9 @@
 ========================================================
-Project Structure
-
-Repository: Eisk
-	* All components shares as common domain model and rules
-	* A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
-	* The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
+Repository: EISK
+========================================================
+* All components shares as common domain model and rules
+* A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
+* The template branch will reside side by side with generated content branch, will allow accepting pull requests from master (direct or modified by author)
 
 - TemplatePack
 	-- Eisk.TemplatePack
@@ -77,23 +76,22 @@ Repository: Eisk
 		* Folder to contain group of projects related to Eisk.WebApi.RESTFul with configuration to connect Eisk.DataServices.EFCore
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
 
-========================================================
-Web API to Data Provider (cross functionality)
-	* Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
-	* dotnet new template (nXm): creates connections dynamically
-	* Public Repo (nX1): contains all web api to default data provider (EF Core)
-	* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
-	* VSIX: (to be decided, dynamically or statically)
-
 ========================================================		
 Repository: Eisk.Samples
-	* There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
+========================================================
+
+There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
+
+* Tech Samples
 	* WebApi samples: to be created from dotnet new options
 	* Blazor sample: single sample with Blazor + EFcore 
-	* Multi-domain samples: i.e. e-commerce, blog
+* App Samples
+	* e-commerce
+	* blog
 
 ========================================================
 Application Components and Modules
+========================================================
 
 Client Side
 * Blazor (default)
@@ -178,12 +176,25 @@ DevOps
 * Vercel
 
 ========================================================
+Web API to Data Provider (cross functionality)
+========================================================
+
+	* Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
+	* dotnet new template (nXm): creates connections dynamically
+	* Public Repo (nX1): contains all web api to default data provider (EF Core)
+	* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
+	* VSIX: (to be decided, dynamically or statically)
+========================================================
 Repo Modules and Dependencies
+========================================================
 
-- eisk.template (default)
+- eisk
+	- Brnach (master): template output code
+	- Branch (template): template
 
-- eisk.webapi (output repo)
-- eisk.template.webapi (template sub module or main module)
+- eisk.webapi 
+	- Brnach (master): (output repo)
+	- Branch (template): template.webapi (template sub module or main module)
 
 - eisk.domain-services
 - eisk.data-services (default)
@@ -221,14 +232,5 @@ All template structure (with architecture)
 	- DomainCore
 	- Core
 - CQRS
-
-========================================================
-EISK Version History
-
-v9.0 - Web API Edition	.NET 6.0	VS2022, 17.0.32112.339	- 10.0.40219.1
-v8.0 - Web API Edition	.NET Core 2.0	VS2017,	15.0.28307.168	- 10.0.40219.1 (Core V1.0)
-v7.0 - MVC Edition	.NET 4.5.1	VS2013, 12.0.21005.1	- 10.0.40219.1
-v6.0 - MVC Edition	.NET 4.0	VS2012, 11.0
-v5.0 - Web Form Edition	.NET 4.0	VS2010,	10.0
 
 ========================================================
