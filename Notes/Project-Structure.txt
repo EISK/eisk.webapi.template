@@ -82,7 +82,7 @@ Repository: EISK
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
 
 ========================================================		
-Repository: Eisk.Samples.CrossTechnologies
+Repository: Eisk.Samples.Core
 ========================================================
 
 This repo will provide all samples with different template options combinations. Content in this repo will be generated automatically.
@@ -91,11 +91,11 @@ This repo will provide all samples with different template options combinations.
 * Blazor sample: single sample with Blazor + EFcore 
 
 ========================================================		
-Repository: Eisk.Samples.Apps
+Repositories: Eisk.Samples.Apps
 ========================================================
 
-* e-commerce
-* blog
+* Eisk.Samples.App.ECommerce
+* Eisk.Samples.App.Blog
 
 ========================================================
 Web API to Data Provider (cross functionality)
@@ -104,7 +104,7 @@ Web API to Data Provider (cross functionality)
 * Original source (nXm): contains all web all to all data provider - special codes for testing cross provider functionalies for various api options
 * dotnet new template (nXm): creates connections dynamically
 * Public Repo (nX1): contains all web api to default data provider (EF Core)
-* Samples (nXm): contains all web all to all data provider - can be generated from dotnet new
+* Samples (nXm + K): contains all web all to all data provider - can be generated from dotnet new. K being additional number of app samples.
 * VSIX: (to be decided, dynamically or statically)
 
 ========================================================
