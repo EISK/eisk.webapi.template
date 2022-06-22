@@ -91,11 +91,11 @@ This repo will provide all samples with different template options combinations.
 * Blazor sample: single sample with Blazor + EFcore 
 
 ========================================================		
-Repositories: Eisk.Samples.Apps
+Repositories: Eisk.Apps
 ========================================================
 
-* Eisk.Samples.App.ECommerce
-* Eisk.Samples.App.Blog
+* Eisk.App.ECommerce
+* Eisk.App.Blog
 
 ========================================================
 Web API to Data Provider (cross functionality)
