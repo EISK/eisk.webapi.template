@@ -63,7 +63,7 @@ Test Options: applicable when relevant Application Type is not none
         - DomainServiceTest
                 -- None
 		-- UnitTest
-		-- ComponentTest (default)
+		-- ComponentTest-InMemoryDatabase (default)
          - DataServiceTest
                 -- None
                 -- IntegrationTest (default)
