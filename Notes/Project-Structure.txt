@@ -115,18 +115,24 @@ Repo Modules and Dependencies
 	- Brnach (master): template output code
 	- Branch (template): template
 
-- eisk.webapi 
+- eisk.webapi
+	- When eisk.webapi.module being used as sub-module with master, this repo allows isolation from other dependencies from eisk and consider as it's own.
+	- The above serves two pusposes at the same time (WebApi serves as sub-module of master or on-its own)
+	- Can be completely an independent repo (when the object model is not shared with overall eisk design)
+	
+- eisk.webapi.module
+	- Can be served only as submodule for another repo (eisk or eisk.webapi)
 	- Brnach (master): (output repo)
 	- Branch (template): template.webapi (template sub module or main module)
 
-- eisk.domain-services
-- eisk.data-services (default)
-- eisk.data-services.sql-server
-- eisk.data-services.cosmosdb
-
-- eisk.test-core (default shared across all, can be used as sub-module or main module)
+- eisk.domain-services, eisk.domain-services.module
+- eisk.data-services.sql-server, eisk.data-services.sql-server.module
+- eisk.data-services.cosmosdb, eisk.data-services.cosmosdb.module
+	
 - eisk.core (default shared across all, can be used as sub-module or main module)
-
+	- eisk.core
+	- eisk.testcore
+	
 ========================================================
 All template structure (with architecture)
 ========================================================
