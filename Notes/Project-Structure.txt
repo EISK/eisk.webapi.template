@@ -56,7 +56,7 @@ Repository: EISK
 
 - Infrastructure
 	* Actual folder name, in solution, it can be according to framework, platform, (i.e. Infrsatructure.EFCore)
-	-- Eisk.DataServices.EFCore 9
+	-- Eisk.DataServices.EFCore
 		--- Eisk.DataServices.EFCore.csproj
 		* Repo default, template default
 		* considers Domain Service Tests with Component Tests with EFCore In-memory database
