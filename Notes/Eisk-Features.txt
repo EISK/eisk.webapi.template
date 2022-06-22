@@ -56,20 +56,20 @@ Application Type Options
 Test Options: applicable when relevant Application Type is not none
 
 	- AppTest
-                -- None (default)
-                -- FuntionalTest-Selenium
-        - APITest
-                -- None (default)
+		-- None (default)
+		-- FuntionalTest-Selenium
+	- APITest
+		-- None (default)
 		-- IntegrationTest-InMemoryWebServer
-                -- IntegrationTest-HttpClient
-                -- IntegrationTest-Postman
-        - DomainServiceTest
-                -- None
+		-- IntegrationTest-HttpClient
+		-- IntegrationTest-Postman
+	- DomainServiceTest
+		-- None
 		-- UnitTest
 		-- ComponentTest-InMemoryDatabase (default)
-         - DataServiceTest
-                -- None
-                -- IntegrationTest-SqlServerLocalDb (default)
+	- DataServiceTest
+		-- None
+		-- IntegrationTest-SqlServerLocalDb (default)
 	- SystemTest
 		-- None (default)
 		-- HealthCheck: tests all system dependencies based on config settings
