@@ -85,7 +85,7 @@ Repository: EISK
 Repository: Eisk.Samples.CrossTechnologies
 ========================================================
 
-This repo will provide alll samples with different template options combinations. Content in this repo will be generated automatically.
+This repo will provide all samples with different template options combinations. Content in this repo will be generated automatically.
 
 * WebApi samples: to be created from dotnet new options
 * Blazor sample: single sample with Blazor + EFcore 
