@@ -94,8 +94,10 @@ This repo will provide all samples with different template options combinations.
 Repositories: Eisk.Apps
 ========================================================
 
-* Eisk.App.ECommerce
 * Eisk.App.Blog
+* Eisk.App.LMS.OnlineTest
+* Eisk.App.EMS (Employee Management System)
+* Eisk.App.ECommerce
 
 ========================================================
 Web API to Data Provider (cross functionality)
