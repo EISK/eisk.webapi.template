@@ -117,8 +117,9 @@ Repo Modules and Dependencies
 
 - eisk.webapi
 	- When eisk.webapi.module being used as sub-module with master, this repo allows isolation from other dependencies from eisk and consider as it's own.
-	- The above serves two pusposes at the same time (WebApi serves as sub-module of master or on-its own)
-	- Can be completely an independent repo (when the object model is not shared with overall eisk design)
+	- The above serves two pusposes at the same time (WebApi serves as sub-module of master or on-its own).
+	- The benefit of on it's own is - user's who are not interested with all components (i.e. webapi, webapp etc) can enjoy the interested one (i.e. data service)
+	- Can be completely an independent repo (when the object model is not shared with overall eisk design).
 	
 - eisk.webapi.module
 	- Can be served only as submodule for another repo (eisk or eisk.webapi)
