@@ -56,7 +56,7 @@ Repository: EISK
 
 - Infrastructure
 	* Actual folder name, in solution, it can be according to framework, platform, (i.e. Infrsatructure.EFCore)
-	-- Eisk.DataServices.EFCore 
+	-- Eisk.DataServices.EFCore 9
 		--- Eisk.DataServices.EFCore.csproj
 		* Repo default, template default
 		* considers Domain Service Tests with Component Tests with EFCore In-memory database
@@ -82,17 +82,20 @@ Repository: EISK
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
 
 ========================================================		
-Repository: Eisk.Samples
+Repository: Eisk.Samples.CrossTechnologies
 ========================================================
 
-There will be another repo called Eisk.Samples, that will provide alll samples with different combinations of template options
+This repo will provide alll samples with different template options combinations. Content in this repo will be generated automatically.
 
-* Tech Samples
-	* WebApi samples: to be created from dotnet new options
-	* Blazor sample: single sample with Blazor + EFcore 
-* App Samples
-	* e-commerce
-	* blog
+* WebApi samples: to be created from dotnet new options
+* Blazor sample: single sample with Blazor + EFcore 
+
+========================================================		
+Repository: Eisk.Samples.Apps
+========================================================
+
+* e-commerce
+* blog
 
 ========================================================
 Web API to Data Provider (cross functionality)
