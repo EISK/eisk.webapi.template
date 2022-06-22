@@ -94,10 +94,18 @@ This repo will provide all samples with different template options combinations.
 Repositories: Eisk.Apps
 ========================================================
 
-* Eisk.App.Blog
-* Eisk.App.LMS.OnlineTest
-* Eisk.App.EMS (Employee Management System)
-* Eisk.App.ECommerce
+* Eisk.Apps.EMS
+	* Employee Management System
+	* Features: employee info, timesheet entry, payment (based on perm salary, contrator rate)
+	
+* Eisk.Micro.Blog
+* Eisk.Micro.EShop
+* Eisk.Micro.Inventory
+* Eisk.Micro.Invoice
+
+* Eisk.Forms.ContactUs
+* Eisk.Forms.Survey
+* Eisk.Forms.OnlineTest
 
 ========================================================
 Web API to Data Provider (cross functionality)
