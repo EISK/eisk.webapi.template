@@ -50,20 +50,23 @@ Application Type Options
 		-- EFCore (default) with EFCore In-memory database and SQL Server (to be also tested in SQL Azure)
 		-- CosmosDb.DocumentDatabase
 
-Test Options
+Test Options: applicable when relevant Application Type is not none
 
-	- TestType: applicable when relevant Application Type is not none
-		-- AppTest-None (default)
-                -- AppTest-FuntionalTest-Selenium
-                -- APITest-None
-		-- APITest-InMemoryWebServerTest (default)
-		-- APITest-HttpClientTest
-		-- APITest-Postman
-                -- DomainService-None
-		-- DomainService-UnitTest
-		-- DomainService-ComponentTest (drfault)
-		-- DataService-None
-                -- DataService-IntegrationTest (default)
+	- AppTest
+                -- None (default)
+                -- FuntionalTest-Selenium
+        - APITest
+                -- None (default)
+		-- InMemoryWebServerTest
+		-- HttpClientTest
+		-- Postman
+        - DomainServiceTest
+                -- None
+		-- UnitTest
+		-- ComponentTest (default)
+         - DataServiceTest
+                -- None
+                -- IntegrationTest (default)
 
 Cross Cutting Concern Options
 
