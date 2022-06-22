@@ -69,7 +69,7 @@ Cross Cutting Concern Options
 		
 DevOps Options
 
-	- Include gitignore
+	- IncludeGitIgnore
 		- Yes
 		- No (default)
 	- DevOpsTypeYaml
