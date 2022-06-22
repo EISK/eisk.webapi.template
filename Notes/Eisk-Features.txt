@@ -99,8 +99,8 @@ Sample Options
 
 	- SampleInclude
 		-- None: no domain specific sample is provided (i.e. Employee domain)
-		-- SingleEntity (default): creates required logical layers and configurations based on a single domain
-		-- MultipleEntities: creates required logical layers and configurations based on a single domain
+		-- SingleEntity (default): creates required logical layers and configurations based on a sample single domain
+		-- MultipleEntities: creates required logical layers and configurations based on same multiple domains
 	- SampleModelType
 		- Creates entity based samples for Controller and Domain Class
 		- Applicable when SampleInclude is not None
