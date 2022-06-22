@@ -106,6 +106,7 @@ Application Components and Modules
 
 Client Side
 * Blazor (default)
+* MVC (Razor)
 * React
 * React Native
 
