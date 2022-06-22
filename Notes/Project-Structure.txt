@@ -103,8 +103,9 @@ Repositories: Eisk.Apps
 * Eisk.Micro.Inventory
 * Eisk.Micro.Invoice
 
-* Eisk.Forms.ContactUs
+* Eisk.Forms.Contact
 * Eisk.Forms.Survey
+* Eisk.Forms.Registration
 * Eisk.Forms.OnlineTest
 
 ========================================================
