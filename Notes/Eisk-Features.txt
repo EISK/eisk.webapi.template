@@ -58,7 +58,7 @@ Test Options: applicable when relevant Application Type is not none
 	- AppTest
 		-- None (default)
 		-- FuntionalTest-Selenium
-	- APITest
+	- ApiTest
 		-- None (default)
 		-- IntegrationTest-InMemoryWebServer
 		-- IntegrationTest-HttpClient
@@ -188,7 +188,7 @@ Search
 * SQL Server full text search
 * Solr
 
-Backgeound Process
+Background Process
 * Process.AzureWebJob
 * Process.AzureLogicApp
 * ServerLess.AzureFunction (Scheduler) (default)
