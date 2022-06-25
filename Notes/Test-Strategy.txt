@@ -1,6 +1,9 @@
 ========================================================
 Test Strategy (Test Pyramid)
 
+Manual Tests: (Integration Test)
+    * Ad hoc tests
+    * P1
 App Tests: (Functional UI Test)
     * Covers only one happy path and one negative test for a given feature.
     * P4
@@ -19,10 +22,9 @@ Domain Service Tests: (Unit/Component Test)
 Data Service Tests: (Database Integration Test)
     * SQL Server integration tests (not included in solution by default)
     * Tests all database queries/operations
-    * To be used in post-deployment (in dev/UAT environment)
-    * To be used with empty sql server with test seed data (in dev envrionment)
-    * To be used with existing sql server with test seed data (in UAT envrionment) - smoke tests only
-    * P3
+    * To be used in build and post-deployment (in dev/UAT environment)
+    * P2: To be used with empty sql server with test seed data (in build envrionment)
+    * P3: To be used with existing sql server with test seed data (in UAT envrionment) - smoke tests only
 System Tests:
     * Health Check: (Configuration Integration Test)
         ** to be tested locally, dev, prod
@@ -30,9 +32,9 @@ System Tests:
         ** Any other external dependencies, like email server, blob storage
         ** Includes exception handling for web api, apps (by throwing error explicitly), to make sure it has debug more or custom error page as appropriate 
         ** Test http error codes (for at least 1 http code for an entity, including mapping to domain exception).
-        ** Attribute level tests can be done for only one entity for each type to make sure error is provided correctly.
+        ** Attribute level tests for api and apps can be done for only one entity for each type to make sure error is provided correctly.
         ** Can inlcude asp.net core feature, azure feature
-        ** P2
+        ** P3
 ========================================================
 Reasons to consider testing base integration tests
 
