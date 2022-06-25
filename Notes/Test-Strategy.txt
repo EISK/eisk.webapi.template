@@ -10,7 +10,7 @@ Api Tests: (API Integration Test)
     * Attribute or field level tests can be skipped and can be included as part of System Tests for one entity
     * Can be used with build server
     * P4
-Domain Service Tests (Unit/Component Test)
+Domain Service Tests: (Unit/Component Test)
     * In-memory tests (default): for smaller projects (assumes empty database in each test case)
     * Unit tests: for large projects
     * Tests only the business rules
@@ -24,7 +24,7 @@ Data Service Tests: (Database Integration Test)
     * To be used with existing sql server with test seed data (in UAT envrionment) - smoke tests only
     * P3
 System Tests:
-    * Health check 
+    * Health Check: (Configuration Integration Test)
         ** to be tested locally, dev, prod
         ** Includes db configuration tests (crud for one table)
         ** Any other external dependencies, like email server, blob storage
