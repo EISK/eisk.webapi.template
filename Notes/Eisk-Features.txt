@@ -100,7 +100,11 @@ DevOps Options
 		- None (default)
 		- AzureDevOps
 		- GithubActions
-		
+        - IncludeCoreAsBinary: default option can be conaidered dynamically based on project size
+                - No, included as source. Useful for small projects.
+                - FromNugetGallery
+		- AsLocalDllWithCustomNamespace
+
 Sample Options
 
 	- SampleInclude
