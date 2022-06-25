@@ -1,5 +1,5 @@
 ========================================================
-Test Strategy
+Test Strategy (Test Pyramid)
 
 App Tests: (Functional UI Test)
     * Covers only one happy path and one negative test for a given feature.
