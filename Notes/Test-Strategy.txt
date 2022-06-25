@@ -4,6 +4,7 @@ Test Strategy
 Api Controller Tests
     * In-memory web tests
     * All http codes tests only (200, 404)
+    * Can be considered for one entity only and include as part of system test
     * Can be used with build server
 Domain Service Tests
     * In-memory tests (default): for smaller projects (assumes empty database in each test case)
@@ -20,8 +21,10 @@ Data Service Tests:
 System Tests:
     * Health check 
         ** to be tested locally, dev, prod
-        ** Includes db configuration tests
+        ** Includes db configuration tests (crud for one table)
         ** Any other external dependencies, like email server, blob storage
+        ** Includes exception handling for web api, apps (by throwing error explicitly), to make sure it has debug more or custom error page as appropriate 
+        ** Test http error codes (for at least 1 http code for an entity).
         ** Can inlcude asp.net core feature, azure feature
 ========================================================
 Reasons to consider testing base integration tests
