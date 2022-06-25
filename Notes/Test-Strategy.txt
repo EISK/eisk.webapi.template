@@ -3,13 +3,13 @@ Test Strategy (Test Pyramid)
 
 App Tests: (Functional UI Test)
     * Covers only one happy path and one negative test for a given feature.
-    * P5
+    * P4
 Api Tests: (API Integration Test)
     * In-memory web tests
     * Covers only one happy path and one negative test for a given end point.
     * Attribute or field level tests can be skipped and can be included as part of System Tests for one entity
     * Can be used with build server
-    * P4
+    * P5
 Domain Service Tests: (Unit/Component Test)
     * In-memory tests (default): for smaller projects (assumes empty database in each test case)
     * Unit tests: for large projects
