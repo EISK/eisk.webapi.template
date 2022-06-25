@@ -1,17 +1,20 @@
 ========================================================
 Test Strategy
 
-Api Controller Tests
+App Tests (Functional UI Test)
+    * In-memory web tests
+    * Covers only one happy path and one negative tests for a given feature.
+Api Tests (API Integration Test)
     * In-memory web tests
     * All http codes tests only (200, 404)
     * Can be considered for one entity only and include as part of system test
     * Can be used with build server
-Domain Service Tests
+Domain Service Tests (Unit/Component Test)
     * In-memory tests (default): for smaller projects (assumes empty database in each test case)
     * Unit tests: for large projects
     * Tests only the business rules
     * Can be used with build server
-Data Service Tests:
+Data Service Tests: (Database Integration Test)
     * SQL Server integration tests (not included in solution by default)
     * Tests all database queries/operations
     * To be used in post-deployment (in dev/UAT environment)
