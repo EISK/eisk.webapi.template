@@ -109,7 +109,6 @@ DevOps Options
         - IncludeCoreAsBinary: default option can be conaidered dynamically based on project size
                 - No (default), included as source. Useful for small projects.
                 - FromNugetGallery
-		- AsLocalDllWithCustomNamespace
 
 Sample Options
 
