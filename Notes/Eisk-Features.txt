@@ -85,6 +85,12 @@ Cross Cutting Concern Options
 		-- Custom (default)
 	- LogType
 		-- None (default)
+		-- AuditLog
+                -- HttpLog
+		-- ApiInterceptor
+                -- AppLog (Error, Debug, Info)
+	- LogProvider
+		-- None (default)
 		-- Log4Net
 		-- SeriLog
 	- ApplicationInsightType
