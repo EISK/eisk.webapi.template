@@ -1,10 +1,29 @@
-Mission
+===================================
+Motivation
+===================================
 
-* Making new technology adaptation easy to learn and use in real world usage with relatiely simple example and minimal documentation.
+* Software development is a multi-trillion dollar industry, 80-90 of which uses outdated or old technologies. 
+* Ironically software development is a fast growing and changing areas, which offers more efficiency and improvement on new releases. 
+* Failing to adapt with new tech and best practices in software development causes inferior development quality and time.
+
+===================================
+Mission
+===================================
+
+New Tech Adaptation:
+* Making new technology adaptation easy and efficient to learn and use in real world usage with relatiely simple example and minimal documentation.
 * New tech: New tech rapid learning to production, as new tech brings benefits but not easy to bring production
 
-* Example based: Example based, over documentation and books
-* Single entity based example: Common, single entity based super set samples standards and ecosystem for all tech examples, to get familier with new tech quickly
+===================================
+Strategy
+===================================
 
-* Paretto rule: Paretto rule to cover 80% common use cases with 20% effort. Over 150 optimized solutions that developers do google/stackoverflow when develiping a new application
+Example Based:
+* Example based, over documentation and books
+* Single entity based example: Common, single entity based super set code samples, standards and ecosystem for different tech, to get familier with new tech quickly
 
+Pareto Principle:
+* Paretto rule to cover 80% common use cases with 20% effort. Over 150 optimized solutions that developers do google/stackoverflow when develiping a new application
+
+===================================
+===================================

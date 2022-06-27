@@ -30,7 +30,7 @@ Tool Features (after creating projects)
 
 * Allow devs to start with minimal template and can add features as understood and needed.
 * Allow adding new features with incremental commit to git (using the combonation of above commands and respetive git commit)
-* Allow creating all services based on given domain or domain name in new or existing project
+* Allow creating all services based on given domain or domain name in existing or new project
 * Allow cleaning sample domain and related classes created in bootstrap
 * Allow upgrading existing code base that was created from one version to another version
 
@@ -87,16 +87,16 @@ Cross Cutting Concern Options
 	- LogType
 		-- None (default)
 		-- AuditLog
-                -- HttpLog
+		-- HttpLog
 		-- ApiInterceptor
-                -- AppLog (Error, Debug, Info)
+		-- AppLog (Error, Debug, Info)
 	- LogProvider
 		-- None (default)
 		-- Log4Net
 		-- SeriLog
 	- ApplicationInsightType
-		- None (default)
-		- AzureInsight
+		-- None (default)
+		-- AzureInsight
 		
 DevOps Options
 
@@ -107,9 +107,9 @@ DevOps Options
 		- None (default)
 		- AzureDevOps
 		- GithubActions
-        - IncludeCoreAsBinary: default option can be conaidered dynamically based on project size
-                - No (default), included as source. Useful for small projects.
-                - FromNugetGallery
+	- IncludeCoreAsBinary: default option can be conaidered dynamically based on project size
+		-- No (default), included as source. Useful for small projects.
+		-- FromNugetGallery
 
 Sample Options
 
