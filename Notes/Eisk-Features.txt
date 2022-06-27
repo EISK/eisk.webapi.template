@@ -30,7 +30,7 @@ Tool Features (after creating projects)
 
 * Allow devs to start with minimal template and can add features as understood and needed.
 * Allow adding new features with incremental commit to git (using the combonation of above commands and respetive git commit)
-* Allow creating all services based on given domain in existing project
+* Allow creating all services based on given domain or domain name in new or existing project
 * Allow cleaning sample domain and related classes created in bootstrap
 * Allow upgrading existing code base that was created from one version to another version
 
