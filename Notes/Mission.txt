@@ -1,13 +1,5 @@
 ===================================
-Motivation
-===================================
-
-* Software development is a multi-trillion dollar industry, 80-90 of which uses outdated or old technologies. 
-* Ironically software development is a fast growing and changing areas, which offers more efficiency and improvement on new releases. 
-* Failing to adapt with new tech and best practices in software development causes inferior development quality and time.
-
-===================================
-Mission
+Mission - What?
 ===================================
 
 New Tech Adaptation:
@@ -15,7 +7,15 @@ New Tech Adaptation:
 * New tech: New tech rapid learning to production, as new tech brings benefits but not easy to bring production
 
 ===================================
-Strategy
+Motivation - Why?
+===================================
+
+* Software development is a multi-trillion dollar industry, 80-90 of which uses outdated or old technologies. 
+* Ironically software development is a fast growing and changing areas, which offers more efficiency and improvement on new releases. 
+* Failing to adapt with new tech and best practices in software development causes inferior development quality and time.
+
+===================================
+Strategy - How?
 ===================================
 
 Example Based:
