@@ -61,6 +61,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{ACEB7D4D
 		Notes\Test-Strategy.txt = Notes\Test-Strategy.txt
 		Notes\TODO.txt = Notes\TODO.txt
 		Notes\Troubleshoot.txt = Notes\Troubleshoot.txt
+		Notes\Version-History.txt = Notes\Version-History.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eisk.Domains.TestData", "DomainCore\Eisk.Domains.TestData\Eisk.Domains.TestData.csproj", "{D0227185-3F9D-41B4-9314-C7B3CBC38D6F}"
