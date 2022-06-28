@@ -3,8 +3,7 @@ Mission - What?
 ===================================
 
 New Tech Adaptation:
-* Making new technology adaptation easy and efficient to learn and use in real world usage with relatiely simple example and minimal documentation.
-* New tech: New tech rapid learning to production, as new tech brings benefits but not easy to bring production
+* Making new technology adaptation easy and efficient to learn and use in real world usage with relatively simple example and minimal documentation.
 
 ===================================
 Motivation - Why?
