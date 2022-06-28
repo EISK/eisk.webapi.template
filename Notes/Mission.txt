@@ -18,7 +18,7 @@ Strategy - How?
 
 Example Based:
 * Example based, over documentation and books
-* Single entity based example: Common, single entity based super set code samples, standards and ecosystem for different tech, to get familier with new tech quickly
+* Single entity based example: Common, single entity based super set code samples, and devops ecosystem for different techs, to get familier with new tech quickly
 
 Pareto Principle:
 * Paretto rule to cover 80% common use cases with 20% effort. Over 150 optimized solutions that developers do google/stackoverflow when develiping a new application
