@@ -70,7 +70,7 @@ Test Options: applicable when relevant Application Type is not none
 		-- ComponentTest-InMemoryDatabase (default)
 	- DataServiceTest
 		-- None
-		-- IntegrationTest-SqlServerLocalDb (default)
+		-- IntegrationTest-Database (default)
 	- SystemTest
 		-- None (default)
 		-- HealthCheck: tests all system dependencies based on config settings
