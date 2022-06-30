@@ -88,10 +88,33 @@ Repository: EISK
 Repository: Eisk.Samples.Core
 ========================================================
 
-This repo will provide all samples with different template options combinations. Content in this repo will be generated automatically.
+This repo will provide all samples with different template options combinations. Content in this repo will be generated automatically from the template command.
 
-* WebApi samples: to be created from dotnet new options
-* Blazor sample: single sample with Blazor + EFcore 
+Web-Samples:
+* Blazor-WebApi-EFCore
+* Blazor-WebApi-CosmosDb
+* Blazor-GraphQL-EFCore
+* Blazor-GraphQL-CosmosDb
+* Blazor-gRPC-EFCore
+* Blazor-gRPC-CosmosDb
+* MVC-WebApi-EFCore
+* MVC-WebApi-CosmosDb
+* MVC-GraphQL-EFCore
+* MVC-GraphQL-CosmosDb
+* MVC-gRPC-EFCore
+* MVC-gRPC-CosmosDb
+
+WebApi-Samples:
+* WebApi-EFCore
+* WebApi-CosmosDb
+* GraphQL-EFCore
+* GraphQL-CosmosDb
+* gRPC-EFCore
+* gRPC-CosmosDb
+
+Data-Provider-Samples:
+* EFCore
+* CosmosDb
 
 ========================================================		
 Repositories: Eisk.Apps
