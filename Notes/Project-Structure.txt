@@ -70,16 +70,18 @@ Repository: EISK
 - Core
 	* Utlities should be created based on param options
 	
-- Utilities
-	-- CleanSample
-		* Provide PowerShell script to clean included samples (without changing existing code)	
-
 - Bridge
 	* Includes projects with different combinations. Useful to test and experiment with different options and configurations. 
 	* Should be excluded from Template output
 	-- Eisk.WebApi.RESTFul + Eisk.DataServices.EFCore
 		* Folder to contain group of projects related to Eisk.WebApi.RESTFul with configuration to connect Eisk.DataServices.EFCore
 	-- Eisk.WebApi.GraphQL + Eisk.DataServices.CosmosDb.DocumentDatabase
+
+- Utilities
+	-- CleanSample
+		* Provide PowerShell script to clean included samples (without changing existing code)
+- Build
+	* Build scripts
 
 ========================================================		
 Repository: Eisk.Samples.Core
