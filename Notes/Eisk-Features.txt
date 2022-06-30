@@ -101,15 +101,18 @@ Cross Cutting Concern Options
 DevOps Options
 
 	- IncludeGitIgnore
-		- Yes
-		- No (default)
-	- DevOpsTypeYaml
-		- None (default)
-		- AzureDevOps
-		- GithubActions
+		-- Yes
+		-- No (default)
 	- IncludeCoreAsBinary: default option can be conaidered dynamically based on project size
 		-- No (default), included as source. Useful for small projects.
 		-- FromNugetGallery
+	- DevOpsTypeYaml
+		-- None (default)
+		-- AzureDevOps
+		-- GithubActions
+	- HostingProvider
+		-- None (default)
+		-- AzureAppService
 
 Sample Options
 
