@@ -85,7 +85,7 @@ Repository: EISK
 	* Build scripts
 
 ========================================================		
-Repository: Eisk.Samples.Core
+Repository: Eisk.Samples.TechStack
 ========================================================
 
 This repo will provide all samples with different template options combinations. Content in this repo will be generated automatically from the template command.
@@ -117,7 +117,7 @@ Data-Provider-Samples:
 * CosmosDb
 
 ========================================================		
-Repositories: Eisk.Apps
+Repositories: Eisk.Samples.Apps
 ========================================================
 
 * Eisk.Apps.EMS
