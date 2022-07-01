@@ -103,6 +103,8 @@ Web-Samples:
 * MVC-GraphQL-CosmosDb
 * MVC-gRPC-EFCore
 * MVC-gRPC-CosmosDb
+* MVC-EFCore
+* MVC-CosmosDb
 
 WebApi-Samples:
 * WebApi-EFCore
