@@ -2,7 +2,7 @@
 Mission - What?
 ===================================
 
-* Making new technology adaptation easy and efficient to learn and use in real world usage with relatively simple example and minimal documentation.
+* Making new technology adaptation easy, DRY and efficient to learn and use in real world usage with relatively simple example and minimal documentation.
 
 ===================================
 Motivation - Why?
