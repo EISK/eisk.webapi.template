@@ -119,7 +119,7 @@ Data-Provider-Samples:
 * CosmosDb
 
 ========================================================		
-Repositories: Eisk.Samples.Apps
+Repositories: Eisk.Apps
 ========================================================
 
 * Eisk.Apps.EMS
