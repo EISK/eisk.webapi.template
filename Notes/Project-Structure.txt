@@ -191,11 +191,12 @@ Repo Modules and Dependencies
 Repository (dependency and auto-generation) Strategy
 ========================================================
 
-* EISK (repo)
-	* Template (branch)
-		* Default-Sample (branch) - auto synced
-		* Eisk.Samples.TechStack (repo) - auto synced
-	 	* Eisk.Apps (repo) - manually synced
+* eisk.domain-services.module (sub module) - optional
+	* EISK (repo)
+		* Template (branch)
+			* Default-Sample (branch) - auto synced - rendered content
+			* Eisk.Samples.TechStack (repo) - auto synced - rendered content
+			* Eisk.Apps (repo) - manually synced
 
 ========================================================
 All template structure (with architecture)
