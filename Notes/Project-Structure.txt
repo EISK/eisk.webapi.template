@@ -5,6 +5,7 @@ Project Structure (Repositories, Folder Structure)
 ========================================================
 Repository: EISK
 ========================================================
+Branch: template
 
 * All components shares as common domain model and rules
 * A single entity based sample will provide a simplified approach to illustrate common application implementation scenario
@@ -83,6 +84,19 @@ Repository: EISK
 
 - Build
 	* Build scripts
+	
+========================================================
+Branch: default-sample (default)
+	* SQL Server
+	* EFCore
+	* ASP.NET Web API
+	* Blazor
+
+========================================================
+EISK (main repo) Branch strategy
+	* the default branch enables providing simple and ready to use sample with default tech stack
+	* having both template and default sample branch in same repository enables accepting pull request from default branch and merging back to template branch (may require manual merge)
+	* enables a single repo holding main template source code, along with default sample branch that is easy to use and receive stars (due to popularity to simple usage)
 
 ========================================================		
 Repository: Eisk.Samples.TechStack
@@ -172,7 +186,17 @@ Repo Modules and Dependencies
 - eisk.core (default shared across all, can be used as sub-module or main module)
 	- eisk.core
 	- eisk.testcore
-	
+
+========================================================
+Repository (dependency and auto-generation) Strategy
+========================================================
+
+* EISK (repo)
+	* Template (branch)
+		* Default-Sample (branch) - auto synced
+		* Eisk.Samples.TechStack (repo) - auto synced
+	 	* Eisk.Apps (repo) - manually synced
+
 ========================================================
 All template structure (with architecture)
 ========================================================
